@@ -3,9 +3,8 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Partners';
 import AboutUs from '../components/AboutUs';
 import OurValues from '../components/OurValues';
-import Services from '../components/Services';
+import Testimonials from '../components/Testimonials';
 import Footer from '../components/Footer';
-
 
 const HomePage = () => {
   return (
@@ -13,7 +12,7 @@ const HomePage = () => {
       <Navbar />
       <Hero />
       <AboutUs />
-      <Services />
+      <Testimonials />
       <OurValues />
       <Footer />
     </div>
