@@ -1,0 +1,100 @@
+.nav-item {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #4D4944;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.nav-item:hover {
+  border-color: #67635E;
+  color: #67635E;
+}
+
+.nav-item span {
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.nav-item span:first-child {
+  transform: translateY(0);
+}
+
+.nav-item span:last-child {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  transform: translateY(0);
+}
+
+.nav-item:hover span:first-child {
+  transform: translateY(-150%);
+}
+
+.nav-item:hover span:last-child {
+  transform: translateY(-100%);
+}
+
+.logo {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  transition: none; /* we handle motion via animation */
+}
+
+.logo.hover-in {
+  animation: spin-drop-in 1.2s ease forwards;
+}
+
+.logo.hover-out {
+  animation: spin-drop-out 1.2s ease forwards;
+}
+
+/* Hover-in animation (original → #67635E) */
+@keyframes spin-drop-in {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    filter: none; /* original color */
+  }
+  50% {
+    transform: translateY(100%) rotate(360deg);
+    opacity: 0;
+    filter: none;
+  }
+  51% {
+    transform: translateY(100%) rotate(0deg);
+    opacity: 0;
+    filter: invert(41%) sepia(8%) saturate(334%) hue-rotate(15deg) brightness(92%) contrast(90%);
+  }
+  100% {
+    transform: translateY(0) rotate(-360deg);
+    opacity: 1;
+    filter: invert(41%) sepia(8%) saturate(334%) hue-rotate(15deg) brightness(92%) contrast(90%);
+  }
+}
+
+/* Hover-out animation (#67635E → original) */
+@keyframes spin-drop-out {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    filter: invert(41%) sepia(8%) saturate(334%) hue-rotate(15deg) brightness(92%) contrast(90%);
+  }
+  50% {
+    transform: translateY(100%) rotate(360deg);
+    opacity: 0;
+    filter: invert(41%) sepia(8%) saturate(334%) hue-rotate(15deg) brightness(92%) contrast(90%);
+  }
+  51% {
+    transform: translateY(100%) rotate(0deg);
+    opacity: 0;
+    filter: none;
+  }
+  100% {
+    transform: translateY(0) rotate(-360deg);
+    opacity: 1;
+    filter: none;
+  }
+}
