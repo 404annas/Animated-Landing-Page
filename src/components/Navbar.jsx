@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Navbar.css"; // we’ll keep animations here
+import "./Navbar.css";
 
 const Navbar = () => {
   const [hoverState, setHoverState] = useState("");

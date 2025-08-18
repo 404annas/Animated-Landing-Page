@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Twitter, Instagram, Linkedin, Facebook } from 'lucide-react';
+import { Twitter, Instagram, Linkedin, Facebook } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./About.css";
 
@@ -15,19 +15,29 @@ const AboutUs = () => {
         <div className="flex items-start flex-col leading-none">
           <div className="flex items-center">
             <p className="text-[#6F6B61] text-8xl">+</p>
-            <h1 className="mor-n text-[192px] leading-none tracking-wider">15</h1>
+            <h1 className="mor-n text-[192px] leading-none tracking-wider">
+              15
+            </h1>
           </div>
-          <p className="inter font-normal text-[#25211D]">Years Of Experience</p>
+          <p className="inter font-normal text-[#25211D]">
+            Years Of Experience
+          </p>
         </div>
 
-        <h1 className="mor-n text-[240px] leading-none uppercase text-[#25211D] font-bold">Modern</h1>
+        <h1 className="mor-n text-[240px] leading-none uppercase text-[#25211D] font-bold">
+          Modern
+        </h1>
 
         <div className="flex items-start flex-col leading-none">
           <div className="flex items-center">
-            <h1 className="mor-n text-[192px] leading-none tracking-wide">98</h1>
+            <h1 className="mor-n text-[192px] leading-none tracking-wide">
+              98
+            </h1>
             <p className="text-[#6F6B61] text-8xl">+</p>
           </div>
-          <p className="inter font-normal text-[#25211D]">Successful Projects</p>
+          <p className="inter font-normal text-[#25211D]">
+            Successful Projects
+          </p>
         </div>
       </div>
 
@@ -37,10 +47,14 @@ const AboutUs = () => {
 
       <div className="flex items-center justify-between pt-4">
         <p className="max-w-md flex items-start inter text-[#34302B]">
-          We create architecture that balances form, function, and context. Our spaces reflect a deep respect for people, place, and purpose — shaped with care, vision, and lasting intent.
+          We create architecture that balances form, function, and context. Our
+          spaces reflect a deep respect for people, place, and purpose — shaped
+          with care, vision, and lasting intent.
         </p>
         <p className="max-w-md flex text-end justify-end inter text-[#34302B]">
-          Every project is an opportunity to connect design with meaning. Through timeless forms and details, we create environments that inspire and serve those who live, work and gather there.
+          Every project is an opportunity to connect design with meaning.
+          Through timeless forms and details, we create environments that
+          inspire and serve those who live, work and gather there.
         </p>
       </div>
 
@@ -52,7 +66,7 @@ const AboutUs = () => {
           style={{
             width: "180px",
             height: "60px",
-            padding: "2px" // space for scaling content
+            padding: "2px", // space for scaling content
           }}
         >
           {/* Inner scaling content */}
@@ -93,25 +107,48 @@ const AboutUs = () => {
       {/* ===== SOCIAL ICONS ===== */}
       <div className="flex items-center justify-center gap-6 mt-10">
         <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer">
-          <span><Instagram size={20} /></span>
-          <span><Instagram size={20} /></span>
+          <span>
+            <Instagram size={20} />
+          </span>
+          <span>
+            <Instagram size={20} />
+          </span>
         </div>
         <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer">
-          <span><Twitter size={20} /></span>
-          <span><Twitter size={20} /></span>
+          <span>
+            <Twitter size={20} />
+          </span>
+          <span>
+            <Twitter size={20} />
+          </span>
         </div>
         <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer">
-          <span><Linkedin size={20} /></span>
-          <span><Linkedin size={20} /></span>
+          <span>
+            <Linkedin size={20} />
+          </span>
+          <span>
+            <Linkedin size={20} />
+          </span>
         </div>
         <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer">
-          <span><Facebook size={20} /></span>
-          <span><Facebook size={20} /></span>
+          <span>
+            <Facebook size={20} />
+          </span>
+          <span>
+            <Facebook size={20} />
+          </span>
         </div>
       </div>
 
       <div className="mt-20 flex justify-center px-10">
-        <div className="border-b border-gray-300 w-full"></div>
+        <motion.div
+          className="border-b border-gray-300"
+          initial={{ scaleX: 0, originX: 0.5 }} // start from center
+          whileInView={{ scaleX: 1 }} // expand fully
+          transition={{ duration: 1, ease: "easeInOut" }}
+          viewport={{ once: true, amount: 0.5 }} // animate only when in view
+          style={{ width: "100%" }}
+        />
       </div>
     </div>
   );

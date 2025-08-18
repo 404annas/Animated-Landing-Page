@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion";
 
 const Partners = () => {
   return (
@@ -16,8 +17,15 @@ const Partners = () => {
 
       {/* Short centered border at bottom */}
       <div className="mt-20 flex justify-center px-10">
-        <div className="border-b border-gray-300 w-full"></div>
-      </div>
+            <motion.div
+              className="border-b border-gray-300"
+              initial={{ scaleX: 0, originX: 0.5 }} // start from center
+              whileInView={{ scaleX: 1 }} // expand fully
+              transition={{ duration: 1, ease: "easeInOut" }}
+              viewport={{ once: true, amount: 0.5 }} // animate only when in view
+              style={{ width: "100%" }}
+            />
+          </div>
     </div>
   );
 };
