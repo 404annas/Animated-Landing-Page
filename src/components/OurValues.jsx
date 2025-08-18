@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { useState, useRef } from "react";
+import { motion, AnimatePresence, useInView } from "framer-motion";
 
 const OurValues = () => {
   const [hovered, setHovered] = useState(false);
@@ -15,13 +15,40 @@ const OurValues = () => {
     "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68516035a3b863be972db6d3_Frame%2010.jpg"
   ];
 
+  // Ref & inView for heading animation
+  const headingRef = useRef(null);
+  const inView = useInView(headingRef, { once: true, amount: 0.4 });
+
+  const headingText = "Let's Design";
+
+  const charVariants = {
+    hidden: { y: 50, rotateX: 90, opacity: 0 },
+    visible: { y: 0, rotateX: 0, opacity: 1 },
+  };
+
   return (
     <div className="bg-[#FEFCF6] pb-20 px-10">
       <h1 className="text-center text-black inter uppercase">Start Building</h1>
-      <h1 className="uppercase mor-n font-bold text-center leading-none text-[240px] pt-6">
-        Let's Design
+
+      {/* Let's Design Heading with inView animation */}
+      <h1
+        ref={headingRef}
+        className="uppercase mor-n font-bold text-center leading-none text-[240px] pt-6 flex justify-center"
+      >
+        {headingText.split("").map((char, index) => (
+          <motion.span
+            key={index}
+            variants={charVariants}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            transition={{ delay: index * 0.1, duration: 0.8, ease: "easeOut" }}
+          >
+            {char}
+          </motion.span>
+        ))}
       </h1>
-      <p className="inter text-center text-[#34302B] max-w-3xl mx-auto">
+
+      <p className="inter text-center text-[#34302B] max-w-3xl mx-auto mt-6">
         Ready to bring your vision to life? Whether it’s a home, a workspace, or
         a public space, we’re here to design environments that inspire,
         function, and endure. Let’s start your project together.
@@ -34,7 +61,7 @@ const OurValues = () => {
           style={{ width: "220px", height: "60px", padding: "2px" }}
         >
           <motion.div
-            className="bg-[#25211D] w-full h-full rounded-full flex items-center justify-center uppercase text-white text-lg overflow-hidden cursor-pointer text-md"
+            className="bg-[#25211D] w-full h-full rounded-full flex items-center justify-center uppercase text-white text-lg overflow-hidden cursor-pointer"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
             animate={{ scale: hovered ? 0.96 : 1 }}
@@ -42,7 +69,7 @@ const OurValues = () => {
           >
             <AnimatePresence mode="wait">
               <motion.span
-                key={hovered ? "learn" : "about"}
+                key={hovered ? "hover" : "normal"}
                 initial={{ rotate: 12, y: -40, opacity: 0 }}
                 animate={{ rotate: 0, y: 0, opacity: 1 }}
                 exit={{ rotate: -12, y: -10, opacity: 0 }}
@@ -59,19 +86,15 @@ const OurValues = () => {
       <div className="relative flex justify-center items-center mt-20 pt-20 overflow-hidden h-[400px]">
         <motion.div
           className="relative w-[600px] h-[600px] rounded-full translate-y-40"
-          animate={{ rotate: -360 }} // anticlockwise
-          transition={{
-            repeat: Infinity,
-            duration: 40, // adjust speed (smaller = faster)
-            ease: "linear",
-          }}
+          animate={{ rotate: -360 }}
+          transition={{ repeat: Infinity, duration: 40, ease: "linear" }}
         >
           {images.map((src, i) => {
-            const angle = (i / images.length) * 2 * Math.PI; // position around circle
+            const angle = (i / images.length) * 2 * Math.PI;
             const radius = 250;
             const x = Math.cos(angle) * radius;
             const y = Math.sin(angle) * radius;
-            const rotation = (angle * 180) / Math.PI + 90; // tangent rotation
+            const rotation = (angle * 180) / Math.PI + 90;
 
             return (
               <img

@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 const testimonials = [
   {
@@ -47,30 +47,50 @@ const testimonials = [
   },
 ];
 
+const charVariants = {
+  hidden: { y: 50, rotateX: 90, opacity: 0 },
+  visible: { y: 0, rotateX: 0, opacity: 1 },
+};
+
 const Testimonials = () => {
   const cardsPerView = 3;
   const [index, setIndex] = useState(0);
+  const [hovered, setHovered] = useState(false);
 
   const nextSlide = () => {
-    if (index < testimonials.length - cardsPerView) {
-      setIndex(index + 1);
-    }
+    if (index < testimonials.length - cardsPerView) setIndex(index + 1);
   };
-
   const prevSlide = () => {
-    if (index > 0) {
-      setIndex(index - 1);
-    }
+    if (index > 0) setIndex(index - 1);
   };
-
-  // total "pages" are based on how many times you can move 1 card
   const totalSteps = testimonials.length - cardsPerView + 1;
+
+  // Ref for heading inView
+  const headingRef = useRef(null);
+  const inView = useInView(headingRef, { once: true, amount: 0.4 });
+
+  const headingText = "TESTIMONIALS";
 
   return (
     <div className="pb-20 px-10 pt-10 bg-[#FEFCF6] relative">
       <h1 className="text-center text-black uppercase inter">Happy Clients</h1>
-      <h1 className="text-center leading-none text-[#25211D] text-[180px] md:text-[240px] uppercase mor-n pt-10">
-        TESTIMONIALS
+
+      {/* TESTIMONIALS HEADING WITH INVIEW ANIMATION */}
+      <h1
+        ref={headingRef}
+        className="text-center leading-none text-[#25211D] text-[180px] md:text-[240px] uppercase mor-n pt-10 flex justify-center"
+      >
+        {headingText.split("").map((char, index) => (
+          <motion.span
+            key={index}
+            variants={charVariants}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            transition={{ delay: index * 0.15, duration: 0.8, ease: "easeOut" }}
+          >
+            {char}
+          </motion.span>
+        ))}
       </h1>
 
       <div className="relative flex items-center justify-center pt-10 px-10">
@@ -108,9 +128,7 @@ const Testimonials = () => {
                     alt={item.name}
                   />
                   <div className="flex flex-col gap-1">
-                    <h1 className="text-[#25211D] inter font-bold">
-                      {item.name}
-                    </h1>
+                    <h1 className="text-[#25211D] inter font-bold">{item.name}</h1>
                     <p className="text-[#6F6B61] inter">{item.role}</p>
                   </div>
                 </div>
@@ -124,11 +142,7 @@ const Testimonials = () => {
           onClick={nextSlide}
           disabled={index >= testimonials.length - cardsPerView}
           className={`absolute cursor-pointer right-4 z-10 rounded-full shadow-lg p-3 top-1/2 -translate-y-1/2 
-            ${
-              index >= testimonials.length - cardsPerView
-                ? "bg-white cursor-not-allowed"
-                : "bg-white"
-            }`}
+            ${index >= testimonials.length - cardsPerView ? "bg-white cursor-not-allowed" : "bg-white"}`}
         >
           <ChevronRight size={28} />
         </button>
@@ -139,21 +153,21 @@ const Testimonials = () => {
         {Array.from({ length: totalSteps }).map((_, stepIndex) => (
           <span
             key={stepIndex}
-            className={`w-3 h-3 rounded-full cursor-pointer ${
-              index === stepIndex ? "bg-[#25211D]" : "bg-gray-400"
-            }`}
+            className={`w-3 h-3 rounded-full cursor-pointer ${index === stepIndex ? "bg-[#25211D]" : "bg-gray-400"
+              }`}
             onClick={() => setIndex(stepIndex)}
           ></span>
         ))}
       </div>
 
+      {/* Bottom Border Animation */}
       <div className="mt-20 flex justify-center px-10">
         <motion.div
           className="border-b border-gray-300"
-          initial={{ scaleX: 0, originX: 0.5 }} // start from center
-          whileInView={{ scaleX: 1 }} // expand fully
+          initial={{ scaleX: 0, originX: 0.5 }}
+          whileInView={{ scaleX: 1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          viewport={{ once: true, amount: 0.5 }} // animate only when in view
+          viewport={{ once: true, amount: 0.5 }}
           style={{ width: "100%" }}
         />
       </div>

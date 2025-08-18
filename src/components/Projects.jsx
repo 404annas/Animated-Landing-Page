@@ -1,19 +1,45 @@
-import React, { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState, useRef } from 'react';
+import { motion, AnimatePresence, useInView } from 'framer-motion';
+
+const charVariants = {
+    hidden: { y: 50, rotateX: 90, opacity: 0 },
+    visible: { y: 0, rotateX: 0, opacity: 1 },
+};
 
 const Projects = () => {
     const [hovered, setHovered] = useState(false);
+    const projectsText = "Projects";
+
+    // Ref and inView hook
+    const headingRef = useRef(null);
+    const inView = useInView(headingRef, { once: true, amount: 0.4 });
 
     return (
-        <div className=" pb-20 relative bg-[#FEFCF6]">
-            <div className='px-10'>
+        <div className="pb-20 relative bg-[#FEFCF6]">
+            <div className="px-10">
                 <h1 className="text-center text-black inter uppercase">Featured</h1>
-                <h1 className="uppercase mor-n font-bold text-center leading-none text-[240px] pt-6">
-                    Projects
+
+                {/* PROJECTS HEADING WITH STAGGERED ANIMATION */}
+                <h1
+                    ref={headingRef}
+                    className="uppercase mor-n font-bold text-center leading-none text-[240px] pt-6 flex justify-center"
+                >
+                    {projectsText.split("").map((char, index) => (
+                        <motion.span
+                            key={index}
+                            variants={charVariants}
+                            initial="hidden"
+                            animate={inView ? "visible" : "hidden"}
+                            transition={{ delay: index * 0.15, duration: 0.8, ease: "easeOut" }}
+                        >
+                            {char}
+                        </motion.span>
+                    ))}
                 </h1>
-                <div className='flex items-center justify-between pt-10'>
-                    <p className='inter text-[#25211D] text-sm'>2020/25</p>
-                    <p className='inter text-[#25211D] text-sm'>(04)</p>
+
+                <div className="flex items-center justify-between pt-10">
+                    <p className="inter text-[#25211D] text-sm">2020/25</p>
+                    <p className="inter text-[#25211D] text-sm">(04)</p>
                 </div>
             </div>
 

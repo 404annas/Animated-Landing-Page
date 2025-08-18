@@ -1,17 +1,16 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import React, { useState, useRef, useEffect } from "react";
+import { motion, useInView } from "framer-motion";
 import { Twitter, Instagram, Linkedin, Facebook } from "lucide-react";
 import "./About.css";
 
-// Scroll counter with animation on mount
-const ScrollCounter = ({ number, height = 192, duration = 2000 }) => {
+// Scroll counter with animation when in view
+const ScrollCounter = ({ number, height = 192, duration = 2000, inView }) => {
   const digits = String(number).split("");
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
-    // trigger animation after mount
-    setAnimate(true);
-  }, []);
+    if (inView) setAnimate(true);
+  }, [inView]);
 
   return (
     <div className="flex">
@@ -23,7 +22,9 @@ const ScrollCounter = ({ number, height = 192, duration = 2000 }) => {
         >
           <div
             style={{
-              transform: animate ? `translateY(-${digit * height}px)` : `translateY(0)`,
+              transform: animate
+                ? `translateY(-${digit * height}px)`
+                : `translateY(0)`,
               transition: `transform ${duration}ms cubic-bezier(0.22, 1, 0.36, 1)`,
             }}
           >
@@ -36,7 +37,7 @@ const ScrollCounter = ({ number, height = 192, duration = 2000 }) => {
                   fontWeight: "bold",
                   color: "#25211D",
                   textAlign: "center",
-                  lineHeight: 1, // remove extra spacing
+                  lineHeight: 1,
                 }}
               >
                 {n}
@@ -49,9 +50,22 @@ const ScrollCounter = ({ number, height = 192, duration = 2000 }) => {
   );
 };
 
+// Animation variants for staggered characters
+const charVariants = {
+  hidden: { y: 50, rotateX: 90, opacity: 0 },
+  visible: { y: 0, rotateX: 0, opacity: 1 },
+};
+
 const AboutUs = () => {
+  const modernText = "Modern";
+  const architectureText = "Architecture";
+
+  // Ref for section
+  const sectionRef = useRef(null);
+  const inView = useInView(sectionRef, { once: true, amount: 0.4 });
+
   return (
-    <div className="bg-[#FEFCF6] py-20 px-10">
+    <div ref={sectionRef} className="bg-[#FEFCF6] py-20 px-10">
       <h1 className="text-center text-black uppercase inter">Design Vision</h1>
 
       <div className="flex items-center justify-between pt-10">
@@ -59,27 +73,51 @@ const AboutUs = () => {
         <div className="flex items-start flex-col leading-none">
           <div className="flex items-center mor-n">
             <p className="text-[#6F6B61] text-8xl">+</p>
-            <ScrollCounter number={15} duration={2500} />
+            <ScrollCounter number={15} duration={2500} inView={inView} />
           </div>
           <p className="inter font-normal text-[#25211D]">Years Of Experience</p>
         </div>
 
-        <h1 className="mor-n text-[240px] leading-none uppercase text-[#25211D] font-bold">
-          Modern
+        {/* MODERN TEXT WITH STAGGERED ANIMATION */}
+        <h1 className="mor-n text-[240px] leading-none uppercase text-[#25211D] font-bold flex">
+          {modernText.split("").map((char, index) => (
+            <motion.span
+              key={index}
+              variants={charVariants}
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
+              transition={{ delay: index * 0.2, duration: 0.8, ease: "easeOut" }}
+            >
+              {char}
+            </motion.span>
+          ))}
         </h1>
 
         {/* RIGHT COUNTER */}
         <div className="flex items-end flex-col leading-none">
           <div className="flex items-center mor-n">
-            <ScrollCounter number={98} duration={3000} />
+            <ScrollCounter number={98} duration={3000} inView={inView} />
             <p className="text-[#6F6B61] text-8xl">+</p>
           </div>
-          <p className="inter font-normal text-[#25211D] text-right">Successful Projects</p>
+          <p className="inter font-normal text-[#25211D] text-right">
+            Successful Projects
+          </p>
         </div>
       </div>
 
-      <h1 className="mor-n text-[240px] leading-none uppercase text-[#25211D] font-bold text-center -mt-8">
-        Architecture
+      {/* ARCHITECTURE TEXT WITH STAGGERED ANIMATION */}
+      <h1 className="mor-n text-[240px] leading-none uppercase text-[#25211D] font-bold text-center -mt-8 flex justify-center">
+        {architectureText.split("").map((char, index) => (
+          <motion.span
+            key={index}
+            variants={charVariants}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            transition={{ delay: index * 0.15, duration: 0.8, ease: "easeOut" }}
+          >
+            {char}
+          </motion.span>
+        ))}
       </h1>
 
       <div className="flex items-center justify-between pt-4">
@@ -101,10 +139,10 @@ const AboutUs = () => {
       <div className="flex justify-center">
         <motion.div
           className="border-b border-gray-300"
-          initial={{ scaleX: 0, originX: 0.5 }} // start from center
-          whileInView={{ scaleX: 1 }} // expand fully
+          initial={{ scaleX: 0, originX: 0.5 }}
+          whileInView={{ scaleX: 1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          viewport={{ once: true, amount: 0.5 }} // animate only when in view
+          viewport={{ once: true, amount: 0.5 }}
           style={{ width: "100%" }}
         />
       </div>
