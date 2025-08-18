@@ -67,7 +67,7 @@ const Testimonials = () => {
   const totalSteps = testimonials.length - cardsPerView + 1;
 
   return (
-    <div className="pb-20 px-10 bg-[#FEFCF6] relative">
+    <div className="pb-20 px-10 pt-10 bg-[#FEFCF6] relative">
       <h1 className="text-center text-black uppercase inter">Happy Clients</h1>
       <h1 className="text-center leading-none text-[#25211D] text-[180px] md:text-[240px] uppercase mor-n pt-10">
         TESTIMONIALS

@@ -1,43 +1,80 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import { Twitter, Instagram, Linkedin, Facebook } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
 import "./About.css";
 
-const AboutUs = () => {
-  const [hovered, setHovered] = useState(false);
+// Scroll counter with animation on mount
+const ScrollCounter = ({ number, height = 192, duration = 2000 }) => {
+  const digits = String(number).split("");
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    // trigger animation after mount
+    setAnimate(true);
+  }, []);
 
   return (
+    <div className="flex">
+      {digits.map((digit, idx) => (
+        <div
+          key={idx}
+          className="overflow-hidden relative"
+          style={{ height: `${height}px`, width: "50px" }}
+        >
+          <div
+            style={{
+              transform: animate ? `translateY(-${digit * height}px)` : `translateY(0)`,
+              transition: `transform ${duration}ms cubic-bezier(0.22, 1, 0.36, 1)`,
+            }}
+          >
+            {[...Array(10).keys()].map((n) => (
+              <div
+                key={n}
+                style={{
+                  height: `${height}px`,
+                  fontSize: `${height}px`,
+                  fontWeight: "bold",
+                  color: "#25211D",
+                  textAlign: "center",
+                  lineHeight: 1, // remove extra spacing
+                }}
+              >
+                {n}
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const AboutUs = () => {
+  return (
     <div className="bg-[#FEFCF6] py-20 px-10">
-      {/* ===== TITLE SECTION ===== */}
       <h1 className="text-center text-black uppercase inter">Design Vision</h1>
 
       <div className="flex items-center justify-between pt-10">
+        {/* LEFT COUNTER */}
         <div className="flex items-start flex-col leading-none">
-          <div className="flex items-center">
+          <div className="flex items-center mor-n">
             <p className="text-[#6F6B61] text-8xl">+</p>
-            <h1 className="mor-n text-[192px] leading-none tracking-wider">
-              15
-            </h1>
+            <ScrollCounter number={15} duration={2500} />
           </div>
-          <p className="inter font-normal text-[#25211D]">
-            Years Of Experience
-          </p>
+          <p className="inter font-normal text-[#25211D]">Years Of Experience</p>
         </div>
 
         <h1 className="mor-n text-[240px] leading-none uppercase text-[#25211D] font-bold">
           Modern
         </h1>
 
-        <div className="flex items-start flex-col leading-none">
-          <div className="flex items-center">
-            <h1 className="mor-n text-[192px] leading-none tracking-wide">
-              98
-            </h1>
+        {/* RIGHT COUNTER */}
+        <div className="flex items-end flex-col leading-none">
+          <div className="flex items-center mor-n">
+            <ScrollCounter number={98} duration={3000} />
             <p className="text-[#6F6B61] text-8xl">+</p>
           </div>
-          <p className="inter font-normal text-[#25211D]">
-            Successful Projects
-          </p>
+          <p className="inter font-normal text-[#25211D] text-right">Successful Projects</p>
         </div>
       </div>
 
@@ -58,89 +95,10 @@ const AboutUs = () => {
         </p>
       </div>
 
-      {/* ===== BUTTON WITH BORDER FRAME ===== */}
-      <div className="flex justify-center mt-10">
-        {/* Outer fixed border */}
-        <div
-          className="rounded-full border border-slate-500"
-          style={{
-            width: "180px",
-            height: "60px",
-            padding: "2px", // space for scaling content
-          }}
-        >
-          {/* Inner scaling content */}
-          <motion.div
-            className="bg-[#25211D] w-full h-full rounded-full flex items-center justify-center uppercase text-white text-lg overflow-hidden cursor-pointer"
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
-            animate={{ scale: hovered ? 0.96 : 1 }}
-            transition={{ duration: 0.2, ease: "easeInOut" }}
-          >
-            <AnimatePresence mode="wait">
-              {!hovered ? (
-                <motion.span
-                  key="about"
-                  initial={{ rotate: 12, y: -40, opacity: 0 }}
-                  animate={{ rotate: 0, y: 0, opacity: 1 }}
-                  exit={{ rotate: -12, y: -10, opacity: 0 }}
-                  transition={{ duration: 0.2, ease: "easeInOut" }}
-                >
-                  ABOUT US
-                </motion.span>
-              ) : (
-                <motion.span
-                  key="learn"
-                  initial={{ rotate: 12, y: -40, opacity: 0 }}
-                  animate={{ rotate: 0, y: 0, opacity: 1 }}
-                  exit={{ rotate: -12, y: -10, opacity: 0 }}
-                  transition={{ duration: 0.2, ease: "easeInOut" }}
-                >
-                  ABOUT US
-                </motion.span>
-              )}
-            </AnimatePresence>
-          </motion.div>
-        </div>
-      </div>
+      {/* SOCIAL ICONS */}
+      <div className="flex items-center justify-center gap-6 mt-10 pb-20"> <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer"> <span> <Instagram size={20} /> </span> <span> <Instagram size={20} /> </span> </div> <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer"> <span> <Twitter size={20} /> </span> <span> <Twitter size={20} /> </span> </div> <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer"> <span> <Linkedin size={20} /> </span> <span> <Linkedin size={20} /> </span> </div> <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer"> <span> <Facebook size={20} /> </span> <span> <Facebook size={20} /> </span> </div> </div>
 
-      {/* ===== SOCIAL ICONS ===== */}
-      <div className="flex items-center justify-center gap-6 mt-10">
-        <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer">
-          <span>
-            <Instagram size={20} />
-          </span>
-          <span>
-            <Instagram size={20} />
-          </span>
-        </div>
-        <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer">
-          <span>
-            <Twitter size={20} />
-          </span>
-          <span>
-            <Twitter size={20} />
-          </span>
-        </div>
-        <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer">
-          <span>
-            <Linkedin size={20} />
-          </span>
-          <span>
-            <Linkedin size={20} />
-          </span>
-        </div>
-        <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer">
-          <span>
-            <Facebook size={20} />
-          </span>
-          <span>
-            <Facebook size={20} />
-          </span>
-        </div>
-      </div>
-
-      <div className="mt-20 flex justify-center px-10">
+      <div className="flex justify-center">
         <motion.div
           className="border-b border-gray-300"
           initial={{ scaleX: 0, originX: 0.5 }} // start from center

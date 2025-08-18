@@ -6,7 +6,7 @@ import FooterItems from "./FooterItems";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-[#25211D] text-white px-10 py-20">
+      <footer className="bg-[#25211D] text-white px-10 pt-20 pb-10">
         <div className="flex items-center flex-col gap-6">
           <img
             className="w-8 cursor-pointer hover:opacity-80 transition-all duration-300"
@@ -75,8 +75,8 @@ const Footer = () => {
         </div>
       </footer>
 
-      <div className="relative bg-[#25211D] overflow-hidden">
-        <h1 className="mor text-[#2C2824] leading-none text-[820px] font-extrabold px-0 uppercase py-0 translate-y-1/2">
+      <div className="relative bg-[#25211D] overflow-hidden h-105">
+        <h1 className="mor text-[#2C2824] leading-none text-[820px] font-extrabold px-0 uppercase py-0">
           Arcoria
         </h1>
       </div>
