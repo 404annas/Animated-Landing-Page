@@ -1,4 +1,3 @@
-import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Partners';
 import AboutUs from '../components/AboutUs';
@@ -11,7 +10,7 @@ import Projects from '../components/Projects';
 const HomePage = () => {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <Hero />
 
       {/* AboutUs visible on lg and above */}
