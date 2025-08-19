@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, AnimatePresence } from "framer-motion";
 import { Twitter, Instagram, Linkedin, Facebook } from "lucide-react";
 import "./About.css";
 
@@ -57,6 +57,8 @@ const charVariants = {
 };
 
 const AboutUs = () => {
+  const [hovered, setHovered] = useState(false);
+
   const modernText = "Modern";
   const architectureText = "Architecture";
 
@@ -131,6 +133,51 @@ const AboutUs = () => {
           Through timeless forms and details, we create environments that
           inspire and serve those who live, work and gather there.
         </p>
+      </div>
+
+      <div className="flex justify-center mt-4 mb-4">
+        {/* Outer fixed border */}
+        <div
+          className="rounded-full border border-slate-500"
+          style={{
+            width: "170px",
+            height: "60px",
+            padding: "2px", // space for scaling content
+          }}
+        >
+          {/* Inner scaling content */}
+          <motion.div
+            className="bg-[#25211D] w-full h-full rounded-full flex items-center justify-center uppercase text-white text-md overflow-hidden cursor-pointer"
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+            animate={{ scale: hovered ? 0.96 : 1 }}
+            transition={{ duration: 0.2, ease: "easeInOut" }}
+          >
+            <AnimatePresence mode="wait">
+              {!hovered ? (
+                <motion.span
+                  key="about"
+                  initial={{ rotate: 12, y: -40, opacity: 0 }}
+                  animate={{ rotate: 0, y: 0, opacity: 1 }}
+                  exit={{ rotate: -12, y: -10, opacity: 0 }}
+                  transition={{ duration: 0.2, ease: "easeInOut" }}
+                >
+                  ABOUT US
+                </motion.span>
+              ) : (
+                <motion.span
+                  key="learn"
+                  initial={{ rotate: 12, y: -40, opacity: 0 }}
+                  animate={{ rotate: 0, y: 0, opacity: 1 }}
+                  exit={{ rotate: -12, y: -10, opacity: 0 }}
+                  transition={{ duration: 0.2, ease: "easeInOut" }}
+                >
+                  ABOUT US
+                </motion.span>
+              )}
+            </AnimatePresence>
+          </motion.div>
+        </div>
       </div>
 
       {/* SOCIAL ICONS */}

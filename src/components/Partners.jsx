@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 const Partners = () => {
   return (
     <div className="bg-[#FEFCF6] pt-20">
-      <h1 className="text-center text-black inter uppercase">
+      <h1 className="text-center text-black inter uppercase pb-10">
         Clients & Partners:
       </h1>
 
@@ -19,22 +19,22 @@ const Partners = () => {
             pauseOnHover={true}
           >
             <img
-              className="w-32 mx-10"
+              className="w-28 sm:w-32 mx-10"
               src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/685161a5822b1ce22b5d1ce5_Umbrella.svg"
               alt=""
             />
             <img
-              className="w-32 mx-10"
+              className="w-28 sm:w-32 mx-10"
               src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/6851618899fe0f81f09d8dc6_Amsterdam.svg"
               alt=""
             />
             <img
-              className="w-32 mx-10"
+              className="w-28 sm:w-32 mx-10"
               src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68516188ef1e08a08cb7adc8_Delaware.svg"
               alt=""
             />
             <img
-              className="w-32 mx-10"
+              className="w-28 sm:w-32 mx-10"
               src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/685161920fd24a7acdfd6334_Monaco.svg"
               alt=""
             />
@@ -53,22 +53,22 @@ const Partners = () => {
             pauseOnHover={true}
           >
             <img
-              className="w-32 mx-10"
+              className="w-28 sm:w-32 mx-10"
               src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/685161920fd24a7acdfd6334_Monaco.svg"
               alt=""
             />
             <img
-              className="w-32 mx-10"
+              className="w-28 sm:w-32 mx-10"
               src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68516188ef1e08a08cb7adc8_Delaware.svg"
               alt=""
             />
             <img
-              className="w-32 mx-10"
+              className="w-28 sm:w-32 mx-10"
               src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/6851618899fe0f81f09d8dc6_Amsterdam.svg"
               alt=""
             />
             <img
-              className="w-32 mx-10"
+              className="w-28 sm:w-32 mx-10"
               src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/685161a5822b1ce22b5d1ce5_Umbrella.svg"
               alt=""
             />

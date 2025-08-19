@@ -37,7 +37,7 @@ const HoverItem = ({ label }) => {
 
 const FooterItems = () => {
   return (
-    <div className="flex items-center justify-between py-20 gap-10">
+    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 items-center justify-between py-20 gap-10">
       <div className="flex flex-col items-center gap-4">
         <HoverItem label="Home" />
         <HoverItem label="Home" />

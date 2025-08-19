@@ -6,7 +6,7 @@ import FooterItems from "./FooterItems";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-[#25211D] text-white px-10 pt-20 pb-10">
+      <footer className="bg-[#25211D] text-white px-4 sm:px-6 md:px-10 pt-20 pb-10">
         <div className="flex items-center flex-col gap-6">
           <img
             className="w-8 cursor-pointer hover:opacity-80 transition-all duration-300"
@@ -17,7 +17,7 @@ const Footer = () => {
           <p className="inter uppercase text-center text-sm">
             Architecture that elevates everyday living.
           </p>
-          <div className="flex items-center justify-center gap-6 mt-8">
+          <div className="flex items-center justify-center gap-4 sm:gap-6 mt-8">
             <div className="footer-item bg-[#25211D] border border-[#4D4944] hover:border-[#67635E] text-white p-3 rounded-full cursor-pointer">
               <span>
                 <Instagram size={20} />
@@ -55,28 +55,30 @@ const Footer = () => {
 
         <FooterItems />
 
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-4">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0 mt-10">
+          {/* Left side */}
+          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
             <div className="flex items-center gap-2">
-              <p className="uppercase text-[#67635E] inter">Powered By</p>
-              <p className="uppercase inter text-white">Webflow</p>
+              <p className="uppercase text-[#67635E] inter text-sm">Powered By</p>
+              <p className="uppercase inter text-white text-sm">Webflow</p>
             </div>
             <div className="flex items-center gap-2">
-              <p className="uppercase text-[#67635E] inter">Created By</p>
-              <p className="uppercase inter text-white">Flowaze</p>
+              <p className="uppercase text-[#67635E] inter text-sm">Created By</p>
+              <p className="uppercase inter text-white text-sm">Flowaze</p>
             </div>
           </div>
 
-          <div className="flex items-center gap-4">
-            <p className="uppercase inter text-white">Style Guide</p>
-            <p className="uppercase inter text-white">Licenses</p>
-            <p className="uppercase inter text-white">Changelog</p>
+          {/* Right side */}
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <p className="uppercase inter text-white text-sm">Style Guide</p>
+            <p className="uppercase inter text-white text-sm">Licenses</p>
+            <p className="uppercase inter text-white text-sm">Changelog</p>
           </div>
         </div>
       </footer>
 
-      <div className="relative bg-[#25211D] overflow-hidden h-105">
-        <h1 className="mor text-[#2C2824] leading-none text-[820px] font-extrabold px-0 uppercase py-0">
+      <div className="relative bg-[#25211D] overflow-hidden h-28 sm:h-60 md:h-72 lg:h-105">
+        <h1 className="mor text-[#2C2824] leading-none text-center text-[220px] sm:text-[400px] md:text-[500px] lg:text-[820px] font-extrabold px-0 uppercase py-0">
           Arcoria
         </h1>
       </div>

@@ -27,13 +27,13 @@ const OurValues = () => {
   };
 
   return (
-    <div className="bg-[#FEFCF6] pb-20 px-10">
+    <div className="bg-[#FEFCF6] px-4 sm:px-6 md:px-10">
       <h1 className="text-center text-black inter uppercase">Start Building</h1>
 
       {/* Let's Design Heading with inView animation */}
       <h1
         ref={headingRef}
-        className="uppercase mor-n font-bold text-center leading-none text-[240px] pt-6 flex justify-center"
+        className="uppercase mor-n font-bold pt-6 flex justify-center mor-n text-[#25211D] text-center text-[120px] sm:text-[150px] md:text-[200px] leading-none"
       >
         {headingText.split("").map((char, index) => (
           <motion.span
@@ -58,10 +58,10 @@ const OurValues = () => {
       <div className="flex justify-center mt-10">
         <div
           className="rounded-full border border-slate-500"
-          style={{ width: "220px", height: "60px", padding: "2px" }}
+          style={{ width: "200px", height: "60px", padding: "2px" }}
         >
           <motion.div
-            className="bg-[#25211D] w-full h-full rounded-full flex items-center justify-center uppercase text-white text-lg overflow-hidden cursor-pointer"
+            className="bg-[#25211D] w-full h-full rounded-full flex items-center justify-center uppercase text-white text-base md:text-lg overflow-hidden cursor-pointer"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
             animate={{ scale: hovered ? 0.96 : 1 }}
@@ -83,7 +83,7 @@ const OurValues = () => {
       </div>
 
       {/* Circle of Images */}
-      <div className="relative flex justify-center items-center mt-20 pt-20 overflow-hidden h-[400px]">
+      <div className="relative flex justify-center items-center mt-0 sm:mt-20 sm:pt-24 md:pt-28 lg:pt-32 overflow-hidden h-[400px]">
         <motion.div
           className="relative w-[600px] h-[600px] rounded-full translate-y-40"
           animate={{ rotate: -360 }}
@@ -91,7 +91,13 @@ const OurValues = () => {
         >
           {images.map((src, i) => {
             const angle = (i / images.length) * 2 * Math.PI;
-            const radius = 250;
+
+            // responsive radius values
+            let radius = 120; // base (mobile)
+            if (window.innerWidth >= 640) radius = 200; // sm
+            if (window.innerWidth >= 768) radius = 220; // md
+            if (window.innerWidth >= 1024) radius = 280; // lg
+
             const x = Math.cos(angle) * radius;
             const y = Math.sin(angle) * radius;
             const rotation = (angle * 180) / Math.PI + 90;
@@ -101,7 +107,7 @@ const OurValues = () => {
                 key={i}
                 src={src}
                 alt={`Frame ${i + 1}`}
-                className="w-52 absolute"
+                className="w-24 sm:w-32 md:w-40 lg:w-52 absolute"
                 style={{
                   left: "50%",
                   top: "50%",
@@ -110,6 +116,7 @@ const OurValues = () => {
               />
             );
           })}
+
         </motion.div>
       </div>
     </div>

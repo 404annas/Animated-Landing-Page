@@ -16,13 +16,13 @@ const Projects = () => {
 
     return (
         <div className="pb-20 relative bg-[#FEFCF6]">
-            <div className="px-10">
+            <div className="px-4 sm:px-6 md:px-10">
                 <h1 className="text-center text-black inter uppercase">Featured</h1>
 
                 {/* PROJECTS HEADING WITH STAGGERED ANIMATION */}
                 <h1
                     ref={headingRef}
-                    className="uppercase mor-n font-bold text-center leading-none text-[240px] pt-6 flex justify-center"
+                    className="uppercase mor-n font-bold pt-6 flex justify-center mor-n text-[#25211D] text-center text-[120px] sm:text-[150px] md:text-[200px] leading-none"
                 >
                     {projectsText.split("").map((char, index) => (
                         <motion.span
@@ -44,15 +44,15 @@ const Projects = () => {
             </div>
 
 
-            <div className='flex mt-4 text-center justify-between sticky top-0 h-screen bg-[#FEFCF6]'>
-                <div className='w-1/2 h-full'>
+            <div className='flex flex-col md:flex-row md:items-center md:justify-between md:sticky md:top-0 md:h-screen bg-[#FEFCF6] mt-6'>
+                <div className='w-full md:w-1/2 h-full'>
                     <img className='' src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bd9/6853f763c47b2af585134ee3_Minimalist%20Interior%20Design.jpg" alt="Project 1" />
                 </div>
-                <div className='w-1/2 flex flex-col h-full justify-end items-center text-center'>
+                <div className='w-full md:w-1/2 flex flex-col h-full justify-end items-center text-center mt-4 md:mt-0'>
                     <p className='text-[#25211D]'>2025</p>
-                    <h1 className='mor-n uppercase leading-none text-[192px] text-[#25211D]'>Ridge</h1>
+                    <h1 className='mor-n uppercase leading-none text-[130px] md:text-[150px] lg:text-[192px] text-[#25211D]'>Ridge</h1>
                     <p className='uppercase text-[#25211D]'>Architectural Design</p>
-                    <div className="flex justify-center mt-4 mb-4">
+                    <div className="flex justify-center mt-4 mb-0 sm:mb-4">
                         {/* Outer fixed border */}
                         <div
                             className="rounded-full border border-slate-500"
@@ -99,15 +99,15 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className='flex flex-row-reverse items-end text-center justify-between sticky top-0 h-screen bg-[#FEFCF6]'>
-                <div className='w-1/2 h-full'>
+            <div className='flex flex-col md:flex-row-reverse md:items-end text-center md:justify-between md:sticky md:top-0 md:h-screen bg-[#FEFCF6] mt-6'>
+                <div className='w-full md:w-1/2 h-full'>
                     <img className='' src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bd9/6853f742a5b34983fecb4671_Scandinavian%20Living%20Room.jpg" alt="Project 2" />
                 </div>
-                <div className='w-1/2 flex flex-col'>
+                <div className='w-full md:w-1/2 flex flex-col mt-4 md:mt-0'>
                     <p className='text-[#25211D]'>2024</p>
-                    <h1 className='mor-n uppercase leading-none text-[192px] text-[#25211D]'>North</h1>
+                    <h1 className='mor-n uppercase leading-none text-[130px] md:text-[150px] lg:text-[192px] text-[#25211D]'>North</h1>
                     <p className='uppercase text-[#25211D]'>Interior Architecture</p>
-                    <div className="flex justify-center mt-4 mb-4">
+                    <div className="flex justify-center mt-4 mb-0 sm:mb-4">
                         {/* Outer fixed border */}
                         <div
                             className="rounded-full border border-slate-500"
@@ -154,15 +154,15 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className='flex items-end text-center justify-between sticky top-0 h-screen bg-[#FEFCF6]'>
-                <div className='w-1/2 h-full'>
+            <div className='flex flex-col md:flex-row md:items-end text-center md:justify-between md:sticky md:top-0 md:h-screen bg-[#FEFCF6] mt-6'>
+                <div className='w-full md:w-1/2 h-full'>
                     <img className='' src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bd9/6853f72c8a5fdbd86d9b8322_Serene%20Minimalist%20Interior.jpg" alt="Project 3" />
                 </div>
-                <div className='w-1/2 flex flex-col'>
+                <div className='w-full md:w-1/2 flex flex-col mt-4 md:mt-0'>
                     <p className='text-[#25211D]'>2023</p>
-                    <h1 className='mor-n uppercase leading-none text-[192px] text-[#25211D]'>Aspect</h1>
+                    <h1 className='mor-n uppercase leading-none text-[130px] md:text-[150px] lg:text-[192px] text-[#25211D]'>Aspect</h1>
                     <p className='uppercase text-[#25211D]'>Master Planning</p>
-                    <div className="flex justify-center mt-4 mb-4">
+                    <div className="flex justify-center mt-4 mb-0 sm:mb-4">
                         {/* Outer fixed border */}
                         <div
                             className="rounded-full border border-slate-500"
@@ -209,13 +209,13 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className='flex flex-row-reverse items-center text-center justify-between relative top-[81px] h-screen bg-[#FEFCF6]'>
-                <div className='w-1/2 h-full'>
+            <div className='flex flex-col md:flex-row-reverse items-center text-center justify-between relative top-[90px] sm:top-[81px] h-screen bg-[#FEFCF6]'>
+                <div className='w-full md:w-1/2 h-full'>
                     <img className='' src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bd9/6853f708b423f659977ac630_Stylish%20and%20Serene%20Living%20Room.jpg" alt="Project 4" />
                 </div>
-                <div className='w-1/2 flex flex-col'>
+                <div className='w-full md:w-1/2 flex flex-col'>
                     <p className='text-[#25211D]'>2022</p>
-                    <h1 className='mor-n uppercase leading-none text-[192px] text-[#25211D]'>Frame</h1>
+                    <h1 className='mor-n uppercase leading-none text-[130px] md:text-[150px] lg:text-[192px] text-[#25211D]'>Frame</h1>
                     <p className='uppercase text-[#25211D]'>Project Management</p>
                     <div className="flex justify-center mt-4 mb-4">
                         {/* Outer fixed border */}
@@ -262,17 +262,6 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div className="flex justify-center">
-                <motion.div
-                    className="border-b border-gray-300"
-                    initial={{ scaleX: 0, originX: 0.5 }} // start from center
-                    whileInView={{ scaleX: 1 }} // expand fully
-                    transition={{ duration: 1, ease: "easeInOut" }}
-                    viewport={{ once: true, amount: 0.5 }} // animate only when in view
-                    style={{ width: "100%" }}
-                />
             </div>
         </div>
     )

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 
@@ -46,16 +46,31 @@ const testimonials = [
     role: "CEO",
   },
 ];
-
 const charVariants = {
   hidden: { y: 50, rotateX: 90, opacity: 0 },
   visible: { y: 0, rotateX: 0, opacity: 1 },
 };
 
 const Testimonials = () => {
-  const cardsPerView = 3;
   const [index, setIndex] = useState(0);
-  const [hovered, setHovered] = useState(false);
+  const [cardsPerView, setCardsPerView] = useState(3);
+
+  // ✅ Responsive cards per view
+  useEffect(() => {
+    const updateCardsPerView = () => {
+      if (window.innerWidth < 640) {
+        setCardsPerView(1); // mobile
+      } else if (window.innerWidth < 1024) {
+        setCardsPerView(2); // tablet
+      } else {
+        setCardsPerView(3); // desktop
+      }
+    };
+
+    updateCardsPerView();
+    window.addEventListener("resize", updateCardsPerView);
+    return () => window.removeEventListener("resize", updateCardsPerView);
+  }, []);
 
   const nextSlide = () => {
     if (index < testimonials.length - cardsPerView) setIndex(index + 1);
@@ -63,6 +78,7 @@ const Testimonials = () => {
   const prevSlide = () => {
     if (index > 0) setIndex(index - 1);
   };
+
   const totalSteps = testimonials.length - cardsPerView + 1;
 
   // Ref for heading inView
@@ -72,13 +88,13 @@ const Testimonials = () => {
   const headingText = "TESTIMONIALS";
 
   return (
-    <div className="pb-20 px-10 pt-10 bg-[#FEFCF6] relative">
+    <div className="pb-20 px-4 sm:px-6 md:px-10 pt-10 bg-[#FEFCF6] relative">
       <h1 className="text-center text-black uppercase inter">Happy Clients</h1>
 
-      {/* TESTIMONIALS HEADING WITH INVIEW ANIMATION */}
+      {/* TESTIMONIALS HEADING */}
       <h1
         ref={headingRef}
-        className="text-center leading-none text-[#25211D] text-[180px] md:text-[240px] uppercase mor-n pt-10 flex justify-center"
+        className="uppercase mor-n font-bold pt-6 flex justify-center mor-n text-[#25211D] text-center text-[120px] sm:text-[150px] md:text-[200px] leading-none"
       >
         {headingText.split("").map((char, index) => (
           <motion.span
@@ -93,15 +109,16 @@ const Testimonials = () => {
         ))}
       </h1>
 
-      <div className="relative flex items-center justify-center pt-10 px-10">
+      {/* Slider */}
+      <div className="relative flex items-center justify-center pt-10">
         {/* Left Arrow */}
         <button
           onClick={prevSlide}
           disabled={index === 0}
-          className={`absolute cursor-pointer left-4 z-10 rounded-full shadow-lg p-3 top-1/2 -translate-y-1/2 
+          className={`absolute cursor-pointer -left-4 sm:-left-6 z-10 rounded-full shadow-lg p-2 sm:p-3 top-1/2 -translate-y-1/2 
             ${index === 0 ? "bg-white cursor-not-allowed" : "bg-white"}`}
         >
-          <ChevronLeft size={28} />
+          <ChevronLeft size={24} />
         </button>
 
         {/* Cards */}
@@ -115,15 +132,15 @@ const Testimonials = () => {
             {testimonials.map((item, idx) => (
               <div
                 key={idx}
-                className="flex-none w-1/3 border border-[#D2D1CB] px-8 py-10 flex flex-col gap-8"
+                className="flex-none w-full sm:w-1/2 lg:w-1/3 border border-[#D2D1CB] px-10 sm:px-8 py-8 sm:py-10 flex flex-col gap-6 sm:gap-8"
               >
-                <img className="w-36" src={item.logo} alt="Logo" />
-                <p className="inter text-[#34302B] text-lg leading-snug">
+                <img className="w-28 sm:w-36" src={item.logo} alt="Logo" />
+                <p className="inter text-[#34302B] text-base sm:text-lg leading-snug">
                   "{item.text}"
                 </p>
                 <div className="flex items-center gap-3 mt-2">
                   <img
-                    className="w-14 rounded-full border border-gray-400 p-1"
+                    className="w-12 sm:w-14 rounded-full border border-gray-400 p-1"
                     src={item.img}
                     alt={item.name}
                   />
@@ -141,10 +158,10 @@ const Testimonials = () => {
         <button
           onClick={nextSlide}
           disabled={index >= testimonials.length - cardsPerView}
-          className={`absolute cursor-pointer right-4 z-10 rounded-full shadow-lg p-3 top-1/2 -translate-y-1/2 
+          className={`absolute cursor-pointer -right-4 sm:-right-6 z-10 rounded-full shadow-lg p-2 sm:p-3 top-1/2 -translate-y-1/2 
             ${index >= testimonials.length - cardsPerView ? "bg-white cursor-not-allowed" : "bg-white"}`}
         >
-          <ChevronRight size={28} />
+          <ChevronRight size={24} />
         </button>
       </div>
 
@@ -160,7 +177,7 @@ const Testimonials = () => {
         ))}
       </div>
 
-      {/* Bottom Border Animation */}
+      {/* Bottom Border */}
       <div className="mt-20 flex justify-center px-10">
         <motion.div
           className="border-b border-gray-300"
