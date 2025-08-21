@@ -209,7 +209,7 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col md:flex-row-reverse items-center text-center justify-between relative top-[90px] sm:top-[81px] h-screen bg-[#FEFCF6]'>
+            <div className='flex flex-col md:flex-row-reverse items-center text-center justify-between relative top-[90px] sm:top-[81px] h-screen bg-[#FEFCF6] pb-10'>
                 <div className='w-full md:w-1/2 h-full'>
                     <img className='' src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bd9/6853f708b423f659977ac630_Stylish%20and%20Serene%20Living%20Room.jpg" alt="Project 4" />
                 </div>
