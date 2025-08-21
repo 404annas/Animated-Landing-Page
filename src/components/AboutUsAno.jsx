@@ -64,7 +64,7 @@ const AboutUsAno = () => {
 
     // Ref for section
     const sectionRef = useRef(null);
-    const inView = useInView(sectionRef, { once: true, amount: 0.5 });
+    const inView = useInView(sectionRef, { once: true, amount: 0.4 });
 
     return (
         <div ref={sectionRef} className="bg-[#FEFCF6] py-20 px-4 sm:px-6 md:px-10">
