@@ -50,7 +50,7 @@ const Partners = () => {
             gradient={false}
             speed={40}
             direction="right"
-            pauseOnHover={true}
+            // pauseOnHover={true}
           >
             <img
               className="w-28 sm:w-32 mx-10"
