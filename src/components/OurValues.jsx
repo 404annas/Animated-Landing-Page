@@ -55,7 +55,7 @@ const OurValues = () => {
       </p>
 
       {/* CTA Button */}
-      <div className="flex justify-center mt-10">
+      <div className="flex justify-center mt-10 pb-10">
         <div
           className="rounded-full border border-slate-500"
           style={{ width: "200px", height: "60px", padding: "2px" }}
@@ -83,7 +83,7 @@ const OurValues = () => {
       </div>
 
       {/* Circle of Images */}
-      <div className="relative flex justify-center items-center mt-0 sm:mt-20 sm:pt-24 md:pt-28 lg:pt-32 overflow-hidden h-[400px]">
+      {/* <div className="relative flex justify-center items-center mt-0 sm:mt-20 sm:pt-24 md:pt-28 lg:pt-32 overflow-hidden h-[400px]">
         <motion.div
           className="relative w-[600px] h-[600px] rounded-full translate-y-40"
           animate={{ rotate: -360 }}
@@ -118,7 +118,7 @@ const OurValues = () => {
           })}
 
         </motion.div>
-      </div>
+      </div> */}
     </div>
   );
 };

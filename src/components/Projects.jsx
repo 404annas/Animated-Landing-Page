@@ -46,7 +46,7 @@ const Projects = () => {
 
             <div className='flex flex-col md:flex-row md:items-center md:justify-between md:sticky md:top-0 md:h-screen bg-[#FEFCF6] mt-6'>
                 <div className='w-full md:w-1/2 h-full'>
-                    <img className='' src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bd9/6853f763c47b2af585134ee3_Minimalist%20Interior%20Design.jpg" alt="Project 1" />
+                    <img loading='lazy' className='' src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bd9/6853f763c47b2af585134ee3_Minimalist%20Interior%20Design.jpg" alt="Project 1" />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col h-full justify-end items-center text-center mt-4 md:mt-0'>
                     <p className='text-[#25211D]'>2025</p>
@@ -101,7 +101,7 @@ const Projects = () => {
 
             <div className='flex flex-col md:flex-row-reverse md:items-end text-center md:justify-between md:sticky md:top-0 md:h-screen bg-[#FEFCF6] mt-6'>
                 <div className='w-full md:w-1/2 h-full'>
-                    <img className='' src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bd9/6853f742a5b34983fecb4671_Scandinavian%20Living%20Room.jpg" alt="Project 2" />
+                    <img loading='lazy' className='' src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bd9/6853f742a5b34983fecb4671_Scandinavian%20Living%20Room.jpg" alt="Project 2" />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col mt-4 md:mt-0'>
                     <p className='text-[#25211D]'>2024</p>
@@ -156,7 +156,7 @@ const Projects = () => {
 
             <div className='flex flex-col md:flex-row md:items-end text-center md:justify-between md:sticky md:top-0 md:h-screen bg-[#FEFCF6] mt-6'>
                 <div className='w-full md:w-1/2 h-full'>
-                    <img className='' src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bd9/6853f72c8a5fdbd86d9b8322_Serene%20Minimalist%20Interior.jpg" alt="Project 3" />
+                    <img loading='lazy' className='' src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bd9/6853f72c8a5fdbd86d9b8322_Serene%20Minimalist%20Interior.jpg" alt="Project 3" />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col mt-4 md:mt-0'>
                     <p className='text-[#25211D]'>2023</p>
@@ -211,7 +211,7 @@ const Projects = () => {
 
             <div className='flex flex-col md:flex-row-reverse items-center text-center justify-between relative top-[90px] sm:top-[81px] h-screen bg-[#FEFCF6] pb-10'>
                 <div className='w-full md:w-1/2 h-full'>
-                    <img className='' src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bd9/6853f708b423f659977ac630_Stylish%20and%20Serene%20Living%20Room.jpg" alt="Project 4" />
+                    <img loading='lazy' className='' src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bd9/6853f708b423f659977ac630_Stylish%20and%20Serene%20Living%20Room.jpg" alt="Project 4" />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col'>
                     <p className='text-[#25211D]'>2022</p>

@@ -38,6 +38,7 @@ const Navbar = () => {
         </div>
 
         <img
+          loading="lazy"
           className={`logo cursor-pointer ${hoverState}`}
           src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/684f806d593d5a0b9c7e201c_R3.svg"
           alt="Logo"
@@ -93,6 +94,7 @@ const Navbar = () => {
               {/* Top Section */}
               <div className="flex items-center justify-between px-6 py-5 border-b border-[#4D4944]">
                 <img
+                  loading="lazy"
                   className="w-7"
                   src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/684f806d593d5a0b9c7e201c_R3.svg"
                   alt="Logo"

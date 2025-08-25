@@ -2,11 +2,21 @@ import React from "react";
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
 
+import hamsabImg from "../assets/hamsab.jpg";
+import khaleejImg from "../assets/khaleej.svg";
+import mmImg from "../assets/mm.jpg";
+import nationImg from "../assets/nation.png";
+import potato2Img from "../assets/potato2.png";
+import reutersImg from "../assets/reuters.webp";
+import rferlImg from "../assets/rferl.svg";
+import unwomenImg from "../assets/unwomen.avif";
+import reuters2Img from "../assets/reuters2.png";
+
 const Partners = () => {
   return (
     <div className="bg-[#FEFCF6] pt-20">
       <h1 className="text-center text-black inter uppercase pb-10">
-        Clients & Partners:
+        Featured At:
       </h1>
 
       <div className="flex items-center justify-center mt-6">
@@ -14,62 +24,70 @@ const Partners = () => {
         <div className="w-1/2 overflow-hidden">
           <Marquee
             gradient={false}
-            speed={40}
+            speed={50}
             direction="left"
-            // pauseOnHover={true}
+          // pauseOnHover={true}
           >
             <img
-              className="w-28 sm:w-32 mx-10"
-              src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/685161a5822b1ce22b5d1ce5_Umbrella.svg"
+              loading="lazy"
+              className="w-28 sm:w-60 mx-10"
+              src={reuters2Img}
               alt=""
             />
             <img
-              className="w-28 sm:w-32 mx-10"
-              src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/6851618899fe0f81f09d8dc6_Amsterdam.svg"
+              loading="lazy"
+              className="w-28 sm:w-56 mx-10"
+              src={khaleejImg}
               alt=""
             />
             <img
-              className="w-28 sm:w-32 mx-10"
-              src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68516188ef1e08a08cb7adc8_Delaware.svg"
+              loading="lazy"
+              className="w-16 h-16 sm:w-24 sm:h-24 mx-10 rounded-full"
+              src={mmImg}
               alt=""
             />
             <img
-              className="w-28 sm:w-32 mx-10"
-              src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/685161920fd24a7acdfd6334_Monaco.svg"
+              loading="lazy"
+              className="w-28 sm:w-40 mx-10"
+              src={nationImg}
               alt=""
             />
           </Marquee>
         </div>
 
         {/* Divider */}
-        <div className="border-l border-gray-200 h-20"></div>
+        <div className="border-l border-gray-200 h-28"></div>
 
         {/* Right logos (move right) */}
         <div className="w-1/2 overflow-hidden">
           <Marquee
             gradient={false}
-            speed={40}
+            speed={50}
             direction="right"
-            // pauseOnHover={true}
+          // pauseOnHover={true}
           >
             <img
-              className="w-28 sm:w-32 mx-10"
-              src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/685161920fd24a7acdfd6334_Monaco.svg"
+              loading="lazy"
+              className="w-28 sm:w-56 mx-10"
+              src={potato2Img}
               alt=""
             />
             <img
-              className="w-28 sm:w-32 mx-10"
-              src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68516188ef1e08a08cb7adc8_Delaware.svg"
+              loading="lazy"
+              className="w-28 sm:w-56 mx-10"
+              src={reutersImg}
               alt=""
             />
             <img
-              className="w-28 sm:w-32 mx-10"
-              src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/6851618899fe0f81f09d8dc6_Amsterdam.svg"
+              loading="lazy"
+              className="w-28 sm:w-56 mx-10"
+              src={rferlImg}
               alt=""
             />
             <img
-              className="w-28 sm:w-32 mx-10"
-              src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/685161a5822b1ce22b5d1ce5_Umbrella.svg"
+              loading="lazy"
+              className="w-28 sm:w-52 mx-10"
+              src={unwomenImg}
               alt=""
             />
           </Marquee>

@@ -6,11 +6,17 @@ import OurValues from '../components/OurValues';
 import Testimonials from '../components/Testimonials';
 import Footer from '../components/Footer';
 import Projects from '../components/Projects';
+import NavbarAno from '../components/NavbarAno';
+import Hero1 from '../components/Hero1';
+import HeroAno from '../components/HeroAno';
 
 const HomePage = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
+      <NavbarAno />
+      {/* <Hero1 /> */}
+      <HeroAno />
       <Hero />
 
       {/* AboutUs visible on lg and above */}

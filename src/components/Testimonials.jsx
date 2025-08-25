@@ -140,6 +140,7 @@ const Testimonials = () => {
                 </p>
                 <div className="flex items-center gap-3 mt-2">
                   <img
+                    loading="lazy"
                     className="w-12 sm:w-14 rounded-full border border-gray-400 p-1"
                     src={item.img}
                     alt={item.name}
