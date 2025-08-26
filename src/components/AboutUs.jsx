@@ -67,7 +67,7 @@ const AboutUs = () => {
   const inView = useInView(sectionRef, { once: true, amount: 0.4 });
 
   return (
-    <div ref={sectionRef} className="bg-[#FEFCF6] py-20 px-10">
+    <div id="services" ref={sectionRef} className="bg-[#FEFCF6] py-20 px-10">
       <h1 className="text-center text-black uppercase inter">Design Vision</h1>
 
       <div className="flex items-center justify-between pt-10">

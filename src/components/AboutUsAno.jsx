@@ -18,7 +18,7 @@ const ScrollCounter = ({ number, height = 120, duration = 2000, inView }) => {
                 <div
                     key={idx}
                     className="overflow-hidden relative"
-                style={{ height: `${height}px`, width: "30px" }}
+                    style={{ height: `${height}px`, width: "30px" }}
                 >
                     <div
                         style={{
@@ -67,7 +67,7 @@ const AboutUsAno = () => {
     const inView = useInView(sectionRef, { once: true, amount: 0.4 });
 
     return (
-        <div ref={sectionRef} className="bg-[#FEFCF6] py-20 px-4 sm:px-6 md:px-10">
+        <div id="services" ref={sectionRef} className="bg-[#FEFCF6] py-20 px-4 sm:px-6 md:px-10">
             <h1 className="text-center text-black uppercase inter">Design Vision</h1>
 
             {/* <h1 className='uppercase mor-n text-[#25211D] text-center text-[120px] sm:text-[150px] md:text-[200px] pt-10 leading-none'>Modern</h1> */}
@@ -103,7 +103,7 @@ const AboutUsAno = () => {
                 <div className="flex items-start flex-col leading-none">
                     <div className="flex items-center mor-n text-[#25211D] text-[100px] sm:text-[130px] md:text-[170px] leading-none">
                         <p className="text-[#6F6B61] text-8xl">+</p>
-                        <ScrollCounter number={15} duration={2500} inView={inView}/>
+                        <ScrollCounter number={15} duration={2500} inView={inView} />
                         {/* <p className='text-[#25211D] text-[100px] sm:text-[130px] md:text-[170px] leading-none'>15</p> */}
                     </div>
                     <p className="inter font-normal text-[#25211D]">Years Of Experience</p>

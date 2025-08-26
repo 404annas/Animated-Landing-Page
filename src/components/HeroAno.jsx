@@ -74,7 +74,7 @@ const HeroAno = () => {
                     className="relative z-30 flex md:flex-row flex-col md:items-center md:gap-5 md:justify-between  h-full"
                 >
                     <div className="flex flex-col justify-between px-2 md:py-6 py-2 md:gap-0">
-                        <h1 className="md:text-5xl text-4xl leading-none frank max-w-lg text-[#25211D]">
+                        <h1 className="md:text-4xl text-4xl leading-none frank max-w-lg text-[#25211D]">
                             Trusting the process of uncomfortable{" "}
                             {/* <h1 className="md:hidden inline text-[1rem] text-secondary leading-none -mt-4 lady-text">
                 transformation
@@ -98,7 +98,7 @@ const HeroAno = () => {
                                 alt="Scroll Down"
                             />
                         </div>
-                        <div className="md:max-w-md max-w-[350px] uppercase tracking-tight">
+                        <div className="md:max-w-md max-w-[350px] uppercase tracking-tight mt-10">
                             <h1 className="md:text-primary text-gray-800 md:text-lg text-md leading-6 inter">
                                 Redeeming Solutions offers hope
                             </h1>
@@ -107,8 +107,8 @@ const HeroAno = () => {
 
                     <div className="flex flex-col md:items-center">
                         <div className="flex flex-col md:text-end md:px-4 px-2 gap-5 md:pt-40">
-                            <h1 className="md:text-8xl text-4xl mor tracking-wide text-[#25211D]">13</h1>
-                            <h1 className="md:text-xl -mt-4 text-sm text-gray-800 md:text-end uppercase md:max-w-[160px]">
+                            <h1 className="md:text-7xl text-4xl frank tracking-tighter text-[#25211D]">13</h1>
+                            <h1 className="md:text-lg -mt-4 text-sm text-gray-800 md:text-end uppercase md:max-w-[160px]">
                                 Years of Expierience
                             </h1>
                         </div>
@@ -117,7 +117,7 @@ const HeroAno = () => {
                             <h1 className="text-gray-800 md:text-xl text-sm md:text-end hover:text-secondary transition-colors duration-300 ease-in-out">
                                 +91 111 222 333
                             </h1>
-                            <h1 className="text-gray-800 md:text-md text-sm  hover:text-secondary transition-colors duration-300 ease-in-out inter">
+                            <h1 className="text-gray-800 md:text-md text-sm text-right hover:text-secondary transition-colors duration-300 ease-in-out inter">
                                 hello@gmail.com
                             </h1>
                         </div>
