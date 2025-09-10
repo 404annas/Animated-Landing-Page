@@ -16,7 +16,7 @@ const Partners = () => {
   return (
     <div className="bg-[#FEFCF6] pt-20">
       <h1 className="text-center text-black inter uppercase pb-10">
-        Featured At:
+        Featured At
       </h1>
 
       <div className="flex items-center justify-center mt-6">

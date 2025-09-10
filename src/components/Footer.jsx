@@ -77,9 +77,9 @@ const Footer = () => {
         </div>
       </footer>
 
-      <div className="relative bg-[#25211D] overflow-hidden h-28 sm:h-60 md:h-72 lg:h-105">
+      <div className="relative bg-[#25211D] overflow-hidden h-28 sm:h-60 md:h-72 lg:h-110">
         <h1 className="mor text-[#2C2824] leading-none text-center text-[220px] sm:text-[400px] md:text-[500px] lg:text-[820px] font-extrabold px-0 uppercase py-0">
-          Arcoria
+          SAHAR
         </h1>
       </div>
     </>

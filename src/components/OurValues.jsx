@@ -19,7 +19,7 @@ const OurValues = () => {
   const headingRef = useRef(null);
   const inView = useInView(headingRef, { once: true, amount: 0.4 });
 
-  const headingText = "Let's Design";
+  const headingText = "Achievements";
 
   const charVariants = {
     hidden: { y: 50, rotateX: 90, opacity: 0 },
@@ -28,7 +28,7 @@ const OurValues = () => {
 
   return (
     <div className="bg-[#FEFCF6] px-4 sm:px-6 md:px-10">
-      <h1 className="text-center text-black inter uppercase">Start Building</h1>
+      <h1 className="text-center text-black inter uppercase">Professional</h1>
 
       {/* Let's Design Heading with inView animation */}
       <h1
@@ -48,17 +48,19 @@ const OurValues = () => {
         ))}
       </h1>
 
-      <p className="inter text-center text-[#34302B] max-w-3xl mx-auto mt-6">
-        Ready to bring your vision to life? Whether it’s a home, a workspace, or
-        a public space, we’re here to design environments that inspire,
-        function, and endure. Let’s start your project together.
+      <div className="inter text-[#34302B] flex flex-col gap-6 md:flex-row items-center justify-between md:text-center mt-4">
+        <p>● Recognized as a Woman of Inspiration for community service work by Reuters and UN Women.</p>
+        <p>● Awarded an honorarium by the Government of Punjab for outstanding contributions to the Budget Campaign.</p>
+      </div>
+      <p className="inter md:text-center text-[#34302B] max-w-3xl mx-auto mt-6">
+        ● Acknowledged by BBC and UN Women for dedicated service to women and farmers during the COVID-19 pandemic
       </p>
 
       {/* CTA Button */}
       <div className="flex justify-center mt-10 pb-10">
         <div
           className="rounded-full border border-slate-500"
-          style={{ width: "200px", height: "60px", padding: "2px" }}
+          style={{ width: "220px", height: "60px", padding: "2px" }}
         >
           <motion.div
             className="bg-[#25211D] w-full h-full rounded-full flex items-center justify-center uppercase text-white text-base md:text-lg overflow-hidden cursor-pointer"

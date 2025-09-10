@@ -4,48 +4,50 @@ import { motion, useInView } from "framer-motion";
 
 const testimonials = [
   {
-    logo: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68516188ef1e08a08cb7adc8_Delaware.svg",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-    img: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68555f938e7a3d5099ea301a_client-03.jpg",
-    name: "Liam Cole",
-    role: "CEO",
+    monthYear: "Nov 2024 - Present",
+    title: "Public Relations Professional OSAN Ability (Registered NDIS Provider)",
+    points: [
+      "● Developed and implemented comprehensive business development strategies to identify new opportunities and drive revenue growth for OSAN Ability through digital platforms.",
+      "● Managed the production and distribution of digital media campaigns on multi-channel (SEO, SEM, paid / organic social, and events).",
+      "● Collaborated with internal teams and external vendors to develop new marketing collateral, including updated branding materials, presentations, and digital assets to support sales and marketing efforts.",
+      "● Featured OSAN Ability in global publications such as Forbes, Wikipedia and CIO Magazine to strengthen brand reputation.",
+      "● Proficient in CRMs including HubSpot, ShiftCare, and Visual Care.",
+    ],
   },
   {
-    logo: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/6851618899fe0f81f09d8dc6_Amsterdam.svg",
-    text: "Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
-    img: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68555f94cf01c11437c2fd63_client-06.jpg",
-    name: "Emma Gray",
-    role: "CEO",
+    monthYear: "Feb 2020 - Feb 2023",
+    title: "Public Relations Professional | Planning & Development Punjab Govt",
+    points: [
+      "● Headed and implemented 13 comprehensive social media campaigns aligned with government policies on Facebook, Twitter, and other platforms.",
+      "● Conceived and orchestrated workshops and knowledge-sharing events, fostering collaboration with foreign donors and the press (40,000+ viewership).",
+      "● Facilitated two high-level strategic sessions to optimize KPIs and communication performance.",
+      "● Achieved a 70% increase in public awareness via impactful social media campaigns.",
+      "● Managed all advocacy campaigns during COVID, ensuring resilience and effective crisis communication.",
+    ],
   },
   {
-    logo: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/6851619fb9d10aebcce79c0d_Sweden.svg",
-    text: "Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
-    img: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68555f93df486cfbc577c5bf_client-02.jpg",
-    name: "Emily Hill",
-    role: "CEO",
+    monthYear: "Oct 2015 - Jan 2020",
+    title: "Public Relations Officer | Directorate General Public Relations",
+    points: [
+      "● Led high-impact campaigns for the Minister of Livestock, influencing 30,000+ individuals.",
+      "● Pioneered Punjab Government's first social media strategy, achieving 70% surge in engagement.",
+      "● Improved KPIs with a 50% increase in consumer engagement.",
+      "● Created content that boosted social media followers by 70% in 2 years.",
+      "● Secured 10+ international press mentions showcasing Punjab Govt globally.",
+    ],
   },
   {
-    logo: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/685161920fd24a7acdfd6334_Monaco.svg",
-    text: "Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
-    img: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68555f93492bd334a12ef84b_client-04.jpg",
-    name: "Mia Lane",
-    role: "CEO",
-  },
-  {
-    logo: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/685161998c35f2dd232c0474_Springfield.svg",
-    text: "Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
-    img: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68555f9380ce974d0b84adc6_client-05.jpg",
-    name: "Michael Ford",
-    role: "CEO",
-  },
-  {
-    logo: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/685161a5822b1ce22b5d1ce5_Umbrella.svg",
-    text: "Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
-    img: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68555f930b1cf5a2b9462b77_client-01.jpg",
-    name: "Noah West",
-    role: "CEO",
+    monthYear: "Feb 2013 - Apr 2014",
+    title: "Public Relations Officer | HKC Entertainment PVT Limited",
+    points: [
+      "● Led strategic image-building for celebrity clients, influencing 17+ newspapers and websites.",
+      "● Secured 156+ positive media features and interviews, amplifying brand reach.",
+      "● Acted as crisis manager, reversing negative coverage into positive sentiment.",
+      "● Drafted press releases and statements, increasing public perception positively by 70%.",
+    ],
   },
 ];
+
 const charVariants = {
   hidden: { y: 50, rotateX: 90, opacity: 0 },
   visible: { y: 0, rotateX: 0, opacity: 1 },
@@ -53,17 +55,16 @@ const charVariants = {
 
 const Testimonials = () => {
   const [index, setIndex] = useState(0);
-  const [cardsPerView, setCardsPerView] = useState(3);
+  const [cardsPerView, setCardsPerView] = useState(2);
 
-  // ✅ Responsive cards per view
   useEffect(() => {
     const updateCardsPerView = () => {
       if (window.innerWidth < 640) {
-        setCardsPerView(1); // mobile
+        setCardsPerView(1); // Mobile
       } else if (window.innerWidth < 1024) {
-        setCardsPerView(2); // tablet
+        setCardsPerView(2); // Tablet
       } else {
-        setCardsPerView(3); // desktop
+        setCardsPerView(2); // Large Desktop (changed from 3 → 2)
       }
     };
 
@@ -75,26 +76,26 @@ const Testimonials = () => {
   const nextSlide = () => {
     if (index < testimonials.length - cardsPerView) setIndex(index + 1);
   };
+
   const prevSlide = () => {
     if (index > 0) setIndex(index - 1);
   };
 
   const totalSteps = testimonials.length - cardsPerView + 1;
 
-  // Ref for heading inView
   const headingRef = useRef(null);
   const inView = useInView(headingRef, { once: true, amount: 0.4 });
 
-  const headingText = "TESTIMONIALS";
+  const headingText = "EXPERIENCE";
 
   return (
     <div className="pb-20 px-4 sm:px-6 md:px-10 pt-10 bg-[#FEFCF6] relative">
-      <h1 className="text-center text-black uppercase inter">Happy Clients</h1>
+      <h1 className="text-center text-black uppercase inter">Professional</h1>
 
-      {/* TESTIMONIALS HEADING */}
+      {/* Animated Heading */}
       <h1
         ref={headingRef}
-        className="uppercase mor-n font-bold pt-6 flex justify-center mor-n text-[#25211D] text-center text-[120px] sm:text-[150px] md:text-[200px] leading-none"
+        className="uppercase mor-n font-bold pt-6 flex justify-center text-[#25211D] text-center text-[120px] sm:text-[150px] md:text-[200px] leading-none"
       >
         {headingText.split("").map((char, index) => (
           <motion.span
@@ -125,31 +126,20 @@ const Testimonials = () => {
         <div className="overflow-hidden w-full">
           <div
             className="flex transition-transform duration-500 ease-in-out"
-            style={{
-              transform: `translateX(-${index * (100 / cardsPerView)}%)`,
-            }}
+            style={{ transform: `translateX(-${index * (100 / cardsPerView)}%)` }}
           >
             {testimonials.map((item, idx) => (
               <div
                 key={idx}
-                className="flex-none w-full sm:w-1/2 lg:w-1/3 border border-[#D2D1CB] px-10 sm:px-8 py-8 sm:py-10 flex flex-col gap-6 sm:gap-8"
+                className="flex-none w-full sm:w-1/2 lg:w-1/2 border border-[#D2D1CB] px-6 sm:px-8 py-8 sm:py-10 flex flex-col gap-4 sm:gap-6"
               >
-                <img className="w-28 sm:w-36" src={item.logo} alt="Logo" />
-                <p className="inter text-[#34302B] text-base sm:text-lg leading-snug">
-                  "{item.text}"
-                </p>
-                <div className="flex items-center gap-3 mt-2">
-                  <img
-                    loading="lazy"
-                    className="w-12 sm:w-14 rounded-full border border-gray-400 p-1"
-                    src={item.img}
-                    alt={item.name}
-                  />
-                  <div className="flex flex-col gap-1">
-                    <h1 className="text-[#25211D] inter font-bold">{item.name}</h1>
-                    <p className="text-[#6F6B61] inter">{item.role}</p>
-                  </div>
-                </div>
+                <p className="text-sm text-gray-500">{item.monthYear}</p>
+                <h2 className="text-lg sm:text-xl font-bold text-[#25211D]">{item.title}</h2>
+                <ul className="text-[#34302B] text-base sm:text-lg space-y-3">
+                  {item.points.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
@@ -171,8 +161,7 @@ const Testimonials = () => {
         {Array.from({ length: totalSteps }).map((_, stepIndex) => (
           <span
             key={stepIndex}
-            className={`w-3 h-3 rounded-full cursor-pointer ${index === stepIndex ? "bg-[#25211D]" : "bg-gray-400"
-              }`}
+            className={`w-3 h-3 rounded-full cursor-pointer ${index === stepIndex ? "bg-[#25211D]" : "bg-gray-400"}`}
             onClick={() => setIndex(stepIndex)}
           ></span>
         ))}

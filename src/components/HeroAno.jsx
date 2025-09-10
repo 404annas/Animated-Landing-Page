@@ -29,7 +29,7 @@ const HeroAno = () => {
 
                 {/* Main background image */}
                 <div
-                    className="lg:absolute custom-hide-375 md:hidden lg:flex absolute md:mx-0 mx-4 inset-0 md:translate-y-0 translate-y-28 z-10 md:bg-center bg-bottom bg-no-repeat bg-contain opacity-85"
+                    className="lg:absolute custom-hide-375 md:hidden lg:flex absolute md:mx-0 mx-4 inset-0 md:translate-y-0 translate-y-32 z-10 md:bg-center bg-bottom bg-no-repeat bg-contain opacity-85"
                     style={{ backgroundImage: `url(${heromain})` }}
                 />
 
@@ -73,7 +73,7 @@ const HeroAno = () => {
                     }
                     className="relative z-30 flex md:flex-row flex-col md:items-center gap-6 md:gap-5 md:justify-between  h-full"
                 >
-                    <div className="flex flex-col justify-between px-2 md:py-6 py-2 md:gap-0">
+                    <div className="flex flex-col justify-between px-2 md:py-2 py-2 md:gap-0">
                         <h1 className="md:text-4xl text-3xl leading-none frank max-w-lg text-[#25211D]">
                             Dedicated and seasoned Communication Specialist{" "}
                             {/* <h1 className="md:hidden inline text-[1rem] text-secondary leading-none -mt-4 lady-text">
@@ -83,9 +83,10 @@ const HeroAno = () => {
                         <h1 className="text-[2rem] md:text-[5rem] text-[#DFD18F] leading-none lady">
                             shaping brands
                         </h1>
-                        {/* <h1 className="text-gray-700 inter mt-2">Internal work for External benefits.</h1> */}
+                        <h1 className="text-gray-700 inter mt-2">Graduate Certificate in Media & Journalism</h1>
+                        <p className="text-gray-700 inter text-sm">The University of Melbourne</p>
 
-                        <div className="md:flex hidden flex-col pt-10 pl-4">
+                        <div className="md:flex hidden flex-col pt-6 pl-4">
                             <img
                                 src={arrowdown}
                                 onClick={handleScrollToServices}
