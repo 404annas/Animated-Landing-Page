@@ -29,7 +29,7 @@ const HeroAno = () => {
 
                 {/* Main background image */}
                 <div
-                    className="lg:absolute custom-hide-375 md:hidden lg:flex absolute md:mx-0 mx-4 inset-0 md:translate-y-0 translate-y-20 z-10 md:bg-center bg-bottom bg-no-repeat bg-contain opacity-85"
+                    className="lg:absolute custom-hide-375 md:hidden lg:flex absolute md:mx-0 mx-4 inset-0 md:translate-y-0 translate-y-24 z-10 md:bg-center bg-bottom bg-no-repeat bg-contain opacity-85"
                     style={{ backgroundImage: `url(${heromain})` }}
                 />
 
@@ -71,7 +71,7 @@ const HeroAno = () => {
                             }
                             : {}
                     }
-                    className="relative z-30 flex md:flex-row flex-col md:items-center gap-10 md:gap-5 md:justify-between  h-full"
+                    className="relative z-30 flex md:flex-row flex-col md:items-center gap-6 md:gap-5 md:justify-between  h-full"
                 >
                     <div className="flex flex-col justify-between px-2 md:py-6 py-2 md:gap-0">
                         <h1 className="md:text-4xl text-3xl leading-none frank max-w-lg text-[#25211D]">
