@@ -89,7 +89,7 @@ const HeroAno = () => {
                             <img
                                 src={arrowdown}
                                 onClick={handleScrollToServices}
-                                className="w-7 ml-14 cursor-pointer group hover:translate-y-8 z-40 transform transition-all duration-800 ease-in-out h-auto object-contain"
+                                className="w-7 ml-14 cursor-pointer group hover:translate-y-8 z-40 transform transition-all duration-800 ease-in-out h-auto object-contain mt-20 sm:mt-0"
                                 alt="Arrow Down"
                             />
                             <img
