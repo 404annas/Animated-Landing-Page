@@ -43,7 +43,6 @@ const Projects = () => {
                 </div>
             </div>
 
-
             <div className='flex flex-col md:flex-row md:items-center md:justify-between md:sticky md:top-0 md:h-screen bg-[#FEFCF6] mt-6'>
                 <div className='w-full md:w-1/2 h-full'>
                     <img loading='lazy' className='' src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bd9/6853f763c47b2af585134ee3_Minimalist%20Interior%20Design.jpg" alt="Project 1" />
@@ -51,7 +50,7 @@ const Projects = () => {
                 <div className='w-full md:w-1/2 flex flex-col h-full justify-center items-center text-center mt-4 md:mt-0'>
                     <p className='text-[#25211D]'>2022</p>
                     <h1 className='mor-n uppercase leading-none text-7xl md:text-[100px] lg:text-[140px] text-[#25211D]'>E-commerce & Digital Marketing</h1>
-                    <p className='uppercase text-[#25211D]'>United Nations ESCAP South and South-West Asia</p>
+                    <p className='uppercase text-sm sm:text-base text-[#25211D]'>United Nations ESCAP South and South-West Asia</p>
                     <div className="flex justify-center mt-4 mb-0 sm:mb-4">
                         {/* Outer fixed border */}
                         <div
@@ -106,7 +105,7 @@ const Projects = () => {
                 <div className='w-full md:w-1/2 flex flex-col mt-14 md:mt-0'>
                     <p className='text-[#25211D]'>2019</p>
                     <h1 className='mor-n uppercase leading-none text-7xl md:text-[100px] lg:text-[150px] text-[#25211D]'>Women Trading Globally</h1>
-                    <p className='uppercase text-[#25211D]'>Australian Awards</p>
+                    <p className='uppercase text-sm sm:text-base text-[#25211D]'>Australian Awards</p>
                     <div className="flex justify-center mt-4 mb-0 sm:mb-4">
                         {/* Outer fixed border */}
                         <div
@@ -207,14 +206,14 @@ const Projects = () => {
                 </div>
             </div> */}
 
-            <div className='flex flex-col md:flex-row items-center text-center justify-between relative top-[90px] sm:top-[81px] h-screen bg-[#FEFCF6] pb-10'>
+            <div className='flex flex-col md:flex-row items-center text-center justify-between relative top-[100px] sm:top-[81px] h-screen bg-[#FEFCF6] pb-10'>
                 <div className='w-full md:w-1/2 h-full'>
                     <img loading='lazy' className='' src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bd9/6853f708b423f659977ac630_Stylish%20and%20Serene%20Living%20Room.jpg" alt="Project 4" />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col'>
                     <p className='text-[#25211D]'>2014</p>
                     <h1 className='mor-n uppercase leading-none text-7xl md:text-[100px] lg:text-[150px] text-[#25211D]'>Creative Writing Course</h1>
-                    <p className='uppercase text-[#25211D]'>Holmesglen University, Melbourne, Australia</p>
+                    <p className='uppercase text-sm sm:text-base text-[#25211D]'>Holmesglen University, Melbourne, Australia</p>
                     <div className="flex justify-center mt-4 mb-4">
                         <div
                             className="rounded-full border border-slate-500"

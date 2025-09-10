@@ -71,10 +71,10 @@ const HeroAno = () => {
                             }
                             : {}
                     }
-                    className="relative z-30 flex md:flex-row flex-col md:items-center md:gap-5 md:justify-between  h-full"
+                    className="relative z-30 flex md:flex-row flex-col md:items-center gap-10 md:gap-5 md:justify-between  h-full"
                 >
                     <div className="flex flex-col justify-between px-2 md:py-6 py-2 md:gap-0">
-                        <h1 className="md:text-4xl text-4xl leading-none frank max-w-lg text-[#25211D]">
+                        <h1 className="md:text-4xl text-3xl leading-none frank max-w-lg text-[#25211D]">
                             Dedicated and seasoned Communication Specialist{" "}
                             {/* <h1 className="md:hidden inline text-[1rem] text-secondary leading-none -mt-4 lady-text">
                 transformation
@@ -98,7 +98,7 @@ const HeroAno = () => {
                                 alt="Scroll Down"
                             />
                         </div>
-                        <div className="md:max-w-md max-w-[350px] uppercase tracking-tight mt-0">
+                        <div className="md:max-w-md max-w-[350px] uppercase tracking-tight mt-4 sm:mt-0">
                             <h1 className="md:text-primary text-gray-800 md:text-lg text-md leading-6 inter max-w-md">
                                 Proven expertise in shaping brand narratives, managing impactful campaigns, and driving strategic communication initiatives.
                             </h1>
@@ -117,7 +117,7 @@ const HeroAno = () => {
                             <a href="tel: 0490 893 961" className="text-gray-800 md:text-xl text-sm md:text-end hover:text-secondary transition-colors duration-300 ease-in-out">
                                 0490 893 961
                             </a>
-                            <a href="mailto:sahr.eqbal8@gmail.com" className="text-gray-800 md:text-md text-sm text-right hover:text-secondary transition-colors duration-300 ease-in-out inter">
+                            <a href="mailto:sahr.eqbal8@gmail.com" className="text-gray-800 md:text-md text-sm text-left sm:text-right hover:text-secondary transition-colors duration-300 ease-in-out inter">
                                 sahr.eqbal8@gmail.com
                             </a>
                         </div>
