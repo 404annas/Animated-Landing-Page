@@ -29,7 +29,7 @@ const HeroAno = () => {
 
                 {/* Main background image */}
                 <div
-                    className="lg:absolute custom-hide-375 md:hidden lg:flex absolute md:mx-0 mx-4 inset-0 md:translate-y-0 translate-y-7 z-10 md:bg-center bg-bottom bg-no-repeat bg-contain opacity-85"
+                    className="lg:absolute custom-hide-375 md:hidden lg:flex absolute md:mx-0 mx-4 inset-0 md:translate-y-0 translate-y-20 z-10 md:bg-center bg-bottom bg-no-repeat bg-contain opacity-85"
                     style={{ backgroundImage: `url(${heromain})` }}
                 />
 
@@ -89,7 +89,7 @@ const HeroAno = () => {
                             <img
                                 src={arrowdown}
                                 onClick={handleScrollToServices}
-                                className="w-7 ml-14 cursor-pointer group hover:translate-y-8 z-40 transform transition-all duration-800 ease-in-out h-auto object-contain mt-20 sm:mt-0"
+                                className="w-7 ml-14 cursor-pointer group hover:translate-y-8 z-40 transform transition-all duration-800 ease-in-out h-auto object-contain"
                                 alt="Arrow Down"
                             />
                             <img
