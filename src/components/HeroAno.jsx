@@ -71,7 +71,7 @@ const HeroAno = () => {
                             }
                             : {}
                     }
-                    className="relative z-30 flex md:flex-row flex-col md:items-center gap-6 md:gap-5 md:justify-between  h-full"
+                    className="relative z-30 flex md:flex-row flex-col md:items-center gap-4 md:gap-5 md:justify-between  h-full"
                 >
                     <div className="flex flex-col justify-between px-2 md:py-2 py-2 md:gap-0">
                         <h1 className="md:text-4xl text-3xl leading-none frank max-w-lg text-[#25211D]">
