@@ -23,7 +23,7 @@ const HeroAno = () => {
 
     return (
         <div className="md:px-4 relative min-h-screen overflow-hidden">
-            <div className="md:container mx-auto">
+            <div className="">
                 {/* Gradient background */}
                 <div className="absolute inset-0 z-0 bg-gradient-to-b from-gray-600 to-white" />
 
@@ -75,15 +75,15 @@ const HeroAno = () => {
                 >
                     <div className="flex flex-col justify-between px-2 md:py-6 py-2 md:gap-0">
                         <h1 className="md:text-4xl text-4xl leading-none frank max-w-lg text-[#25211D]">
-                            Trusting the process of uncomfortable{" "}
+                            Dedicated and seasoned Communication Specialist{" "}
                             {/* <h1 className="md:hidden inline text-[1rem] text-secondary leading-none -mt-4 lady-text">
                 transformation
               </h1> */}
                         </h1>
                         <h1 className="text-[2rem] md:text-[5rem] text-[#DFD18F] leading-none lady">
-                            transformation
+                            shaping brands
                         </h1>
-                        <h1 className="text-gray-700 inter mt-2">Internal work for External benefits.</h1>
+                        {/* <h1 className="text-gray-700 inter mt-2">Internal work for External benefits.</h1> */}
 
                         <div className="md:flex hidden flex-col pt-10 pl-4">
                             <img
@@ -98,28 +98,28 @@ const HeroAno = () => {
                                 alt="Scroll Down"
                             />
                         </div>
-                        <div className="md:max-w-md max-w-[350px] uppercase tracking-tight mt-10">
-                            <h1 className="md:text-primary text-gray-800 md:text-lg text-md leading-6 inter">
-                                Redeeming Solutions offers hope
+                        <div className="md:max-w-md max-w-[350px] uppercase tracking-tight mt-0">
+                            <h1 className="md:text-primary text-gray-800 md:text-lg text-md leading-6 inter max-w-md">
+                                Proven expertise in shaping brand narratives, managing impactful campaigns, and driving strategic communication initiatives.
                             </h1>
                         </div>
                     </div>
 
                     <div className="flex flex-col md:items-center">
                         <div className="flex flex-col md:text-end md:px-4 px-2 gap-5 md:pt-40">
-                            <h1 className="md:text-7xl text-4xl frank tracking-tighter text-[#25211D]">13</h1>
+                            <h1 className="md:text-7xl text-4xl frank tracking-tighter text-[#25211D]">10</h1>
                             <h1 className="md:text-lg -mt-4 text-sm text-gray-800 md:text-end uppercase md:max-w-[160px]">
                                 Years of Expierience
                             </h1>
                         </div>
 
                         <div className="md:absolute md:mt-0 flex flex-col px-2 bottom-6  right-0 max-w-[300px] tracking-tight">
-                            <h1 className="text-gray-800 md:text-xl text-sm md:text-end hover:text-secondary transition-colors duration-300 ease-in-out">
-                                +91 111 222 333
-                            </h1>
-                            <h1 className="text-gray-800 md:text-md text-sm text-right hover:text-secondary transition-colors duration-300 ease-in-out inter">
-                                hello@gmail.com
-                            </h1>
+                            <a href="tel: 0490 893 961" className="text-gray-800 md:text-xl text-sm md:text-end hover:text-secondary transition-colors duration-300 ease-in-out">
+                                0490 893 961
+                            </a>
+                            <a href="mailto:sahr.eqbal8@gmail.com" className="text-gray-800 md:text-md text-sm text-right hover:text-secondary transition-colors duration-300 ease-in-out inter">
+                                sahr.eqbal8@gmail.com
+                            </a>
                         </div>
                     </div>
                 </motion.div>

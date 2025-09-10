@@ -59,8 +59,8 @@ const charVariants = {
 const AboutUsAno = () => {
     const [hovered, setHovered] = useState(false);
 
-    const modernText = "Modern";
-    const architectureText = "Architecture";
+    const modernText = "Area-Of";
+    const architectureText = "Expertise";
 
     // Ref for section
     const sectionRef = useRef(null);
@@ -68,7 +68,7 @@ const AboutUsAno = () => {
 
     return (
         <div id="services" ref={sectionRef} className="bg-[#FEFCF6] py-20 px-4 sm:px-6 md:px-10">
-            <h1 className="text-center text-black uppercase inter">Design Vision</h1>
+            <h1 className="text-center text-black uppercase inter">My Expertise</h1>
 
             {/* <h1 className='uppercase mor-n text-[#25211D] text-center text-[120px] sm:text-[150px] md:text-[200px] pt-10 leading-none'>Modern</h1> */}
             <h1 className='uppercase mor-n text-[#25211D] text-center text-[120px] sm:text-[150px] md:text-[200px] pt-10 leading-none'>
@@ -102,8 +102,8 @@ const AboutUsAno = () => {
             <div className='flex items-center justify-between pt-10'>
                 <div className="flex items-start flex-col leading-none">
                     <div className="flex items-center mor-n text-[#25211D] text-[100px] sm:text-[130px] md:text-[170px] leading-none">
+                        <ScrollCounter number={10} duration={2500} inView={inView} />
                         <p className="text-[#6F6B61] text-8xl">+</p>
-                        <ScrollCounter number={15} duration={2500} inView={inView} />
                         {/* <p className='text-[#25211D] text-[100px] sm:text-[130px] md:text-[170px] leading-none'>15</p> */}
                     </div>
                     <p className="inter font-normal text-[#25211D]">Years Of Experience</p>
@@ -111,39 +111,36 @@ const AboutUsAno = () => {
 
                 <div className="flex items-end flex-col leading-none">
                     <div className="flex items-center mor-n text-[#25211D] text-[100px] sm:text-[130px] md:text-[170px] leading-none">
-                        <ScrollCounter number={98} duration={2500} inView={inView} />
+                        <ScrollCounter number={3} duration={2500} inView={inView} />
                         {/* <p className='text-[#25211D] text-[100px] sm:text-[130px] md:text-[170px] leading-none'>98</p> */}
                         <p className="text-[#6F6B61] text-8xl">+</p>
                     </div>
-                    <p className="inter font-normal text-right text-[#25211D]">Successfull Projects</p>
+                    <p className="inter font-normal text-right text-[#25211D]">Achievements</p>
                 </div>
             </div>
 
-            <div className='flex flex-col items-center gap-4 pt-10'>
-                <p className="flex text-center inter text-[#34302B]">
-                    We create architecture that balances form, function, and context. Our
-                    spaces reflect a deep respect for people, place, and purpose — shaped
-                    with care, vision, and lasting intent.
+            <div className="flex sm:flex-row flex-col gap-4 sm:items-center justify-between pt-10">
+                <p className="max-w-md flex flex-col items-start inter text-[#34302B]">
+                    <p>• Communication Strategy</p>
+                    <p>• Stakeholder</p>
+                    <p>• Public Relations Media Relations</p>
                 </p>
-
-                <p className="flex text-center inter text-[#34302B]">
-                    Every project is an opportunity to connect design with meaning.
-                    Through timeless forms and details, we create environments that
-                    inspire and serve those who live, work and gather there.
+                <p className="max-w-md flex flex-col text-start justify-end inter text-[#34302B]">
+                    <p>• Social Media Management</p>
+                    <p>• Digital Marketing</p>
+                    <p>• Engagement Advocacy</p>
                 </p>
             </div>
 
-            <div className="flex justify-center mt-10 mb-4">
-                {/* Outer fixed border */}
+            {/* <div className="flex justify-center mt-10 mb-4">
                 <div
                     className="rounded-full border border-slate-500"
                     style={{
                         width: "170px",
                         height: "60px",
-                        padding: "2px", // space for scaling content
+                        padding: "2px",
                     }}
                 >
-                    {/* Inner scaling content */}
                     <motion.div
                         className="bg-[#25211D] w-full h-full rounded-full flex items-center justify-center uppercase text-white text-md overflow-hidden cursor-pointer"
                         onMouseEnter={() => setHovered(true)}
@@ -176,12 +173,12 @@ const AboutUsAno = () => {
                         </AnimatePresence>
                     </motion.div>
                 </div>
-            </div>
+            </div> */}
 
             {/* SOCIAL ICONS */}
-            <div className="flex items-center justify-center gap-4 sm:gap-6 mt-10 pb-20"> <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer"> <span> <Instagram size={20} /> </span> <span> <Instagram size={20} /> </span> </div> <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer"> <span> <Twitter size={20} /> </span> <span> <Twitter size={20} /> </span> </div> <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer"> <span> <Linkedin size={20} /> </span> <span> <Linkedin size={20} /> </span> </div> <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer"> <span> <Facebook size={20} /> </span> <span> <Facebook size={20} /> </span> </div> </div>
+            {/* <div className="flex items-center justify-center gap-4 sm:gap-6 mt-10 pb-20"> <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer"> <span> <Instagram size={20} /> </span> <span> <Instagram size={20} /> </span> </div> <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer"> <span> <Twitter size={20} /> </span> <span> <Twitter size={20} /> </span> </div> <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer"> <span> <Linkedin size={20} /> </span> <span> <Linkedin size={20} /> </span> </div> <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer"> <span> <Facebook size={20} /> </span> <span> <Facebook size={20} /> </span> </div> </div> */}
 
-            <div className="flex justify-center">
+            <div className="flex justify-center pt-20">
                 <motion.div
                     className="border-b border-gray-300"
                     initial={{ scaleX: 0, originX: 0.5 }}

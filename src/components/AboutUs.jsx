@@ -59,8 +59,8 @@ const charVariants = {
 const AboutUs = () => {
   const [hovered, setHovered] = useState(false);
 
-  const modernText = "Modern";
-  const architectureText = "Architecture";
+  const modernText = `Area-Of`;
+  const architectureText = "Expertise";
 
   // Ref for section
   const sectionRef = useRef(null);
@@ -68,14 +68,14 @@ const AboutUs = () => {
 
   return (
     <div id="services" ref={sectionRef} className="bg-[#FEFCF6] py-20 px-10">
-      <h1 className="text-center text-black uppercase inter">Design Vision</h1>
+      <h1 className="text-center text-black uppercase inter">My Expertise</h1>
 
       <div className="flex items-center justify-between pt-10">
         {/* LEFT COUNTER */}
         <div className="flex items-start flex-col leading-none">
           <div className="flex items-center mor-n">
+            <ScrollCounter number={10} duration={2500} inView={inView} />
             <p className="text-[#6F6B61] text-8xl">+</p>
-            <ScrollCounter number={15} duration={2500} inView={inView} />
           </div>
           <p className="inter font-normal text-[#25211D]">Years Of Experience</p>
         </div>
@@ -98,11 +98,11 @@ const AboutUs = () => {
         {/* RIGHT COUNTER */}
         <div className="flex items-end flex-col leading-none">
           <div className="flex items-center mor-n">
-            <ScrollCounter number={98} duration={3000} inView={inView} />
+            <ScrollCounter number={3} duration={3000} inView={inView} />
             <p className="text-[#6F6B61] text-8xl">+</p>
           </div>
           <p className="inter font-normal text-[#25211D] text-right">
-            Successful Projects
+            Achievements
           </p>
         </div>
       </div>
@@ -123,29 +123,27 @@ const AboutUs = () => {
       </h1>
 
       <div className="flex items-center justify-between pt-4">
-        <p className="max-w-md flex items-start inter text-[#34302B]">
-          We create architecture that balances form, function, and context. Our
-          spaces reflect a deep respect for people, place, and purpose — shaped
-          with care, vision, and lasting intent.
+        <p className="max-w-md flex flex-col items-start inter text-[#34302B]">
+          <p>• Communication Strategy</p>
+          <p>• Stakeholder</p>
+          <p>• Public Relations Media Relations</p>
         </p>
-        <p className="max-w-md flex text-end justify-end inter text-[#34302B]">
-          Every project is an opportunity to connect design with meaning.
-          Through timeless forms and details, we create environments that
-          inspire and serve those who live, work and gather there.
+        <p className="max-w-md flex flex-col text-start justify-end inter text-[#34302B]">
+          <p>• Social Media Management</p>
+          <p>• Digital Marketing</p>
+          <p>• Engagement Advocacy</p>
         </p>
       </div>
 
-      <div className="flex justify-center mt-4 mb-4">
-        {/* Outer fixed border */}
+      {/* <div className="flex justify-center mt-4 mb-4">
         <div
           className="rounded-full border border-slate-500"
           style={{
             width: "170px",
             height: "60px",
-            padding: "2px", // space for scaling content
+            padding: "2px",
           }}
         >
-          {/* Inner scaling content */}
           <motion.div
             className="bg-[#25211D] w-full h-full rounded-full flex items-center justify-center uppercase text-white text-md overflow-hidden cursor-pointer"
             onMouseEnter={() => setHovered(true)}
@@ -178,12 +176,12 @@ const AboutUs = () => {
             </AnimatePresence>
           </motion.div>
         </div>
-      </div>
+      </div> */}
 
       {/* SOCIAL ICONS */}
-      <div className="flex items-center justify-center gap-6 mt-10 pb-20"> <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer"> <span> <Instagram size={20} /> </span> <span> <Instagram size={20} /> </span> </div> <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer"> <span> <Twitter size={20} /> </span> <span> <Twitter size={20} /> </span> </div> <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer"> <span> <Linkedin size={20} /> </span> <span> <Linkedin size={20} /> </span> </div> <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer"> <span> <Facebook size={20} /> </span> <span> <Facebook size={20} /> </span> </div> </div>
+      {/* <div className="flex items-center justify-center gap-6 mt-10 pb-20"> <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer"> <span> <Instagram size={20} /> </span> <span> <Instagram size={20} /> </span> </div> <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer"> <span> <Twitter size={20} /> </span> <span> <Twitter size={20} /> </span> </div> <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer"> <span> <Linkedin size={20} /> </span> <span> <Linkedin size={20} /> </span> </div> <div className="about-item bg-[#25211D] text-white p-3 rounded-full cursor-pointer"> <span> <Facebook size={20} /> </span> <span> <Facebook size={20} /> </span> </div> </div> */}
 
-      <div className="flex justify-center">
+      <div className="flex justify-center pt-20">
         <motion.div
           className="border-b border-gray-300"
           initial={{ scaleX: 0, originX: 0.5 }}

@@ -24,11 +24,11 @@ const NavbarAno = () => {
 
     return (
         <>
-            <motion.nav className="sticky top-0 left-0 right-0 z-50 bg-[#25211D] backdrop-blur-sm border-b border-gray-500/20">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex items-center justify-between">
+            <motion.nav className="sticky top-0 left-0 right-0 z-50 bg-[#25211D] backdrop-blur-sm border-b border-gray-500/20 h-14">
+                <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex items-center justify-between">
                     {/* Desktop Navigation */}
                     <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
-                        <motion.button
+                        {/* <motion.button
                             className="text-white font-semibold flex items-center group relative text-sm xl:text-base inter"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
@@ -48,9 +48,9 @@ const NavbarAno = () => {
                                 whileHover={{ width: "100%" }}
                                 transition={{ duration: 0.3 }}
                             />
-                        </motion.button>
+                        </motion.button> */}
 
-                        <motion.button
+                        {/* <motion.button
                             className="text-white hover:text-gray-300 font-semibold flex items-center group relative text-sm xl:text-base inter"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
@@ -70,12 +70,14 @@ const NavbarAno = () => {
                                 whileHover={{ width: "100%" }}
                                 transition={{ duration: 0.3 }}
                             />
-                        </motion.button>
+                        </motion.button> */}
 
                         {/* Add this new "Contact Now" button */}
-                        <motion.a
-                            href="mailto:Shahrukhfepo@gmail.com"
-                            className="text-white hover:text-gray-300 font-semibold flex items-center group relative text-sm xl:text-base inter"
+                        {/* <p>Sydney, Australia</p> */}
+
+                        {/* <motion.a
+                            href="mailto:sahr.eqbal8@gmail.com"
+                            className="text-white hover:text-gray-300 font-medium flex items-center group relative text-sm xl:text-base inter"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
@@ -87,11 +89,11 @@ const NavbarAno = () => {
                                 whileHover={{ width: "100%" }}
                                 transition={{ duration: 0.3 }}
                             />
-                        </motion.a>
+                        </motion.a> */}
                     </div>
 
                     {/* Mobile Menu Button */}
-                    <motion.button
+                    {/* <motion.button
                         className="lg:hidden text-white cursor-pointer"
                         whileTap={{ scale: 0.95 }}
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -101,11 +103,11 @@ const NavbarAno = () => {
                         ) : (
                             <Menu className="w-6 h-6" />
                         )}
-                    </motion.button>
+                    </motion.button> */}
 
                     {/* Logo - Centered */}
                     <motion.div
-                        className="absolute left-1/2 transform -translate-x-1/2"
+                        className="absolute left-1/2 transform -translate-x-1/2 mt-7 sm:mt-5 w-full"
                     // whileHover={{ scale: 1.1 }}
                     // animate={{
                     //     textShadow: [
@@ -119,13 +121,13 @@ const NavbarAno = () => {
                     // transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
                     >
                         <div className="text-white font-bold text-lg sm:text-xl cursor-pointer text-center inter">
-                            SAHAR
-                            <div className="text-xs text-gray-200 inter">Iqbal Watto</div>
+                            Sahar Iqbal
+                            <div className="text-xs text-gray-200 inter">SENIOR MARKETING STRATEGIST</div>
                         </div>
                     </motion.div>
 
                     {/* Social Icons - Desktop */}
-                    <div className="hidden sm:flex items-center space-x-3 lg:space-x-4">
+                    {/* <div className="hidden sm:flex items-center space-x-3 lg:space-x-4">
                         <motion.a
                             href="https://www.instagram.com/shahrukhkazimmusic?igsh=cjJlcTNid2RlMDg%3D&utm_source=qr"
                             target="_blank"
@@ -158,11 +160,11 @@ const NavbarAno = () => {
                         >
                             <FaFacebook className="w-4 h-4 lg:w-5 lg:h-5 text-white hover:text-blue-500 cursor-pointer transition-colors duration-300" />
                         </motion.a>
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* Mobile Menu */}
-                <motion.div
+                {/* <motion.div
                     className="lg:hidden bg-black/95 backdrop-blur-sm border-t border-gray-500/20"
                     initial={{ height: 0, opacity: 0 }}
                     animate={{
@@ -171,9 +173,9 @@ const NavbarAno = () => {
                     }}
                     transition={{ duration: 0.3 }}
                     style={{ overflow: "hidden" }}
-                >
-                    <div className="px-4 py-4 space-y-4">
-                        <motion.button
+                > */}
+                    {/* <div className="px-4 py-4 space-y-4"> */}
+                        {/* <motion.button
                             className="text-white font-semibold flex items-center group w-full"
                             whileTap={{ scale: 0.95 }}
                             onClick={() =>
@@ -186,8 +188,8 @@ const NavbarAno = () => {
                         >
                             <FaMusic className="w-4 h-4 mr-2 group-hover:fill-current transition-all duration-300" />
                             New Release
-                        </motion.button>
-                        <motion.button
+                        </motion.button> */}
+                        {/* <motion.button
                             className="text-white hover:text-gray-300 font-semibold flex items-center group w-full"
                             whileTap={{ scale: 0.95 }}
                             onClick={() =>
@@ -200,18 +202,18 @@ const NavbarAno = () => {
                         >
                             <Play className="w-4 h-4 mr-2 transition-colors duration-300" />
                             Top hit
-                        </motion.button>
-                        <motion.a
+                        </motion.button> */}
+                        {/* <motion.a
                             href="mailto:Shahrukhfepo@gmail.com"
                             className="text-white hover:text-gray-300 font-semibold flex items-center group w-full"
                             whileTap={{ scale: 0.95 }}
                         >
                             <Mail className="w-4 h-4 mr-2 transition-colors duration-300" />
                             Contact Now
-                        </motion.a>
+                        </motion.a> */}
 
                         {/* Mobile Social Icons */}
-                        <div className="flex items-center space-x-4 pt-4 border-t border-gray-700">
+                        {/* <div className="flex items-center space-x-4 pt-4 border-t border-gray-700">
                             <a
                                 href="https://www.instagram.com/shahrukhkazimmusic?igsh=cjJlcTNid2RlMDg%3D&utm_source=qr"
                                 target="_blank"
@@ -237,9 +239,9 @@ const NavbarAno = () => {
                             >
                                 <FaFacebook className="w-5 h-5 text-white hover:text-blue-500 cursor-pointer transition-colors duration-300" />
                             </a>
-                        </div>
-                    </div>
-                </motion.div>
+                        </div> */}
+                    {/* </div> */}
+                {/* </motion.div> */}
             </motion.nav>
         </>
     );
