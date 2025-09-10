@@ -29,7 +29,7 @@ const HeroAno = () => {
 
                 {/* Main background image */}
                 <div
-                    className="lg:absolute custom-hide-375 md:hidden lg:flex absolute md:mx-0 mx-4 inset-0 md:translate-y-0 translate-y-24 z-10 md:bg-center bg-bottom bg-no-repeat bg-contain opacity-85"
+                    className="lg:absolute custom-hide-375 md:hidden lg:flex absolute md:mx-0 mx-4 inset-0 md:translate-y-0 translate-y-28 z-10 md:bg-center bg-bottom bg-no-repeat bg-contain opacity-85"
                     style={{ backgroundImage: `url(${heromain})` }}
                 />
 
@@ -99,7 +99,7 @@ const HeroAno = () => {
                             />
                         </div>
                         <div className="md:max-w-md max-w-[350px] uppercase tracking-tight mt-4 sm:mt-0">
-                            <h1 className="md:text-primary text-gray-800 md:text-lg text-md leading-6 inter max-w-md">
+                            <h1 className="md:text-primary text-gray-800 md:text-lg text-sm leading-6 inter max-w-md">
                                 Proven expertise in shaping brand narratives, managing impactful campaigns, and driving strategic communication initiatives.
                             </h1>
                         </div>
