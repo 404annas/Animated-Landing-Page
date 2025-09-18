@@ -11,6 +11,7 @@ import reutersImg from "../assets/reuters.webp";
 import rferlImg from "../assets/rferl.svg";
 import unwomenImg from "../assets/unwomen.avif";
 import reuters2Img from "../assets/reuters2.png";
+import { Link } from "react-router-dom";
 
 const Partners = () => {
   return (
@@ -28,30 +29,38 @@ const Partners = () => {
             direction="left"
           // pauseOnHover={true}
           >
-            <img
-              loading="lazy"
-              className="w-28 sm:w-60 mx-10"
-              src={reuters2Img}
-              alt=""
-            />
-            <img
-              loading="lazy"
-              className="w-28 sm:w-56 mx-10"
-              src={khaleejImg}
-              alt=""
-            />
-            <img
-              loading="lazy"
-              className="w-16 h-16 sm:w-24 sm:h-24 mx-10 rounded-full"
-              src={mmImg}
-              alt=""
-            />
-            <img
-              loading="lazy"
-              className="w-28 sm:w-40 mx-10"
-              src={nationImg}
-              alt=""
-            />
+            <Link target="_blank" to={"https://reuters.screenocean.com/record/1398742?utm_source=chatgpt.com"}>
+              <img
+                loading="lazy"
+                className="w-28 sm:w-60 mx-10"
+                src={reuters2Img}
+                alt=""
+              />
+            </Link>
+            <Link target="_blank" to={"https://www.khaleejtimes.com/supplements/empowerment-in-pakistan-women-reclaim-work-worth-and-voice?fbclid=IwQ0xDSwMY4GVjbGNrAxjgX2V4dG4DYWVtAjExAAEeqLaW7Gwyo6i_VSh4hwzPgVCImylpqUyIWRSHqb4or8POAWM9jyoG4gefuBk_aem__WcMWBShtcZm_qqmdY7xRA"}>
+              <img
+                loading="lazy"
+                className="w-28 sm:w-56 mx-10"
+                src={khaleejImg}
+                alt=""
+              />
+            </Link>
+            <Link target="_blank" to={"https://youtu.be/xdg3uyxLqEE?si=-Gyraq-9tEk-ipV0"}>
+              <img
+                loading="lazy"
+                className="w-16 h-16 sm:w-24 sm:h-24 mx-10 rounded-full"
+                src={mmImg}
+                alt=""
+              />
+            </Link>
+            <Link target="_blank" to={"https://www.nation.com.pk/26-Apr-2018/cropping-out-taboos?utm_source=chatgpt.com"}>
+              <img
+                loading="lazy"
+                className="w-28 sm:w-40 mx-10"
+                src={nationImg}
+                alt=""
+              />
+            </Link>
           </Marquee>
         </div>
 
@@ -66,30 +75,38 @@ const Partners = () => {
             direction="right"
           // pauseOnHover={true}
           >
-            <img
-              loading="lazy"
-              className="w-28 sm:w-56 mx-10"
-              src={potato2Img}
-              alt=""
-            />
-            <img
-              loading="lazy"
-              className="w-28 sm:w-56 mx-10"
-              src={reutersImg}
-              alt=""
-            />
-            <img
-              loading="lazy"
-              className="w-28 sm:w-56 mx-10"
-              src={rferlImg}
-              alt=""
-            />
-            <img
-              loading="lazy"
-              className="w-28 sm:w-52 mx-10"
-              src={unwomenImg}
-              alt=""
-            />
+            <Link target="_blank" to={"https://www.potatonewstoday.com/2019/03/08/orders-from-a-lady-an-unusual-pakistani-potato-farm-run-by-a-woman/?utm_source=chatgpt.com"}>
+              <img
+                loading="lazy"
+                className="w-28 sm:w-56 mx-10"
+                src={potato2Img}
+                alt=""
+              />
+            </Link>
+            <Link target="_blank" to={"https://reuters.screenocean.com/record/1398742?utm_source=chatgpt.com"}>
+              <img
+                loading="lazy"
+                className="w-28 sm:w-56 mx-10"
+                src={reutersImg}
+                alt=""
+              />
+            </Link>
+            <Link target="_blank" to={"https://www.rferl.org/a/paksitan-woman-farmer/29808949.html?utm_source=chatgpt.com"}>
+              <img
+                loading="lazy"
+                className="w-28 sm:w-56 mx-10"
+                src={rferlImg}
+                alt=""
+              />
+            </Link>
+            <Link target="_blank" to={"https://pakistan.unwomen.org/en/news-and-events/stories/2020/06/i-am-generation-equality---female-leadership-during-covid-19?utm_source=chatgpt.com"}>
+              <img
+                loading="lazy"
+                className="w-28 sm:w-52 mx-10"
+                src={unwomenImg}
+                alt=""
+              />
+            </Link>
           </Marquee>
         </div>
       </div>

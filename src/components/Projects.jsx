@@ -1,5 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
+import social from "../assets/social.jpg";
+import comm from "../assets/comm.jpg";
+import talk from "../assets/talk.jpg";
 
 const charVariants = {
     hidden: { y: 50, rotateX: 90, opacity: 0 },
@@ -45,12 +48,17 @@ const Projects = () => {
 
             <div className='flex flex-col md:flex-row md:items-center md:justify-between md:sticky md:top-0 md:h-screen bg-[#FEFCF6] mt-6'>
                 <div className='w-full md:w-1/2 h-full'>
-                    <img loading='lazy' className='' src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bd9/6853f763c47b2af585134ee3_Minimalist%20Interior%20Design.jpg" alt="Project 1" />
+                    <img
+                        loading="lazy"
+                        className="w-full h-full object-cover object-bottom"
+                        src={social}
+                        alt="Project 1"
+                    />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col h-full justify-center items-center text-center mt-4 md:mt-0'>
                     <p className='text-[#25211D]'>2022</p>
-                    <h1 className='mor-n uppercase leading-none text-7xl md:text-[100px] lg:text-[140px] text-[#25211D]'>E-commerce & Digital Marketing</h1>
-                    <p className='uppercase text-sm sm:text-base text-[#25211D]'>United Nations ESCAP South and South-West Asia</p>
+                    <h1 className='mor-n uppercase leading-none text-7xl md:text-[100px] lg:text-[140px] text-[#25211D]'>Social Media Management</h1>
+                    <p className='uppercase text-sm sm:text-base text-[#25211D]'>Strategic social media management for growth and engagement.</p>
                     <div className="flex justify-center mt-4 mb-0 sm:mb-4">
                         {/* Outer fixed border */}
                         <div
@@ -98,14 +106,14 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col md:flex-row-reverse md:items-end text-center md:justify-between md:sticky md:top-0 md:h-screen bg-[#FEFCF6] mt-6'>
+            <div className='flex flex-col md:flex-row-reverse md:items-center text-center md:justify-between md:sticky md:top-0 md:h-screen bg-[#FEFCF6] mt-6'>
                 <div className='w-full md:w-1/2 h-full'>
-                    <img loading='lazy' className='' src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bd9/6853f742a5b34983fecb4671_Scandinavian%20Living%20Room.jpg" alt="Project 2" />
+                    <img loading='lazy' className='w-full h-full object-cover object-bottom' src="https://images.unsplash.com/photo-1555077292-22a4489e5897?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGlnaXRhbCUyMG1hcmtldGluZ3xlbnwwfDF8MHx8fDA%3D" alt="Project 2" />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col mt-14 md:mt-0'>
                     <p className='text-[#25211D]'>2019</p>
-                    <h1 className='mor-n uppercase leading-none text-7xl md:text-[100px] lg:text-[150px] text-[#25211D]'>Women Trading Globally</h1>
-                    <p className='uppercase text-sm sm:text-base text-[#25211D]'>Australian Awards</p>
+                    <h1 className='mor-n uppercase leading-none text-7xl md:text-[100px] lg:text-[150px] text-[#25211D]'>Digital Marketing</h1>
+                    <p className='uppercase text-sm sm:text-base text-[#25211D]'>Effective digital marketing solutions to grow your business.</p>
                     <div className="flex justify-center mt-4 mb-0 sm:mb-4">
                         {/* Outer fixed border */}
                         <div
@@ -153,14 +161,14 @@ const Projects = () => {
                 </div>
             </div>
 
-            {/* <div className='flex flex-col md:flex-row md:items-end text-center md:justify-between md:sticky md:top-0 md:h-screen bg-[#FEFCF6] mt-6'>
+            <div className='flex flex-col md:flex-row md:items-end text-center md:justify-between md:sticky md:top-0 md:h-screen bg-[#FEFCF6] mt-6'>
                 <div className='w-full md:w-1/2 h-full'>
-                    <img loading='lazy' className='' src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bd9/6853f72c8a5fdbd86d9b8322_Serene%20Minimalist%20Interior.jpg" alt="Project 3" />
+                    <img loading='lazy' className='w-full h-full object-cover object-bottom' src={comm} alt="Project 3" />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col mt-4 md:mt-0'>
                     <p className='text-[#25211D]'>2014</p>
-                    <h1 className='mor-n uppercase leading-none text-[130px] md:text-[150px] text-[#25211D]'>Creative Writing Course</h1>
-                    <p className='uppercase text-[#25211D]'>Holmesglen University, Melbourne, Australia</p>
+                    <h1 className='mor-n uppercase leading-none text-[130px] md:text-[150px] text-[#25211D]'>Communication Strategy</h1>
+                    <p className='uppercase text-[#25211D]'>Smart communication strategies that connect, engage, and inspire.</p>
                     <div className="flex justify-center mt-4 mb-0 sm:mb-4">
                         <div
                             className="rounded-full border border-slate-500"
@@ -204,16 +212,16 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
 
-            <div className='flex flex-col md:flex-row items-center text-center justify-between relative top-[100px] sm:top-[81px] h-screen bg-[#FEFCF6] pb-10'>
+            <div className='flex flex-col md:flex-row-reverse items-center text-center justify-between relative top-[100px] sm:top-[81px] h-screen bg-[#FEFCF6] pb-10'>
                 <div className='w-full md:w-1/2 h-full'>
-                    <img loading='lazy' className='' src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bd9/6853f708b423f659977ac630_Stylish%20and%20Serene%20Living%20Room.jpg" alt="Project 4" />
+                    <img loading='lazy' className='w-full h-full object-cover object-center' src={talk} alt="Project 4" />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col'>
                     <p className='text-[#25211D]'>2014</p>
-                    <h1 className='mor-n uppercase leading-none text-7xl md:text-[100px] lg:text-[150px] text-[#25211D]'>Creative Writing Course</h1>
-                    <p className='uppercase text-sm sm:text-base text-[#25211D]'>Holmesglen University, Melbourne, Australia</p>
+                    <h1 className='mor-n uppercase leading-none text-7xl md:text-[100px] lg:text-[150px] text-[#25211D]'>Public Relations Media Relations</h1>
+                    <p className='uppercase text-sm sm:text-base text-[#25211D]'>Building strong public and media relations for impact.</p>
                     <div className="flex justify-center mt-4 mb-4">
                         <div
                             className="rounded-full border border-slate-500"
