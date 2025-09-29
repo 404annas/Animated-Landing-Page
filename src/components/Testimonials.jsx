@@ -4,47 +4,46 @@ import { motion, useInView } from "framer-motion";
 
 const testimonials = [
   {
-    monthYear: "Nov 2024 - Present",
-    title: "Public Relations Professional OSAN Ability (Registered NDIS Provider)",
-    points: [
-      "● Developed and implemented comprehensive business development strategies to identify new opportunities and drive revenue growth for OSAN Ability through digital platforms.",
-      "● Managed the production and distribution of digital media campaigns on multi-channel (SEO, SEM, paid / organic social, and events).",
-      "● Collaborated with internal teams and external vendors to develop new marketing collateral, including updated branding materials, presentations, and digital assets to support sales and marketing efforts.",
-      "● Featured OSAN Ability in global publications such as Forbes, Wikipedia and CIO Magazine to strengthen brand reputation.",
-      "● Proficient in CRMs including HubSpot, ShiftCare, and Visual Care.",
-    ],
+    image: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68516188ef1e08a08cb7adc8_Delaware.svg",
+    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+    person: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68555f93492bd334a12ef84b_client-04.jpg",
+    name: "Mia Lane",
+    position: "CEO",
   },
   {
-    monthYear: "Feb 2020 - Feb 2023",
-    title: "Public Relations Professional | Planning & Development Punjab Govt",
-    points: [
-      "● Headed and implemented 13 comprehensive social media campaigns aligned with government policies on Facebook, Twitter, and other platforms.",
-      "● Conceived and orchestrated workshops and knowledge-sharing events, fostering collaboration with foreign donors and the press (40,000+ viewership).",
-      "● Facilitated two high-level strategic sessions to optimize KPIs and communication performance.",
-      "● Achieved a 70% increase in public awareness via impactful social media campaigns.",
-      "● Managed all advocacy campaigns during COVID, ensuring resilience and effective crisis communication.",
-    ],
+    image: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/6851618899fe0f81f09d8dc6_Amsterdam.svg",
+    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+    person: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68555f9380ce974d0b84adc6_client-05.jpg",
+    name: "Mia Lane",
+    position: "CEO",
   },
   {
-    monthYear: "Oct 2015 - Jan 2020",
-    title: "Public Relations Officer | Directorate General Public Relations",
-    points: [
-      "● Led high-impact campaigns for the Minister of Livestock, influencing 30,000+ individuals.",
-      "● Pioneered Punjab Government's first social media strategy, achieving 70% surge in engagement.",
-      "● Improved KPIs with a 50% increase in consumer engagement.",
-      "● Created content that boosted social media followers by 70% in 2 years.",
-      "● Secured 10+ international press mentions showcasing Punjab Govt globally.",
-    ],
+    image: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/6851619fb9d10aebcce79c0d_Sweden.svg",
+    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.lations",
+    person: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68555f930b1cf5a2b9462b77_client-01.jpg",
+    name: "Mia Lane",
+    position: "CEO",
   },
   {
-    monthYear: "Feb 2013 - Apr 2014",
-    title: "Public Relations Officer | HKC Entertainment PVT Limited",
-    points: [
-      "● Led strategic image-building for celebrity clients, influencing 17+ newspapers and websites.",
-      "● Secured 156+ positive media features and interviews, amplifying brand reach.",
-      "● Acted as crisis manager, reversing negative coverage into positive sentiment.",
-      "● Drafted press releases and statements, increasing public perception positively by 70%.",
-    ],
+    image: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/685161920fd24a7acdfd6334_Monaco.svg",
+    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+    person: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68555f93df486cfbc577c5bf_client-02.jpg",
+    name: "Mia Lane",
+    position: "CEO",
+  },
+  {
+    image: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/685161998c35f2dd232c0474_Springfield.svg",
+    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+    person: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68555f938e7a3d5099ea301a_client-03.jpg",
+    name: "Mia Lane",
+    position: "CEO",
+  },
+  {
+    image: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/685161a5822b1ce22b5d1ce5_Umbrella.svg",
+    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+    person: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68555f94cf01c11437c2fd63_client-06.jpg",
+    name: "Mia Lane",
+    position: "CEO",
   },
 ];
 
@@ -55,7 +54,7 @@ const charVariants = {
 
 const Testimonials = () => {
   const [index, setIndex] = useState(0);
-  const [cardsPerView, setCardsPerView] = useState(2);
+  const [cardsPerView, setCardsPerView] = useState(3);
 
   useEffect(() => {
     const updateCardsPerView = () => {
@@ -64,7 +63,7 @@ const Testimonials = () => {
       } else if (window.innerWidth < 1024) {
         setCardsPerView(2); // Tablet
       } else {
-        setCardsPerView(2); // Large Desktop (changed from 3 → 2)
+        setCardsPerView(3); // Desktop
       }
     };
 
@@ -81,16 +80,14 @@ const Testimonials = () => {
     if (index > 0) setIndex(index - 1);
   };
 
-  const totalSteps = testimonials.length - cardsPerView + 1;
-
   const headingRef = useRef(null);
   const inView = useInView(headingRef, { once: true, amount: 0.4 });
 
-  const headingText = "EXPERIENCE";
+  const headingText = "TESTIMONIALS";
 
   return (
     <div className="pb-20 px-4 sm:px-6 md:px-10 pt-10 bg-[#FEFCF6] relative">
-      <h1 className="text-center text-black uppercase inter">Professional</h1>
+      <h1 className="text-center text-black uppercase inter">Happy Clients</h1>
 
       {/* Animated Heading */}
       <h1
@@ -131,15 +128,22 @@ const Testimonials = () => {
             {testimonials.map((item, idx) => (
               <div
                 key={idx}
-                className="flex-none w-full sm:w-1/2 lg:w-1/2 border border-[#D2D1CB] px-6 sm:px-8 py-8 sm:py-10 flex flex-col gap-4 sm:gap-6"
+                className="flex-none w-full sm:w-1/2 lg:w-1/3 border border-[#D2D1CB] px-6 sm:px-8 py-8 sm:py-10 flex flex-col gap-4 sm:gap-6"
               >
-                <p className="text-sm text-gray-500">{item.monthYear}</p>
-                <h2 className="text-lg sm:text-xl font-bold text-[#25211D]">{item.title}</h2>
-                <ul className="text-[#34302B] text-base sm:text-lg space-y-3">
+                <img className="w-30" loading="lazy" src={item.image} alt="Image" />
+                <h2 className="text-base text-[#25211D]">{item.title}</h2>
+                {/* <ul className="text-[#34302B] text-base sm:text-lg space-y-3">
                   {item.points.map((point, i) => (
                     <li key={i}>{point}</li>
                   ))}
-                </ul>
+                </ul> */}
+                <div className="flex items-center gap-4">
+                  <img className="rounded-full w-14 border border-gray-300 p-0.5" loading="lazy" src={item.person} alt="Person Image" />
+                  <div className="flex flex-col items-start">
+                    <h3 className="text-[#25211D] font-semibold">{item.name}</h3>
+                    <p className="text-[#34302B] text-sm">{item.position}</p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
@@ -158,10 +162,11 @@ const Testimonials = () => {
 
       {/* Dots */}
       <div className="flex justify-center mt-6 gap-2">
-        {Array.from({ length: totalSteps }).map((_, stepIndex) => (
+        {Array.from({ length: testimonials.length - cardsPerView + 1 }).map((_, stepIndex) => (
           <span
             key={stepIndex}
-            className={`w-3 h-3 rounded-full cursor-pointer ${index === stepIndex ? "bg-[#25211D]" : "bg-gray-400"}`}
+            className={`w-3 h-3 rounded-full cursor-pointer ${index === stepIndex ? "bg-[#25211D]" : "bg-gray-400"
+              }`}
             onClick={() => setIndex(stepIndex)}
           ></span>
         ))}

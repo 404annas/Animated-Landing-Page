@@ -13,10 +13,10 @@ import HeroAno from '../components/HeroAno';
 const HomePage = () => {
   return (
     <div>
-      {/* <Navbar /> */}
-      <NavbarAno />
-      {/* <Hero1 /> */}
-      <HeroAno />
+      <Navbar />
+      {/* <NavbarAno /> */}
+      <Hero1 />
+      {/* <HeroAno /> */}
       <Hero />
 
       {/* AboutUs visible on lg and above */}

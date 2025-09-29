@@ -59,8 +59,8 @@ const charVariants = {
 const AboutUs = () => {
   const [hovered, setHovered] = useState(false);
 
-  const modernText = `Area-Of`;
-  const architectureText = "Expertise";
+  const modernText = `Modern`;
+  const architectureText = "Architecture";
 
   // Ref for section
   const sectionRef = useRef(null);
@@ -68,14 +68,14 @@ const AboutUs = () => {
 
   return (
     <div id="services" ref={sectionRef} className="bg-[#FEFCF6] py-20 px-10">
-      <h1 className="text-center text-black uppercase inter">My Expertise</h1>
+      <h1 className="text-center text-black uppercase inter">Design Vision</h1>
 
       <div className="flex items-center justify-between pt-10">
         {/* LEFT COUNTER */}
         <div className="flex items-start flex-col leading-none">
           <div className="flex items-center mor-n">
-            <ScrollCounter number={10} duration={2500} inView={inView} />
             <p className="text-[#6F6B61] text-8xl">+</p>
+            <ScrollCounter number={15} duration={2500} inView={inView} />
           </div>
           <p className="inter font-normal text-[#25211D]">Years Of Experience</p>
         </div>
@@ -98,11 +98,11 @@ const AboutUs = () => {
         {/* RIGHT COUNTER */}
         <div className="flex items-end flex-col leading-none">
           <div className="flex items-center mor-n">
-            <ScrollCounter number={3} duration={3000} inView={inView} />
+            <ScrollCounter number={98} duration={3000} inView={inView} />
             <p className="text-[#6F6B61] text-8xl">+</p>
           </div>
           <p className="inter font-normal text-[#25211D] text-right">
-            Achievements
+            Successful Projects
           </p>
         </div>
       </div>
@@ -123,16 +123,19 @@ const AboutUs = () => {
       </h1>
 
       <div className="flex items-center justify-between pt-4">
-        <p className="max-w-md flex flex-col items-start inter text-[#34302B]">
+        {/* <p className="max-w-md flex flex-col items-start inter text-[#34302B]">
           <p>• Communication Strategy</p>
           <p>• Stakeholder</p>
           <p>• Public Relations Media Relations</p>
-        </p>
-        <p className="max-w-md flex flex-col text-start justify-end inter text-[#34302B]">
+        </p> */}
+        <p className="max-w-md text-left">We create architecture that balances form, function, and context. Our spaces reflect a deep respect for people, place, and purpose — shaped with care, vision, and lasting intent.</p>
+        {/* <p className="max-w-md flex flex-col text-start justify-end inter text-[#34302B]">
           <p>• Social Media Management</p>
           <p>• Digital Marketing</p>
           <p>• Engagement Advocacy</p>
-        </p>
+        </p> */}
+        <p className="max-w-md text-right">
+          Every project is an opportunity to connect design with meaning. Through timeless forms and details, we create environments that inspire and serve those who live, work and gather there.</p>
       </div>
 
       {/* <div className="flex justify-center mt-4 mb-4">

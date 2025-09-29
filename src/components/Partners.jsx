@@ -13,12 +13,17 @@ import unwomenImg from "../assets/unwomen.avif";
 import reuters2Img from "../assets/reuters2.png";
 import { Link } from "react-router-dom";
 
+const umbrella = "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/685161a5822b1ce22b5d1ce5_Umbrella.svg";
+const monaco = "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/685161920fd24a7acdfd6334_Monaco.svg";
+const amsterdam = "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/6851618899fe0f81f09d8dc6_Amsterdam.svg";
+const delaware = "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68516188ef1e08a08cb7adc8_Delaware.svg";
+
 const Partners = () => {
   return (
     <div className="bg-[#FEFCF6] pt-20">
-      <h1 className="text-center text-black inter uppercase pb-10">
+      {/* <h1 className="text-center text-black inter uppercase pb-10">
         Featured At
-      </h1>
+      </h1> */}
 
       <div className="flex items-center justify-center mt-6">
         {/* Left logos (move left) */}
@@ -32,32 +37,32 @@ const Partners = () => {
             <Link target="_blank" to={"https://reuters.screenocean.com/record/1398742?utm_source=chatgpt.com"}>
               <img
                 loading="lazy"
-                className="w-28 sm:w-60 mx-10"
-                src={reuters2Img}
+                className="w-28 sm:w-30 mx-10"
+                src={umbrella}
                 alt=""
               />
             </Link>
             <Link target="_blank" to={"https://www.khaleejtimes.com/supplements/empowerment-in-pakistan-women-reclaim-work-worth-and-voice?fbclid=IwQ0xDSwMY4GVjbGNrAxjgX2V4dG4DYWVtAjExAAEeqLaW7Gwyo6i_VSh4hwzPgVCImylpqUyIWRSHqb4or8POAWM9jyoG4gefuBk_aem__WcMWBShtcZm_qqmdY7xRA"}>
               <img
                 loading="lazy"
-                className="w-28 sm:w-56 mx-10"
-                src={khaleejImg}
+                className="w-28 sm:w-30 mx-10"
+                src={monaco}
                 alt=""
               />
             </Link>
             <Link target="_blank" to={"https://youtu.be/xdg3uyxLqEE?si=-Gyraq-9tEk-ipV0"}>
               <img
                 loading="lazy"
-                className="w-16 h-16 sm:w-24 sm:h-24 mx-10 rounded-full"
-                src={mmImg}
+                className="w-16 h-16 sm:w-32 mx-10 rounded-full"
+                src={amsterdam}
                 alt=""
               />
             </Link>
             <Link target="_blank" to={"https://www.nation.com.pk/26-Apr-2018/cropping-out-taboos?utm_source=chatgpt.com"}>
               <img
                 loading="lazy"
-                className="w-28 sm:w-40 mx-10"
-                src={nationImg}
+                className="w-28 sm:w-30 mx-10"
+                src={delaware}
                 alt=""
               />
             </Link>
@@ -78,32 +83,32 @@ const Partners = () => {
             <Link target="_blank" to={"https://www.potatonewstoday.com/2019/03/08/orders-from-a-lady-an-unusual-pakistani-potato-farm-run-by-a-woman/?utm_source=chatgpt.com"}>
               <img
                 loading="lazy"
-                className="w-28 sm:w-56 mx-10"
-                src={potato2Img}
+                className="w-28 sm:w-30 mx-10"
+                src={delaware}
                 alt=""
               />
             </Link>
             <Link target="_blank" to={"https://reuters.screenocean.com/record/1398742?utm_source=chatgpt.com"}>
               <img
                 loading="lazy"
-                className="w-28 sm:w-56 mx-10"
-                src={reutersImg}
+                className="w-28 sm:w-32 mx-10"
+                src={amsterdam}
                 alt=""
               />
             </Link>
             <Link target="_blank" to={"https://www.rferl.org/a/paksitan-woman-farmer/29808949.html?utm_source=chatgpt.com"}>
               <img
                 loading="lazy"
-                className="w-28 sm:w-56 mx-10"
-                src={rferlImg}
+                className="w-28 sm:w-30 mx-10"
+                src={monaco}
                 alt=""
               />
             </Link>
             <Link target="_blank" to={"https://pakistan.unwomen.org/en/news-and-events/stories/2020/06/i-am-generation-equality---female-leadership-during-covid-19?utm_source=chatgpt.com"}>
               <img
                 loading="lazy"
-                className="w-28 sm:w-52 mx-10"
-                src={unwomenImg}
+                className="w-28 sm:w-30 mx-10"
+                src={umbrella}
                 alt=""
               />
             </Link>

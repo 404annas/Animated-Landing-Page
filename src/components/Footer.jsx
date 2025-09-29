@@ -8,15 +8,15 @@ const Footer = () => {
     <>
       <footer className="bg-[#25211D] text-white px-4 sm:px-6 md:px-10 pt-20 pb-10">
         <div className="flex items-center flex-col gap-6">
-          {/* <img
+          <img
             className="w-8 cursor-pointer hover:opacity-80 transition-all duration-300"
             loading="lazy"
             src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/684f806d593d5a0b9c7e201c_R3.svg"
             alt="Logo"
-          /> */}
-          <h1 className="text-4xl font-bold">Sahar Iqbal</h1>
+          />
+          {/* <h1 className="text-4xl font-bold">Sahar Iqbal</h1> */}
           <p className="inter uppercase text-center text-sm">
-            Dedicated and seasoned Communication Specialist
+            Architecture that elevates everyday living.
           </p>
           <div className="flex items-center justify-center gap-4 sm:gap-6 mt-8">
             <div className="footer-item bg-[#25211D] border border-[#4D4944] hover:border-[#67635E] text-white p-3 rounded-full cursor-pointer">
@@ -60,24 +60,24 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
             <div className="flex items-center gap-2">
               <p className="uppercase text-[#67635E] inter text-sm">Address</p>
-              <p className="uppercase inter text-white text-sm">Sydney, Australia</p>
+              <p className="uppercase inter text-white text-sm">416, Kingston Road, KT1 3PB</p>
             </div>
             <div className="flex items-center gap-2">
               <p className="uppercase text-[#67635E] inter text-sm">Email</p>
-              <a href="mailto: ahr.eqbal8@gmail.com" className="uppercase inter text-white text-sm">sahr.eqbal8@gmail.com</a>
+              <a href="mailto: hello@designz.dwell-rich.com" className="uppercase inter text-white text-sm">hello@designz.dwell-rich.com</a>
             </div>
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-2">
             <p className="uppercase text-[#67635E] inter text-sm">Phone</p>
-            <a href="tel:0490 893 961" className="uppercase inter text-white text-sm"> 0490 893 961 </a>
+            <a href="tel:07803326891" className="uppercase inter text-white text-sm"> 07803326891 </a>
           </div>
         </div>
       </footer>
 
       <div className="relative bg-[#25211D] overflow-hidden h-28 sm:h-60 md:h-72 lg:h-110">
         <h1 className="mor text-[#2C2824] leading-none text-center text-[220px] sm:text-[400px] md:text-[500px] lg:text-[820px] font-extrabold px-0 uppercase py-0">
-          SAHAR
+          DESIGNZ
         </h1>
       </div>
     </>
