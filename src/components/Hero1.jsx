@@ -1,25 +1,25 @@
 import React, { useState, useEffect } from "react";
 const heroImages = [
     {
-        url: "https://images.pexels.com/photos/6566976/pexels-photo-6566976.jpeg?_gl=1*zykpcy*_ga*MTMxMzQwNjA1Ni4xNzU0ODkwNzk1*_ga_8JE65Q40S6*czE3NTgzOTc1OTMkbzQkZzEkdDE3NTgzOTc2MTkkajM0JGwwJGgw",
-        title: "PRECISION & POWER",
-        subtitle: "Premium Tactical Equipment",
+        url: "https://images.unsplash.com/photo-1615406020658-6c4b805f1f30?w=2000&auto=format&fit=crop&q=120&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW9kZXJuJTIwYXJjaGl0ZWN0dXJlfGVufDB8fDB8fHww",
+        title: "INNOVATION",
+        subtitle: "Design • Efficiency • Technology",
         description:
-            "Engineered for accuracy, built for reliability. Discover our professional-grade tactical collection.",
+            "Modern architecture embraces innovation, blending creativity with functionality. It transforms spaces into experiences that inspire and engage.",
     },
     {
-        url: "https://images.pexels.com/photos/5202444/pexels-photo-5202444.jpeg?_gl=1*1i2hmu*_ga*MTMxMzQwNjA1Ni4xNzU0ODkwNzk1*_ga_8JE65Q40S6*czE3NTgzOTc1OTMkbzQkZzEkdDE3NTgzOTc2OTQkajIyJGwwJGgw",
-        title: "TACTICAL EXCELLENCE",
-        subtitle: "Military Grade Quality",
+        url: "https://images.unsplash.com/photo-1531591022136-eb8b0da1e6d0?w=2000&auto=format&fit=crop&q=120&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1vZGVybiUyMGFyY2hpdGVjdHVyZXxlbnwwfHwwfHx8MA%3D%3D",
+        title: "SUSTAINABILITY",
+        subtitle: "Green • Durable • Smart",
         description:
-            "From handguns to rifles, find the perfect weapon system for your tactical needs.",
+            "Eco-friendly materials and energy-efficient designs are central to modern architecture. Buildings aim to reduce environmental impact while enhancing comfort.",
     },
     {
-        url: "https://images.pexels.com/photos/864987/pexels-photo-864987.jpeg?_gl=1*14hyna5*_ga*MTMxMzQwNjA1Ni4xNzU0ODkwNzk1*_ga_8JE65Q40S6*czE3NTgzOTc1OTMkbzQkZzEkdDE3NTgzOTc2NjIkajU0JGwwJGgw",
-        title: "PROFESSIONAL GEAR",
-        subtitle: "Complete Tactical Solutions",
+        url: "https://images.unsplash.com/photo-1543071293-d91175a68672?w=2000&auto=format&fit=crop&q=120&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vZGVybiUyMGFyY2hpdGVjdHVyZXxlbnwwfHwwfHx8MA%3D%3D",
+        title: "MINIMALISM",
+        subtitle: "Simple • Elegant • Functional",
         description:
-            "Comprehensive selection of tactical equipment, optics, and accessories for professionals.",
+            "Clean lines and uncluttered spaces define minimalistic modern designs. Simplicity in form creates elegance and timeless appeal.",
     },
 ];
 
@@ -75,8 +75,8 @@ const Hero = () => {
                         {/* Left Column - Text Content */}
                         <div
                             className={`text-left transform transition-all duration-1000 ${isLoaded
-                                    ? "translate-x-0 opacity-100"
-                                    : "-translate-x-20 opacity-0"
+                                ? "translate-x-0 opacity-100"
+                                : "-translate-x-20 opacity-0"
                                 }`}
                         >
                             {/* Badge */}
@@ -103,7 +103,7 @@ const Hero = () => {
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <button className="group bg-gradient-to-r from-yellow-600 via-orange-600 to-red-600 hover:from-yellow-500 hover:via-orange-500 hover:to-red-500 text-white font-bold py-2 px-8 cursor-pointer rounded-full text-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg">
                                     <span className="flex items-center justify-center">
-                                        Shop Now
+                                        Get Inspired
                                         <svg
                                             className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-300"
                                             fill="none"
@@ -122,7 +122,7 @@ const Hero = () => {
 
                                 <button className="group border-2 border-orange-500 hover:bg-orange-500/10 text-white font-bold py-2 cursor-pointer px-8 rounded-full text-lg transform transition-all duration-300 hover:scale-105">
                                     <span className="flex items-center justify-center">
-                                        Learn More
+                                        Explore Designs
                                         <svg
                                             className="w-5 h-5 ml-2 transform group-hover:rotate-45 transition-transform duration-300"
                                             fill="none"
@@ -144,15 +144,15 @@ const Hero = () => {
                             <div className="flex items-center gap-8 mt-12 pt-8 border-t border-gray-700/50">
                                 <div>
                                     <div className="text-3xl font-bold text-yellow-400">500+</div>
-                                    <div className="text-sm text-gray-400">Products</div>
+                                    <div className="text-sm text-gray-400">Projects</div>
                                 </div>
                                 <div>
                                     <div className="text-3xl font-bold text-orange-400">50K+</div>
-                                    <div className="text-sm text-gray-400">Customers</div>
+                                    <div className="text-sm text-gray-400">Satisfied Clients</div>
                                 </div>
                                 <div>
                                     <div className="text-3xl font-bold text-red-400">15+</div>
-                                    <div className="text-sm text-gray-400">Years</div>
+                                    <div className="text-sm text-gray-400">Awards</div>
                                 </div>
                             </div>
                         </div>
@@ -160,8 +160,8 @@ const Hero = () => {
                         {/* Right Column - Interactive Elements */}
                         <div
                             className={`hidden lg:block transform transition-all duration-1000 delay-300 ${isLoaded
-                                    ? "translate-x-0 opacity-100"
-                                    : "translate-x-20 opacity-0"
+                                ? "translate-x-0 opacity-100"
+                                : "translate-x-20 opacity-0"
                                 }`}
                         >
                             <div className="relative">{/* Floating Cards */}</div>
