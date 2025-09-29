@@ -134,8 +134,7 @@ const AboutUs = () => {
           <p>• Digital Marketing</p>
           <p>• Engagement Advocacy</p>
         </p> */}
-        <p className="max-w-md text-right">
-          Every project is an opportunity to connect design with meaning. Through timeless forms and details, we create environments that inspire and serve those who live, work and gather there.</p>
+        <p className="max-w-md text-right">Every project is an opportunity to connect design with meaning. Through timeless forms and details, we create environments that inspire and serve those who live, work and gather there.</p>
       </div>
 
       {/* <div className="flex justify-center mt-4 mb-4">

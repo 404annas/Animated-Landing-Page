@@ -59,8 +59,8 @@ const charVariants = {
 const AboutUsAno = () => {
     const [hovered, setHovered] = useState(false);
 
-    const modernText = "Area-Of";
-    const architectureText = "Expertise";
+    const modernText = "Modern";
+    const architectureText = "Architecture";
 
     // Ref for section
     const sectionRef = useRef(null);
@@ -68,7 +68,7 @@ const AboutUsAno = () => {
 
     return (
         <div id="services" ref={sectionRef} className="bg-[#FEFCF6] py-20 px-4 sm:px-6 md:px-10">
-            <h1 className="text-center text-black uppercase inter">My Expertise</h1>
+            <h1 className="text-center text-black uppercase inter">Design Vision</h1>
 
             {/* <h1 className='uppercase mor-n text-[#25211D] text-center text-[120px] sm:text-[150px] md:text-[200px] pt-10 leading-none'>Modern</h1> */}
             <h1 className='uppercase mor-n text-[#25211D] text-center text-[120px] sm:text-[150px] md:text-[200px] pt-10 leading-none'>
@@ -102,7 +102,7 @@ const AboutUsAno = () => {
             <div className='flex items-center justify-between pt-10'>
                 <div className="flex items-start flex-col leading-none">
                     <div className="flex items-center mor-n text-[#25211D] text-[100px] sm:text-[130px] md:text-[170px] leading-none">
-                        <ScrollCounter number={10} duration={2500} inView={inView} />
+                        <ScrollCounter number={15} duration={2500} inView={inView} />
                         <p className="text-[#6F6B61] text-8xl">+</p>
                         {/* <p className='text-[#25211D] text-[100px] sm:text-[130px] md:text-[170px] leading-none'>15</p> */}
                     </div>
@@ -111,25 +111,27 @@ const AboutUsAno = () => {
 
                 <div className="flex items-end flex-col leading-none">
                     <div className="flex items-center mor-n text-[#25211D] text-[100px] sm:text-[130px] md:text-[170px] leading-none">
-                        <ScrollCounter number={3} duration={2500} inView={inView} />
+                        <ScrollCounter number={98} duration={2500} inView={inView} />
                         {/* <p className='text-[#25211D] text-[100px] sm:text-[130px] md:text-[170px] leading-none'>98</p> */}
                         <p className="text-[#6F6B61] text-8xl">+</p>
                     </div>
-                    <p className="inter font-normal text-right text-[#25211D]">Achievements</p>
+                    <p className="inter font-normal text-right text-[#25211D]">Successful Projects</p>
                 </div>
             </div>
 
             <div className="flex sm:flex-row flex-col gap-4 sm:items-center justify-between pt-10">
-                <p className="max-w-md flex flex-col items-start inter text-[#34302B]">
+                {/* <p className="max-w-md flex flex-col items-start inter text-[#34302B]">
                     <p>• Communication Strategy</p>
                     <p>• Stakeholder</p>
                     <p>• Public Relations Media Relations</p>
-                </p>
-                <p className="max-w-md flex flex-col text-start justify-end inter text-[#34302B]">
+                </p> */}
+                <p className="text-sm text-center">We create architecture that balances form, function, and context. Our spaces reflect a deep respect for people, place, and purpose — shaped with care, vision, and lasting intent.</p>
+                {/* <p className="max-w-md flex flex-col text-start justify-end inter text-[#34302B]">
                     <p>• Social Media Management</p>
                     <p>• Digital Marketing</p>
                     <p>• Engagement Advocacy</p>
-                </p>
+                </p> */}
+                <p className="text-sm text-center">Every project is an opportunity to connect design with meaning. Through timeless forms and details, we create environments that inspire and serve those who live, work and gather there.</p>
             </div>
 
             {/* <div className="flex justify-center mt-10 mb-4">
