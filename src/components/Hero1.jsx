@@ -88,14 +88,14 @@ const Hero = () => {
                             </div>
 
                             {/* Main Title */}
-                            <h1 className="text-6xl md:text-7xl lg:text-8xl font-black leading-none mb-6">
+                            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-none mb-6">
                                 <span className="bg-gradient-to-r from-gray-400 via-[#562B1B] to-[#25211D] bg-clip-text text-transparent">
                                     {currentImage.title}
                                 </span>
                             </h1>
 
                             {/* Description */}
-                            <p className="text-lg text-gray-400 leading-relaxed mb-8 max-w-2xl">
+                            <p className="text-base sm:text-lg text-gray-400 leading-relaxed mb-8 max-w-2xl">
                                 {currentImage.description}
                             </p>
 
