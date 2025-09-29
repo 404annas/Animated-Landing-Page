@@ -80,28 +80,28 @@ const Hero = () => {
                                 }`}
                         >
                             {/* Badge */}
-                            <div className="inline-flex items-center bg-gradient-to-r from-yellow-600/20 to-orange-600/20 border border-orange-500/30 rounded-full px-4 py-2 mb-6">
-                                <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse mr-2"></div>
-                                <span className="text-orange-300 text-sm font-semibold tracking-wide">
+                            <div className="inline-flex items-center bg-gradient-to-r from-gray-600/20 to-[#25211D] border border-[#24272A] rounded-full px-4 py-2 mb-6">
+                                <div className="w-2 h-2 bg-gray-800 rounded-full animate-pulse mr-2"></div>
+                                <span className="text-gray-400 text-sm font-semibold tracking-wide">
                                     {currentImage.subtitle}
                                 </span>
                             </div>
 
                             {/* Main Title */}
                             <h1 className="text-6xl md:text-7xl lg:text-8xl font-black leading-none mb-6">
-                                <span className="bg-gradient-to-r from-white via-yellow-200 to-orange-300 bg-clip-text text-transparent">
+                                <span className="bg-gradient-to-r from-gray-400 via-[#562B1B] to-[#25211D] bg-clip-text text-transparent">
                                     {currentImage.title}
                                 </span>
                             </h1>
 
                             {/* Description */}
-                            <p className="text-xl text-gray-300 leading-relaxed mb-8 max-w-2xl">
+                            <p className="text-lg text-gray-400 leading-relaxed mb-8 max-w-2xl">
                                 {currentImage.description}
                             </p>
 
                             {/* CTA Buttons */}
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <button className="group bg-gradient-to-r from-yellow-600 via-orange-600 to-red-600 hover:from-yellow-500 hover:via-orange-500 hover:to-red-500 text-white font-bold py-2 px-8 cursor-pointer rounded-full text-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg">
+                                <button className="group bg-gradient-to-r from-gray-700 to-[#25211D] hover:from-[#25211D] hover:to-gray-700 text-white font-bold py-2 px-8 cursor-pointer rounded-full text-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg">
                                     <span className="flex items-center justify-center">
                                         Get Inspired
                                         <svg
@@ -120,7 +120,7 @@ const Hero = () => {
                                     </span>
                                 </button>
 
-                                <button className="group border-2 border-orange-500 hover:bg-orange-500/10 text-white font-bold py-2 cursor-pointer px-8 rounded-full text-lg transform transition-all duration-300 hover:scale-105">
+                                <button className="group border-2 border-gray-500 hover:bg-gray-500/20 text-white font-bold py-2 cursor-pointer px-8 rounded-full text-lg transform transition-all duration-300 hover:scale-105">
                                     <span className="flex items-center justify-center">
                                         Explore Designs
                                         <svg
@@ -143,15 +143,15 @@ const Hero = () => {
                             {/* Stats */}
                             <div className="flex items-center gap-8 mt-12 pt-8 border-t border-gray-700/50">
                                 <div>
-                                    <div className="text-3xl font-bold text-yellow-400">500+</div>
+                                    <div className="text-3xl font-bold text-gray-200">500+</div>
                                     <div className="text-sm text-gray-400">Projects</div>
                                 </div>
                                 <div>
-                                    <div className="text-3xl font-bold text-orange-400">50K+</div>
+                                    <div className="text-3xl font-bold text-gray-200">50K+</div>
                                     <div className="text-sm text-gray-400">Satisfied Clients</div>
                                 </div>
                                 <div>
-                                    <div className="text-3xl font-bold text-red-400">15+</div>
+                                    <div className="text-3xl font-bold text-gray-200">15+</div>
                                     <div className="text-sm text-gray-400">Awards</div>
                                 </div>
                             </div>
