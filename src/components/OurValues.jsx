@@ -27,7 +27,7 @@ const OurValues = () => {
 
   const headingRef = useRef(null);
   const inView = useInView(headingRef, { once: true, amount: 0.4 });
-  const headingText = "Why-Choose-Us";
+  const headingText = "Choose-Us";
   const charVariants = {
     hidden: { y: 50, rotateX: 90, opacity: 0 },
     visible: { y: 0, rotateX: 0, opacity: 1 },
@@ -111,7 +111,7 @@ const OurValues = () => {
       {/* <p className="inter text-[#34302B] text-center max-w-3xl mx-auto mt-4">
         Ready to bring your vision to life? Whether it’s a home, a workspace, or a public space, we’re here to design environments that inspire, function, and endure. Let’s start your project together.
       </p> */}
-      <div className="grid grid-cols-2 gap-2 inter text-[#34302B] mt-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 inter text-[#34302B] mt-4">
         <p>• Experience in residential, joinery and commercial projects.</p>
         <p>• Uk-approved warranties for peace of mind.</p>
         <p>• A fully unified design and build service with everything managed in-house.</p>

@@ -120,7 +120,7 @@ const Hero = () => {
                                     </span>
                                 </button>
 
-                                <button className="group border-2 border-gray-500 hover:bg-gray-500/20 text-white font-bold py-2 cursor-pointer px-8 rounded-full text-lg transform transition-all duration-300 hover:scale-105">
+                                <button className="group border-2 border-gray-500 hover:bg-gray-500/20 text-white font-bold py-2 cursor-pointer px-8 rounded-full text-base sm:text-lg transform transition-all duration-300 hover:scale-105">
                                     <span className="flex items-center justify-center">
                                         Explore Designs
                                         <svg
