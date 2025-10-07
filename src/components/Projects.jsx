@@ -36,11 +36,6 @@ const Projects = () => {
                         </motion.span>
                     ))}
                 </h1>
-
-                <div className="flex items-center justify-between pt-10">
-                    <p className="inter text-[#25211D] text-sm">2020/25</p>
-                    <p className="inter text-[#25211D] text-sm">(04)</p>
-                </div>
             </div>
 
             <div className='flex flex-col md:flex-row md:items-center md:justify-between md:sticky md:top-0 md:h-screen bg-[#FEFCF6] mt-6'>
@@ -61,7 +56,7 @@ const Projects = () => {
                         <div
                             className="rounded-full border border-slate-500"
                             style={{
-                                width: "190px",
+                                width: "230px",
                                 height: "60px",
                                 padding: "2px", // space for scaling content
                             }}
@@ -83,7 +78,7 @@ const Projects = () => {
                                             exit={{ rotate: -12, y: -10, opacity: 0 }}
                                             transition={{ duration: 0.2, ease: "easeInOut" }}
                                         >
-                                            VIEW PROJECT
+                                            BOOK 1 TO 1 CALL NOW
                                         </motion.span>
                                     ) : (
                                         <motion.span
@@ -93,7 +88,7 @@ const Projects = () => {
                                             exit={{ rotate: -12, y: -10, opacity: 0 }}
                                             transition={{ duration: 0.2, ease: "easeInOut" }}
                                         >
-                                            VIEW PROJECT
+                                            BOOK 1 TO 1 CALL NOW
                                         </motion.span>
                                     )}
                                 </AnimatePresence>
@@ -116,7 +111,7 @@ const Projects = () => {
                         <div
                             className="rounded-full border border-slate-500"
                             style={{
-                                width: "190px",
+                                width: "230px",
                                 height: "60px",
                                 padding: "2px", // space for scaling content
                             }}
@@ -138,7 +133,7 @@ const Projects = () => {
                                             exit={{ rotate: -12, y: -10, opacity: 0 }}
                                             transition={{ duration: 0.2, ease: "easeInOut" }}
                                         >
-                                            VIEW PROJECT
+                                            BOOK 1 TO 1 CALL NOW
                                         </motion.span>
                                     ) : (
                                         <motion.span
@@ -148,7 +143,7 @@ const Projects = () => {
                                             exit={{ rotate: -12, y: -10, opacity: 0 }}
                                             transition={{ duration: 0.2, ease: "easeInOut" }}
                                         >
-                                            VIEW PROJECT
+                                            BOOK 1 TO 1 CALL NOW
                                         </motion.span>
                                     )}
                                 </AnimatePresence>
@@ -170,7 +165,7 @@ const Projects = () => {
                         <div
                             className="rounded-full border border-slate-500"
                             style={{
-                                width: "190px",
+                                width: "230px",
                                 height: "60px",
                                 padding: "2px",
                             }}
@@ -191,7 +186,7 @@ const Projects = () => {
                                             exit={{ rotate: -12, y: -10, opacity: 0 }}
                                             transition={{ duration: 0.2, ease: "easeInOut" }}
                                         >
-                                            VIEW PROJECT
+                                            BOOK 1 TO 1 CALL NOW
                                         </motion.span>
                                     ) : (
                                         <motion.span
@@ -201,7 +196,7 @@ const Projects = () => {
                                             exit={{ rotate: -12, y: -10, opacity: 0 }}
                                             transition={{ duration: 0.2, ease: "easeInOut" }}
                                         >
-                                            VIEW PROJECT
+                                            BOOK 1 TO 1 CALL NOW
                                         </motion.span>
                                     )}
                                 </AnimatePresence>
@@ -223,7 +218,7 @@ const Projects = () => {
                         <div
                             className="rounded-full border border-slate-500"
                             style={{
-                                width: "190px",
+                                width: "230px",
                                 height: "60px",
                                 padding: "2px",
                             }}
@@ -244,7 +239,7 @@ const Projects = () => {
                                             exit={{ rotate: -12, y: -10, opacity: 0 }}
                                             transition={{ duration: 0.2, ease: "easeInOut" }}
                                         >
-                                            VIEW PROJECT
+                                            BOOK 1 TO 1 CALL NOW
                                         </motion.span>
                                     ) : (
                                         <motion.span
@@ -254,7 +249,7 @@ const Projects = () => {
                                             exit={{ rotate: -12, y: -10, opacity: 0 }}
                                             transition={{ duration: 0.2, ease: "easeInOut" }}
                                         >
-                                            VIEW PROJECT
+                                            BOOK 1 TO 1 CALL NOW
                                         </motion.span>
                                     )}
                                 </AnimatePresence>
@@ -276,7 +271,7 @@ const Projects = () => {
                         <div
                             className="rounded-full border border-slate-500"
                             style={{
-                                width: "190px",
+                                width: "230px",
                                 height: "60px",
                                 padding: "2px",
                             }}
@@ -297,7 +292,7 @@ const Projects = () => {
                                             exit={{ rotate: -12, y: -10, opacity: 0 }}
                                             transition={{ duration: 0.2, ease: "easeInOut" }}
                                         >
-                                            VIEW PROJECT
+                                            BOOK 1 TO 1 CALL NOW
                                         </motion.span>
                                     ) : (
                                         <motion.span
@@ -307,7 +302,7 @@ const Projects = () => {
                                             exit={{ rotate: -12, y: -10, opacity: 0 }}
                                             transition={{ duration: 0.2, ease: "easeInOut" }}
                                         >
-                                            VIEW PROJECT
+                                            BOOK 1 TO 1 CALL NOW
                                         </motion.span>
                                     )}
                                 </AnimatePresence>
@@ -329,7 +324,7 @@ const Projects = () => {
                         <div
                             className="rounded-full border border-slate-500"
                             style={{
-                                width: "190px",
+                                width: "230px",
                                 height: "60px",
                                 padding: "2px",
                             }}
@@ -350,7 +345,7 @@ const Projects = () => {
                                             exit={{ rotate: -12, y: -10, opacity: 0 }}
                                             transition={{ duration: 0.2, ease: "easeInOut" }}
                                         >
-                                            VIEW PROJECT
+                                            BOOK 1 TO 1 CALL NOW
                                         </motion.span>
                                     ) : (
                                         <motion.span
@@ -360,7 +355,7 @@ const Projects = () => {
                                             exit={{ rotate: -12, y: -10, opacity: 0 }}
                                             transition={{ duration: 0.2, ease: "easeInOut" }}
                                         >
-                                            VIEW PROJECT
+                                            BOOK 1 TO 1 CALL NOW
                                         </motion.span>
                                     )}
                                 </AnimatePresence>

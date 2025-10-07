@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
 import { X } from "lucide-react";
 import { toast } from "sonner";
+import Accordian from "./Accordian";
 
 const OurValues = () => {
   const [hovered, setHovered] = useState(false);
@@ -111,18 +112,20 @@ const OurValues = () => {
       {/* <p className="inter text-[#34302B] text-center max-w-3xl mx-auto mt-4">
         Ready to bring your vision to life? Whether it’s a home, a workspace, or a public space, we’re here to design environments that inspire, function, and endure. Let’s start your project together.
       </p> */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 inter text-[#34302B] mt-4">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 inter text-[#34302B] mt-4">
         <p>• Experience in residential, joinery and commercial projects.</p>
         <p>• Uk-approved warranties for peace of mind.</p>
         <p>• A fully unified design and build service with everything managed in-house.</p>
         <p>• A collaborative, personalised approach that ensures project feels truly bespoke.</p>
-      </div>
+      </div> */}
+
+      <Accordian />
 
       {/* CTA Button */}
       <div className="flex justify-center mt-10 pb-10">
         <div
           className="rounded-full border border-slate-500"
-          style={{ width: "220px", height: "60px", padding: "2px" }}
+          style={{ width: "230px", height: "60px", padding: "2px" }}
         >
           <motion.div
             className="bg-[#25211D] w-full h-full rounded-full flex items-center justify-center uppercase text-white text-md overflow-hidden cursor-pointer"
@@ -140,7 +143,7 @@ const OurValues = () => {
                 exit={{ rotate: -12, y: -10, opacity: 0 }}
                 transition={{ duration: 0.2, ease: "easeInOut" }}
               >
-                START A PROJECT
+                BOOK 1 TO 1 CALL NOW
               </motion.span>
             </AnimatePresence>
           </motion.div>

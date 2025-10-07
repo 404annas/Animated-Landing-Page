@@ -5,45 +5,39 @@ import { motion, useInView } from "framer-motion";
 const testimonials = [
   {
     image: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68516188ef1e08a08cb7adc8_Delaware.svg",
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+    title: "As an architect i worked with saleha on one of the interior design  project. The outcome was brilliant. Client was very pleased  with the results. she is very professional!!",
     person: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68555f93492bd334a12ef84b_client-04.jpg",
-    name: "Mia Lane",
-    position: "CEO",
+    name: "Sameera Dalvi",
   },
   {
     image: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/6851618899fe0f81f09d8dc6_Amsterdam.svg",
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+    title: "Saleha has been brilliant all along. She designed our living room and changed it to something extraordinary and special. Saleha is approachable and wonderful.",
     person: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68555f9380ce974d0b84adc6_client-05.jpg",
-    name: "Mia Lane",
-    position: "CEO",
+    name: "HU-584350361",
   },
   {
     image: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/6851619fb9d10aebcce79c0d_Sweden.svg",
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.lations",
+    title: "I would like to express my appreciation for the exceptional interior design services provided by Saleha. Her expertise and attention to detail ensured everything",
     person: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68555f930b1cf5a2b9462b77_client-01.jpg",
-    name: "Mia Lane",
-    position: "CEO",
+    name: "Talib",
   },
   {
     image: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/685161920fd24a7acdfd6334_Monaco.svg",
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+    title: "We would highly recommend Saleha and team that worked with us to help design and decorate our new home. Start to finish, took the time to understand what we wanted.",
     person: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68555f93df486cfbc577c5bf_client-02.jpg",
-    name: "Mia Lane",
-    position: "CEO",
+    name: "Ashley Newman",
   },
   {
     image: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/685161998c35f2dd232c0474_Springfield.svg",
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+    title: "Thanks to Saliha and team for understanding our requirements and providing useful insights into what will work and what wanted.",
     person: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68555f938e7a3d5099ea301a_client-03.jpg",
-    name: "Mia Lane",
-    position: "CEO",
+    name: "Moiz Siawala",
   },
   {
     image: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/685161a5822b1ce22b5d1ce5_Umbrella.svg",
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+    title: "I wanted to post a review of the decoration project with Dwell Rich( SK). The execution was smooth and timely. I am happy with the final look of the room and corridor.",
     person: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68555f94cf01c11437c2fd63_client-06.jpg",
-    name: "Mia Lane",
-    position: "CEO",
+    name: "HU-901874817",
   },
 ];
 
@@ -141,7 +135,6 @@ const Testimonials = () => {
                   <img className="rounded-full w-14 border border-gray-300 p-0.5" loading="lazy" src={item.person} alt="Person Image" />
                   <div className="flex flex-col items-start">
                     <h3 className="text-[#25211D] font-semibold">{item.name}</h3>
-                    <p className="text-[#34302B] text-sm">{item.position}</p>
                   </div>
                 </div>
               </div>

@@ -103,7 +103,7 @@ const Hero = () => {
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <button className="group bg-gradient-to-r from-gray-700 to-[#25211D] hover:from-[#25211D] hover:to-gray-700 text-white font-bold py-2 px-8 cursor-pointer rounded-full text-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg">
                                     <span className="flex items-center justify-center">
-                                        Get Inspired
+                                        Download Profile
                                         <svg
                                             className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-300"
                                             fill="none"
@@ -122,7 +122,7 @@ const Hero = () => {
 
                                 <button className="group border-2 border-gray-500 hover:bg-gray-500/20 text-white font-bold py-2 cursor-pointer px-8 rounded-full text-base sm:text-lg transform transition-all duration-300 hover:scale-105">
                                     <span className="flex items-center justify-center">
-                                        Explore Designs
+                                        Book 1 to 1 call now
                                         <svg
                                             className="w-5 h-5 ml-2 transform group-hover:rotate-45 transition-transform duration-300"
                                             fill="none"
