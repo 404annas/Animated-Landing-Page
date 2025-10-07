@@ -19,7 +19,7 @@ body {
 }
 
 .frank {
-  font-family: "Frank Ruhl Libre", serif;
+    font-family: "Frank Ruhl Libre", serif;
 }
 
 .mor {
@@ -34,4 +34,18 @@ body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.animate-scroll-right {
+    animation: scroll-right 20s linear infinite;
 }

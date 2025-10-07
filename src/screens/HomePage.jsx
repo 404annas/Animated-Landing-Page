@@ -9,11 +9,13 @@ import Projects from '../components/Projects';
 import NavbarAno from '../components/NavbarAno';
 import Hero1 from '../components/Hero1';
 import HeroAno from '../components/HeroAno';
+import Header from '../components/Header';
 
 const HomePage = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
+      <Header />
       {/* <NavbarAno /> */}
       <Hero1 />
       {/* <HeroAno /> */}

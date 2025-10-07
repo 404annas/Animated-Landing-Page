@@ -2,24 +2,24 @@ import React, { useState, useEffect } from "react";
 const heroImages = [
     {
         url: "https://images.unsplash.com/photo-1615406020658-6c4b805f1f30?w=2000&auto=format&fit=crop&q=120&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW9kZXJuJTIwYXJjaGl0ZWN0dXJlfGVufDB8fDB8fHww",
-        title: "INNOVATION",
-        subtitle: "Design • Efficiency • Technology",
+        title: "ARCHITECTURAL",
+        subtitle: "Shaping Your Signature Style",
         description:
             "Modern architecture embraces innovation, blending creativity with functionality. It transforms spaces into experiences that inspire and engage.",
     },
     {
         url: "https://images.unsplash.com/photo-1531591022136-eb8b0da1e6d0?w=2000&auto=format&fit=crop&q=120&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1vZGVybiUyMGFyY2hpdGVjdHVyZXxlbnwwfHwwfHx8MA%3D%3D",
-        title: "SUSTAINABILITY",
-        subtitle: "Green • Durable • Smart",
+        title: "STRUCTURAL",
+        subtitle: "Shaping Your Signature Style",
         description:
             "Eco-friendly materials and energy-efficient designs are central to modern architecture. Buildings aim to reduce environmental impact while enhancing comfort.",
     },
     {
         url: "https://images.unsplash.com/photo-1543071293-d91175a68672?w=2000&auto=format&fit=crop&q=120&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vZGVybiUyMGFyY2hpdGVjdHVyZXxlbnwwfHwwfHx8MA%3D%3D",
-        title: "MINIMALISM",
-        subtitle: "Simple • Elegant • Functional",
+        title: "CONSTRUCTION",
+        subtitle: "Shaping Your Signature Style",
         description:
-            "Clean lines and uncluttered spaces define minimalistic modern designs. Simplicity in form creates elegance and timeless appeal.",
+            "Clean lines and uncluttered spaces define minimalistic modern designs. Simplicity in form creates elegance and timeless appeal. Simplicity in form creates elegance and timeless appeal.",
     },
 ];
 
@@ -69,7 +69,7 @@ const Hero = () => {
             <div className="absolute inset-0 overflow-hidden"></div>
 
             {/* Main Content */}
-            <div className="relative z-10 h-full flex items-center">
+            <div className="relative z-10 h-full flex items-center -mt-10">
                 <div className="container mx-auto px-4 w-full">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         {/* Left Column - Text Content */}
@@ -138,22 +138,6 @@ const Hero = () => {
                                         </svg>
                                     </span>
                                 </button>
-                            </div>
-
-                            {/* Stats */}
-                            <div className="flex items-center gap-8 mt-12 pt-8 border-t border-gray-700/50">
-                                <div>
-                                    <div className="text-3xl font-bold text-gray-200">500+</div>
-                                    <div className="text-sm text-gray-400">Projects</div>
-                                </div>
-                                <div>
-                                    <div className="text-3xl font-bold text-gray-200">50K+</div>
-                                    <div className="text-sm text-gray-400">Satisfied Clients</div>
-                                </div>
-                                <div>
-                                    <div className="text-3xl font-bold text-gray-200">15+</div>
-                                    <div className="text-sm text-gray-400">Awards</div>
-                                </div>
                             </div>
                         </div>
 

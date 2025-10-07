@@ -53,14 +53,14 @@ const Projects = () => {
                     <img
                         loading="lazy"
                         className="w-full h-full object-cover object-bottom"
-                        src={project1}
+                        src="https://plus.unsplash.com/premium_photo-1680553491336-644d5955ea50?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8QXJjaGl0ZWN0dXJhbHxlbnwwfHwwfHx8MA%3D%3D"
                         alt="Project 1"
                     />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col h-full justify-center items-center text-center mt-4 md:mt-0'>
                     <p className='text-[#25211D]'>2025</p>
-                    <h1 className='mor-n uppercase leading-none text-7xl md:text-[100px] lg:text-[220px] text-[#25211D]'>Ridge</h1>
-                    <p className='uppercase text-sm sm:text-base text-[#25211D]'>Architectural Design</p>
+                    <h1 className='mor-n uppercase leading-none text-7xl md:text-[100px] lg:text-[220px] text-[#25211D]'>Architectural</h1>
+                    <p className='uppercase text-sm sm:text-base text-[#25211D]'>Architectural Drawings</p>
                     <div className="flex justify-center mt-4 mb-0 sm:mb-4">
                         {/* Outer fixed border */}
                         <div
@@ -110,12 +110,12 @@ const Projects = () => {
 
             <div className='flex flex-col md:flex-row-reverse md:items-center text-center md:justify-between md:sticky md:top-0 md:h-screen bg-[#FEFCF6] mt-6'>
                 <div className='w-full md:w-1/2 h-full'>
-                    <img loading='lazy' className='w-full h-full object-cover object-bottom' src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bd9/6853f742a5b34983fecb4671_Scandinavian%20Living%20Room.jpg" alt="Project 2" />
+                    <img loading='lazy' className='w-full h-full object-cover object-center' src="https://images.unsplash.com/photo-1655335064375-f9ba0fd43846?w=2000&auto=format&fit=crop&q=120&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fFN0cnVjdHVyYWx8ZW58MHx8MHx8fDA%3D" alt="Project 2" />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col mt-14 md:mt-0'>
                     <p className='text-[#25211D]'>2024</p>
-                    <h1 className='mor-n uppercase leading-none text-7xl md:text-[100px] lg:text-[220px] text-[#25211D]'>North</h1>
-                    <p className='uppercase text-sm sm:text-base text-[#25211D]'>Interior Architecture</p>
+                    <h1 className='mor-n uppercase leading-none text-7xl md:text-[100px] lg:text-[220px] text-[#25211D]'>Structural</h1>
+                    <p className='uppercase text-sm sm:text-base text-[#25211D]'>Structural Drawings</p>
                     <div className="flex justify-center mt-4 mb-0 sm:mb-4">
                         {/* Outer fixed border */}
                         <div
@@ -165,12 +165,118 @@ const Projects = () => {
 
             <div className='flex flex-col md:flex-row md:items-center text-center md:justify-between md:sticky md:top-0 md:h-screen bg-[#FEFCF6] mt-6'>
                 <div className='w-full md:w-1/2 h-full'>
-                    <img loading='lazy' className='w-full h-full object-cover object-bottom' src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bd9/6853f72c8a5fdbd86d9b8322_Serene%20Minimalist%20Interior.jpg" alt="Project 3" />
+                    <img loading='lazy' className='w-full h-full object-cover object-center' src="https://plus.unsplash.com/premium_photo-1681691912442-68c4179c530c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q29udHJ1Y3Rpb258ZW58MHx8MHx8fDA%3D" alt="Project 3" />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col mt-4 md:mt-0'>
                     <p className='text-[#25211D]'>2023</p>
-                    <h1 className='mor-n uppercase leading-none text-[130px] md:text-[220px] text-[#25211D]'>Aspect</h1>
+                    <h1 className='mor-n uppercase leading-none text-[130px] md:text-[220px] text-[#25211D]'>Contruction</h1>
                     <p className='uppercase text-[#25211D]'>Master Planning</p>
+                    <div className="flex justify-center mt-4 mb-0 sm:mb-4">
+                        <div
+                            className="rounded-full border border-slate-500"
+                            style={{
+                                width: "190px",
+                                height: "60px",
+                                padding: "2px",
+                            }}
+                        >
+                            <motion.div
+                                className="bg-[#25211D] w-full h-full rounded-full flex items-center justify-center uppercase text-white text-md overflow-hidden cursor-pointer"
+                                onMouseEnter={() => setHovered(true)}
+                                onMouseLeave={() => setHovered(false)}
+                                animate={{ scale: hovered ? 0.96 : 1 }}
+                                transition={{ duration: 0.2, ease: "easeInOut" }}
+                            >
+                                <AnimatePresence mode="wait">
+                                    {!hovered ? (
+                                        <motion.span
+                                            key="about"
+                                            initial={{ rotate: 12, y: -40, opacity: 0 }}
+                                            animate={{ rotate: 0, y: 0, opacity: 1 }}
+                                            exit={{ rotate: -12, y: -10, opacity: 0 }}
+                                            transition={{ duration: 0.2, ease: "easeInOut" }}
+                                        >
+                                            VIEW PROJECT
+                                        </motion.span>
+                                    ) : (
+                                        <motion.span
+                                            key="learn"
+                                            initial={{ rotate: 12, y: -40, opacity: 0 }}
+                                            animate={{ rotate: 0, y: 0, opacity: 1 }}
+                                            exit={{ rotate: -12, y: -10, opacity: 0 }}
+                                            transition={{ duration: 0.2, ease: "easeInOut" }}
+                                        >
+                                            VIEW PROJECT
+                                        </motion.span>
+                                    )}
+                                </AnimatePresence>
+                            </motion.div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='flex flex-col md:flex-row-reverse md:items-center text-center md:justify-between md:sticky md:top-0 md:h-screen bg-[#FEFCF6] mt-6'>
+                <div className='w-full md:w-1/2 h-full'>
+                    <img loading='lazy' className='w-full h-full object-cover object-center' src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=2000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8SW50ZXJpb3J8ZW58MHx8MHx8fDA%3D" alt="Project 3" />
+                </div>
+                <div className='w-full md:w-1/2 flex flex-col mt-4 md:mt-0'>
+                    <p className='text-[#25211D]'>2023</p>
+                    <h1 className='mor-n uppercase leading-none text-[130px] md:text-[220px] text-[#25211D]'>Interior</h1>
+                    <p className='uppercase text-[#25211D]'>Designing</p>
+                    <div className="flex justify-center mt-4 mb-0 sm:mb-4">
+                        <div
+                            className="rounded-full border border-slate-500"
+                            style={{
+                                width: "190px",
+                                height: "60px",
+                                padding: "2px",
+                            }}
+                        >
+                            <motion.div
+                                className="bg-[#25211D] w-full h-full rounded-full flex items-center justify-center uppercase text-white text-md overflow-hidden cursor-pointer"
+                                onMouseEnter={() => setHovered(true)}
+                                onMouseLeave={() => setHovered(false)}
+                                animate={{ scale: hovered ? 0.96 : 1 }}
+                                transition={{ duration: 0.2, ease: "easeInOut" }}
+                            >
+                                <AnimatePresence mode="wait">
+                                    {!hovered ? (
+                                        <motion.span
+                                            key="about"
+                                            initial={{ rotate: 12, y: -40, opacity: 0 }}
+                                            animate={{ rotate: 0, y: 0, opacity: 1 }}
+                                            exit={{ rotate: -12, y: -10, opacity: 0 }}
+                                            transition={{ duration: 0.2, ease: "easeInOut" }}
+                                        >
+                                            VIEW PROJECT
+                                        </motion.span>
+                                    ) : (
+                                        <motion.span
+                                            key="learn"
+                                            initial={{ rotate: 12, y: -40, opacity: 0 }}
+                                            animate={{ rotate: 0, y: 0, opacity: 1 }}
+                                            exit={{ rotate: -12, y: -10, opacity: 0 }}
+                                            transition={{ duration: 0.2, ease: "easeInOut" }}
+                                        >
+                                            VIEW PROJECT
+                                        </motion.span>
+                                    )}
+                                </AnimatePresence>
+                            </motion.div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='flex flex-col md:flex-row md:items-center text-center md:justify-between md:sticky md:top-0 md:h-screen bg-[#FEFCF6] mt-6'>
+                <div className='w-full md:w-1/2 h-full'>
+                    <img loading='lazy' className='w-full h-full object-cover object-bottom' src="https://plus.unsplash.com/premium_photo-1694558413194-0cb84cf8be4b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEpvaW5lcnl8ZW58MHx8MHx8fDA%3D" alt="Project 3" />
+                </div>
+                <div className='w-full md:w-1/2 flex flex-col mt-4 md:mt-0'>
+                    <p className='text-[#25211D]'>2023</p>
+                    <h1 className='mor-n uppercase leading-none text-[130px] md:text-[220px] text-[#25211D]'>Joinery</h1>
+                    <p className='uppercase text-[#25211D]'>Joining</p>
                     <div className="flex justify-center mt-4 mb-0 sm:mb-4">
                         <div
                             className="rounded-full border border-slate-500"
@@ -218,12 +324,12 @@ const Projects = () => {
 
             <div className='flex flex-col md:flex-row-reverse items-center text-center justify-between relative top-[100px] sm:top-[81px] h-screen bg-[#FEFCF6] pb-10'>
                 <div className='w-full md:w-1/2 h-full'>
-                    <img loading='lazy' className='w-full h-full object-cover object-center' src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bd9/6853f708b423f659977ac630_Stylish%20and%20Serene%20Living%20Room.jpg" alt="Project 4" />
+                    <img loading='lazy' className='w-full h-full object-cover object-center' src="https://plus.unsplash.com/premium_photo-1661370024678-6cd5c79b847e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q29tbWVyY2lhbHxlbnwwfHwwfHx8MA%3D%3D" alt="Project 4" />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col'>
                     <p className='text-[#25211D]'>2022</p>
-                    <h1 className='mor-n uppercase leading-none text-7xl md:text-[100px] lg:text-[220px] text-[#25211D]'>Frame</h1>
-                    <p className='uppercase text-sm sm:text-base text-[#25211D]'>Project Management</p>
+                    <h1 className='mor-n uppercase leading-none text-7xl md:text-[100px] lg:text-[220px] text-[#25211D]'>Commercial</h1>
+                    <p className='uppercase text-sm sm:text-base text-[#25211D]'>Projects</p>
                     <div className="flex justify-center mt-4 mb-4">
                         <div
                             className="rounded-full border border-slate-500"

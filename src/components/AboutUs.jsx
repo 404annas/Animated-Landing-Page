@@ -59,8 +59,8 @@ const charVariants = {
 const AboutUs = () => {
   const [hovered, setHovered] = useState(false);
 
-  const modernText = `Modern`;
-  const architectureText = "Architecture";
+  const modernText = `South-London`;
+  const architectureText = "Surey";
 
   // Ref for section
   const sectionRef = useRef(null);
@@ -68,7 +68,7 @@ const AboutUs = () => {
 
   return (
     <div id="services" ref={sectionRef} className="bg-[#FEFCF6] py-20 px-10">
-      <h1 className="text-center text-black uppercase inter">Design Vision</h1>
+      <h1 className="text-center text-black uppercase inter">Design & Build</h1>
 
       <div className="flex items-center justify-between pt-10">
         {/* LEFT COUNTER */}
@@ -128,13 +128,13 @@ const AboutUs = () => {
           <p>• Stakeholder</p>
           <p>• Public Relations Media Relations</p>
         </p> */}
-        <p className="max-w-md text-left">We create architecture that balances form, function, and context. Our spaces reflect a deep respect for people, place, and purpose — shaped with care, vision, and lasting intent.</p>
+        <p className="max-w-md text-left">From luxury home renovations to specialist commercial builds, we bring visison, detail and craftmanship together to create spaces that last.</p>
         {/* <p className="max-w-md flex flex-col text-start justify-end inter text-[#34302B]">
           <p>• Social Media Management</p>
           <p>• Digital Marketing</p>
           <p>• Engagement Advocacy</p>
         </p> */}
-        <p className="max-w-md text-right">Every project is an opportunity to connect design with meaning. Through timeless forms and details, we create environments that inspire and serve those who live, work and gather there.</p>
+        <p className="max-w-md text-right">Every project is an opportunity to connect design with meaning. Through timeless forms and details, we create environments that inspire.</p>
       </div>
 
       {/* <div className="flex justify-center mt-4 mb-4">
