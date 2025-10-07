@@ -6,7 +6,6 @@ const Banner = () => {
             <Marquee
                 gradient={false}
                 speed={60}
-                pauseOnHover={true}
                 direction="right"
             >
                 {Array(5)

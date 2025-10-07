@@ -1,10 +1,5 @@
 import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
-import social from "../assets/social.jpg";
-import comm from "../assets/comm.jpg";
-import talk from "../assets/talk.jpg";
-
-const project1 = "https://cdn.prod.website-files.com/684f6af04ca7b75961204bd9/6853f763c47b2af585134ee3_Minimalist%20Interior%20Design.jpg"
 
 const charVariants = {
     hidden: { y: 50, rotateX: 90, opacity: 0 },
