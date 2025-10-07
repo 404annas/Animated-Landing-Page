@@ -27,10 +27,10 @@ const Navbar = () => {
         <>
             <Banner />
 
+            {/* Navbar */}
             <nav className="flex items-center justify-between bg-[#25211D] px-6 lg:px-10 py-4 text-white relative z-50">
                 {/* Left Side */}
                 <div className="flex items-center gap-8">
-                    {/* Logo visible on all screens */}
                     <h1 className="text-xl font-semibold tracking-wide">LOGO</h1>
 
                     {/* Desktop Dropdown */}
@@ -47,15 +47,18 @@ const Navbar = () => {
                             />
                         </button>
 
-                        {dropdownOpen && (
-                            <div className="absolute mt-2 w-52 bg-white/10 backdrop-blur-md rounded-xl p-2 flex flex-col gap-1 z-50 text-sm">
-                                {menuItems.map((item) => (
-                                    <Link key={item.name} to={item.path} className={linkClass}>
-                                        {item.name}
-                                    </Link>
-                                ))}
-                            </div>
-                        )}
+                        <div
+                            className={`absolute mt-2 w-52 bg-white/10 backdrop-blur-md rounded-xl p-2 flex flex-col gap-1 z-50 text-sm transition-all duration-300 ease-in-out ${dropdownOpen
+                                    ? "opacity-100 translate-y-0"
+                                    : "opacity-0 -translate-y-2 pointer-events-none"
+                                }`}
+                        >
+                            {menuItems.map((item) => (
+                                <Link key={item.name} to={item.path} className={linkClass}>
+                                    {item.name}
+                                </Link>
+                            ))}
+                        </div>
                     </div>
                 </div>
 
@@ -84,7 +87,7 @@ const Navbar = () => {
                 <div className="lg:hidden flex items-center gap-4">
                     <button
                         onClick={() => setSidebarOpen(true)}
-                        className="text-white focus:outline-none"
+                        className="text-white focus:outline-none cursor-pointer"
                     >
                         <Menu size={24} />
                     </button>
@@ -93,65 +96,66 @@ const Navbar = () => {
 
             {/* Mobile Sidebar */}
             <div
-                className={`fixed top-0 right-0 h-full w-64 bg-[#25211D] z-50 transform transition-transform duration-300 ease-in-out ${sidebarOpen ? "translate-x-0" : "translate-x-full"
+                className={`fixed top-11 right-0 h-full w-[70%] bg-[#25211D] z-50 transform transition-transform duration-500 ease-in-out ${sidebarOpen ? "translate-x-0" : "translate-x-full"
                     }`}
             >
                 <div className="flex justify-between items-center p-4">
-                    {/* Mobile Logo inside sidebar */}
                     <h1 className="text-xl font-semibold tracking-wide text-white">
                         LOGO
                     </h1>
-                    <button
-                        onClick={() => setSidebarOpen(false)}
-                        className="text-white"
-                    >
+                    <button onClick={() => setSidebarOpen(false)} className="text-white cursor-pointer">
                         <X size={24} />
                     </button>
                 </div>
 
-                <div className="flex flex-col gap-2 mt-4 px-6">
+                <div className="flex flex-col gap-3 mt-4 px-6">
                     {/* Sidebar Dropdown */}
-                    <button
-                        onClick={() => setSidebarDropdownOpen(!sidebarDropdownOpen)}
-                        className="flex items-center justify-between w-full text-white text-lg px-2 py-2 rounded-lg hover:bg-white/10 transition"
-                    >
-                        <span>Navigate</span>
-                        <ChevronDown
-                            size={16}
-                            className={`transition-transform duration-300 ${sidebarDropdownOpen ? "rotate-180" : ""
-                                }`}
-                        />
-                    </button>
+                    <div className="relative">
+                        <button
+                            onClick={() => setSidebarDropdownOpen(!sidebarDropdownOpen)}
+                            className="flex items-center justify-between w-full bg-white/10 hover:bg-white/15 transition-colors duration-300 rounded-2xl px-4 py-2 cursor-pointer text-sm text-white"
+                        >
+                            <span>Navigate</span>
+                            <ChevronDown
+                                size={16}
+                                className={`transition-transform duration-300 ${sidebarDropdownOpen ? "rotate-180" : ""
+                                    }`}
+                            />
+                        </button>
 
-                    {sidebarDropdownOpen && (
-                        <div className="flex flex-col gap-2 ml-2 mt-1">
+                        <div
+                            className={`mt-2 bg-white/10 backdrop-blur-md rounded-xl p-2 flex flex-col gap-1 text-sm transition-all duration-300 ease-in-out text-white ${sidebarDropdownOpen
+                                    ? "opacity-100 translate-y-0"
+                                    : "opacity-0 -translate-y-2 pointer-events-none"
+                                }`}
+                        >
                             {menuItems.map((item) => (
                                 <Link
                                     key={item.name}
                                     to={item.path}
-                                    className="text-white text-base px-2 py-1 rounded hover:bg-white/10 transition"
+                                    className={linkClass}
                                     onClick={() => setSidebarOpen(false)}
                                 >
                                     {item.name}
                                 </Link>
                             ))}
                         </div>
-                    )}
+                    </div>
 
                     <a
                         href="mailto:abc@gmail.com"
-                        className="text-white text-sm hover:text-white/80 mt-4"
+                        className="text-white text-sm hover:text-white/80 transition-all duration-300 mt-2"
                     >
                         abc@gmail.com
                     </a>
                     <a
                         href="tel:+920000000000"
-                        className="text-white text-sm hover:text-white/80"
+                        className="text-white text-sm hover:text-white/80 transition-all duration-300"
                     >
                         +92 000 0000000
                     </a>
                     <Link to="/contact">
-                        <button className="bg-white/10 hover:bg-white/15 transition-colors duration-300 rounded-2xl px-4 py-2 mt-4 text-sm w-full">
+                        <button className="bg-white/10 hover:bg-white/15 transition-colors duration-300 rounded-2xl px-4 py-2 mt-4 text-sm w-full cursor-pointer text-white">
                             Contact Us
                         </button>
                     </Link>
@@ -161,7 +165,7 @@ const Navbar = () => {
             {/* Overlay when sidebar is open */}
             {sidebarOpen && (
                 <div
-                    className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40"
+                    className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 transition-opacity duration-300"
                     onClick={() => setSidebarOpen(false)}
                 ></div>
             )}
