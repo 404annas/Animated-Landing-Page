@@ -324,7 +324,7 @@ const Projects = () => {
 
             <div className='flex flex-col md:flex-row-reverse items-center text-center justify-between relative top-[100px] sm:top-[81px] h-screen bg-[#FEFCF6] pb-10'>
                 <div className='w-full md:w-1/2 h-full'>
-                    <img loading='lazy' className='w-full h-full object-cover object-center' src="https://plus.unsplash.com/premium_photo-1661370024678-6cd5c79b847e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q29tbWVyY2lhbHxlbnwwfHwwfHx8MA%3D%3D" alt="Project 4" />
+                    <img loading='lazy' className='w-full h-full object-cover object-center' src="https://plus.unsplash.com/premium_photo-1661413166847-47e3ecc668a3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Q29tbWVyY2lhbHxlbnwwfHwwfHx8MA%3D%3D" alt="Project 4" />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col'>
                     <p className='text-[#25211D]'>2022</p>
