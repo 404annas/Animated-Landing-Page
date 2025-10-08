@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown, Menu, X } from "lucide-react";
-import Banner from "./Banner";
 
 const Navbar = () => {
     const [dropdownOpen, setDropdownOpen] = useState(false);

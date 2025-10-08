@@ -143,7 +143,7 @@ const OurValues = () => {
                 exit={{ rotate: -12, y: -10, opacity: 0 }}
                 transition={{ duration: 0.2, ease: "easeInOut" }}
               >
-                BOOK 1 TO 1 CALL NOW
+                BOOK 1:1 CALL NOW
               </motion.span>
             </AnimatePresence>
           </motion.div>

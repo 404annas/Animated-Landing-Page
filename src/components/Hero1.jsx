@@ -122,7 +122,7 @@ const Hero = () => {
 
                                 <button className="group border-2 border-gray-500 hover:bg-gray-500/20 text-white font-bold py-2 cursor-pointer px-8 rounded-full text-base sm:text-lg transform transition-all duration-300 hover:scale-105">
                                     <span className="flex items-center justify-center">
-                                        Book 1 to 1 call now
+                                        Book 1:1 call now
                                         <svg
                                             className="w-5 h-5 ml-2 transform group-hover:rotate-45 transition-transform duration-300"
                                             fill="none"
