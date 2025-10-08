@@ -70,7 +70,7 @@ const Footer = () => {
 
           <div className="flex flex-wrap items-center justify-center gap-2">
             <p className="uppercase text-[#67635E] inter text-sm">Phone</p>
-            <a href="tel:07803326891" className="uppercase inter text-white text-sm"> 07803326891 </a>
+            <a href="tel:07803326891" className="uppercase inter text-white text-sm">07803 326 891</a>
           </div>
         </div>
       </footer>

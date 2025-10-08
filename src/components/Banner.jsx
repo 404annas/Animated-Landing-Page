@@ -2,7 +2,7 @@ import Marquee from "react-fast-marquee";
 
 const Banner = () => {
     return (
-        <div className="bg-gradient-to-r from-[#25211D] to-[#654237] py-2.5 overflow-hidden">
+        <div className="bg-gradient-to-r from-[#25211D] to-[#654237] py-10 overflow-hidden">
             <Marquee
                 gradient={false}
                 speed={60}
@@ -13,7 +13,7 @@ const Banner = () => {
                         "Planning | Construction | Interior Design & Joinery"
                     )
                     .map((text, index) => (
-                        <span key={index} className="text-white text-sm font-medium mx-10">
+                        <span key={index} className="text-white text-base font-medium mx-10">
                             {text}
                         </span>
                     ))}

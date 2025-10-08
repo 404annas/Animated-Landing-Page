@@ -55,7 +55,7 @@ export const AccordionContent = ({ children, open }) => {
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3, ease: "easeInOut" }}
-                    className="px-4 py-2 bg-white text-gray-800"
+                    className="px-4 py-2 bg-[#FEFCF6] text-gray-800"
                 >
                     {children}
                 </motion.div>

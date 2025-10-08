@@ -10,6 +10,7 @@ import NavbarAno from '../components/NavbarAno';
 import Hero1 from '../components/Hero1';
 import HeroAno from '../components/HeroAno';
 import Header from '../components/Header';
+import Banner from '../components/Banner';
 
 const HomePage = () => {
   return (
@@ -19,7 +20,8 @@ const HomePage = () => {
       {/* <NavbarAno /> */}
       <Hero1 />
       {/* <HeroAno /> */}
-      <Hero />
+      {/* <Hero /> */}
+      <Banner />
 
       {/* AboutUs visible on lg and above */}
       <div className="hidden lg:block">

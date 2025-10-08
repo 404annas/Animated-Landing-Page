@@ -25,8 +25,6 @@ const Navbar = () => {
 
     return (
         <>
-            <Banner />
-
             {/* Navbar */}
             <nav className="flex items-center justify-between bg-[#25211D] px-6 lg:px-10 py-4 text-white relative z-50">
                 {/* Left Side */}
@@ -37,7 +35,7 @@ const Navbar = () => {
                     <div className="hidden lg:block relative">
                         <button
                             onClick={() => setDropdownOpen(!dropdownOpen)}
-                            className="flex items-center gap-2 bg-white/10 hover:bg-white/15 transition-colors duration-300 rounded-2xl px-4 py-2 cursor-pointer text-sm"
+                            className="flex items-center gap-2 outline-none bg-white/10 hover:bg-white/15 transition-colors duration-300 rounded-2xl px-4 py-2 cursor-pointer text-sm"
                         >
                             <span>Navigate</span>
                             <ChevronDown
@@ -49,8 +47,8 @@ const Navbar = () => {
 
                         <div
                             className={`absolute mt-2 w-52 bg-white/10 backdrop-blur-md rounded-xl p-2 flex flex-col gap-1 z-50 text-sm transition-all duration-300 ease-in-out ${dropdownOpen
-                                    ? "opacity-100 translate-y-0"
-                                    : "opacity-0 -translate-y-2 pointer-events-none"
+                                ? "opacity-100 translate-y-0"
+                                : "opacity-0 -translate-y-2 pointer-events-none"
                                 }`}
                         >
                             {menuItems.map((item) => (
@@ -65,16 +63,16 @@ const Navbar = () => {
                 {/* Right Side (Desktop Only) */}
                 <div className="hidden lg:flex items-center gap-6">
                     <a
-                        href="mailto:abc@gmail.com"
+                        href="mailto:hello@designz.dwell-rich.com"
                         className="hover:text-white/80 transition-all duration-300 text-sm"
                     >
-                        abc@gmail.com
+                        hello@designz.dwell-rich.com
                     </a>
                     <a
-                        href="tel:+920000000000"
+                        href="tel:07803 326 891"
                         className="hover:text-white/80 transition-all duration-300 text-sm"
                     >
-                        +92 000 0000000
+                        07803 326 891
                     </a>
                     <Link to="/contact">
                         <button className="bg-white/10 hover:bg-white/15 transition-colors duration-300 rounded-2xl px-4 py-2 cursor-pointer text-sm">
@@ -96,7 +94,7 @@ const Navbar = () => {
 
             {/* Mobile Sidebar */}
             <div
-                className={`fixed top-11 right-0 h-full w-[70%] bg-[#25211D] z-50 transform transition-transform duration-500 ease-in-out ${sidebarOpen ? "translate-x-0" : "translate-x-full"
+                className={`fixed top-0 right-0 h-full w-[70%] bg-[#25211D] z-50 transform transition-transform duration-500 ease-in-out ${sidebarOpen ? "translate-x-0" : "translate-x-full"
                     }`}
             >
                 <div className="flex justify-between items-center p-4">
@@ -113,7 +111,7 @@ const Navbar = () => {
                     <div className="relative">
                         <button
                             onClick={() => setSidebarDropdownOpen(!sidebarDropdownOpen)}
-                            className="flex items-center justify-between w-full bg-white/10 hover:bg-white/15 transition-colors duration-300 rounded-2xl px-4 py-2 cursor-pointer text-sm text-white"
+                            className="flex items-center outline-none justify-between w-full bg-white/10 hover:bg-white/15 transition-colors duration-300 rounded-2xl px-4 py-2 cursor-pointer text-sm text-white"
                         >
                             <span>Navigate</span>
                             <ChevronDown
@@ -125,8 +123,8 @@ const Navbar = () => {
 
                         <div
                             className={`mt-2 bg-white/10 backdrop-blur-md rounded-xl p-2 flex flex-col gap-1 text-sm transition-all duration-300 ease-in-out text-white ${sidebarDropdownOpen
-                                    ? "opacity-100 translate-y-0"
-                                    : "opacity-0 -translate-y-2 pointer-events-none"
+                                ? "opacity-100 translate-y-0"
+                                : "opacity-0 -translate-y-2 pointer-events-none"
                                 }`}
                         >
                             {menuItems.map((item) => (
@@ -143,16 +141,17 @@ const Navbar = () => {
                     </div>
 
                     <a
-                        href="mailto:abc@gmail.com"
+                        href="mailto:hello@designz.dwell-rich.com"
                         className="text-white text-sm hover:text-white/80 transition-all duration-300 mt-2"
                     >
-                        abc@gmail.com
+                        hello@designz.dwell-rich.com
                     </a>
                     <a
-                        href="tel:+920000000000"
+                        href="tel:07803 326 891"
                         className="text-white text-sm hover:text-white/80 transition-all duration-300"
                     >
-                        +92 000 0000000
+
+                        07803 326 891
                     </a>
                     <Link to="/contact">
                         <button className="bg-white/10 hover:bg-white/15 transition-colors duration-300 rounded-2xl px-4 py-2 mt-4 text-sm w-full cursor-pointer text-white">
