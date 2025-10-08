@@ -1,5 +1,9 @@
 import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
+import port1 from "../assets/port1.jpg"
+import port2 from "../assets/port2.jpg"
+import port3 from "../assets/port3.jpg"
+import port4 from "../assets/port4.jpg"
 
 const charVariants = {
     hidden: { y: 50, rotateX: 90, opacity: 0 },
@@ -43,7 +47,7 @@ const Projects = () => {
                     <img
                         loading="lazy"
                         className="w-full h-full object-cover object-bottom"
-                        src="https://st.hzcdn.com/fimgs/37c18ac206a16f33_5818-w312-h312-b0-p0---kitchen.jpg"
+                        src={port1}
                         alt="Project 1"
                     />
                 </div>
@@ -100,7 +104,7 @@ const Projects = () => {
 
             <div className='flex flex-col md:flex-row-reverse md:items-center text-center md:justify-between md:sticky md:top-0 md:h-screen bg-[#FEFCF6] mt-6'>
                 <div className='w-full md:w-1/2 h-full'>
-                    <img loading='lazy' className='w-full h-full object-cover object-center' src="https://st.hzcdn.com/fimgs/16b1cd8806a16f3a_8217-w312-h312-b0-p0---kitchen.jpg" alt="Project 2" />
+                    <img loading='lazy' className='w-full h-full object-cover object-center' src={port2} alt="Project 2" />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col mt-14 md:mt-0'>
                     <p className='text-[#25211D]'>2024</p>
@@ -155,7 +159,7 @@ const Projects = () => {
 
             <div className='flex flex-col md:flex-row md:items-center text-center md:justify-between md:sticky md:top-0 md:h-screen bg-[#FEFCF6] mt-6'>
                 <div className='w-full md:w-1/2 h-full'>
-                    <img loading='lazy' className='w-full h-full object-cover object-center' src="https://st.hzcdn.com/fimgs/b331f03108bd53c9_1273-w312-h312-b0-p0---spaces.jpg" alt="Project 3" />
+                    <img loading='lazy' className='w-full h-full object-cover object-center' src={port3} alt="Project 3" />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col mt-4 md:mt-0'>
                     <p className='text-[#25211D]'>2023</p>
@@ -314,7 +318,7 @@ const Projects = () => {
 
             <div className='flex flex-col md:flex-row-reverse items-center text-center justify-between relative top-[100px] sm:top-[81px] h-screen bg-[#FEFCF6] pb-10'>
                 <div className='w-full md:w-1/2 h-full'>
-                    <img loading='lazy' className='w-full h-full object-cover object-center' src="https://st.hzcdn.com/fimgs/7021950308bd53d0_8225-w312-h312-b0-p0---spaces.jpg" alt="Project 4" />
+                    <img loading='lazy' className='w-full h-full object-cover object-center' src={port4} alt="Project 4" />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col'>
                     <p className='text-[#25211D]'>2022</p>
