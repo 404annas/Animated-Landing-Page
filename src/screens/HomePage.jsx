@@ -11,6 +11,9 @@ import Hero1 from '../components/Hero1';
 import HeroAno from '../components/HeroAno';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
+import Text from '../components/Text';
+import QuerySection from '../components/QuerySection';
+import HeroNew from '../components/HeroNew';
 
 const HomePage = () => {
   return (
@@ -18,10 +21,13 @@ const HomePage = () => {
       {/* <Navbar /> */}
       <Header />
       {/* <NavbarAno /> */}
-      <Hero1 />
+      {/* <Hero1 /> */}
+      <HeroNew />
       {/* <HeroAno /> */}
       {/* <Hero /> */}
       <Banner />
+
+      <Text />
 
       {/* AboutUs visible on lg and above */}
       <div className="hidden lg:block">
@@ -35,6 +41,7 @@ const HomePage = () => {
 
       <Projects />
       <Testimonials />
+      <QuerySection />
       <OurValues />
       <Footer />
     </div>

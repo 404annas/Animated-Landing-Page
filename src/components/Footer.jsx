@@ -2,16 +2,17 @@ import React from "react";
 import { Twitter, Instagram, Linkedin, Facebook } from "lucide-react";
 import "./Footer.css";
 import FooterItems from "./FooterItems";
+import logo from "../assets/logo.png"
 
 const Footer = () => {
   return (
     <>
-      <footer className="bg-[#25211D] text-white px-4 sm:px-6 md:px-10 pt-20 pb-10">
+      <footer className="bg-[#25211D] text-white px-4 sm:px-6 md:px-10 py-10">
         <div className="flex items-center flex-col gap-6">
           <img
-            className="w-8 cursor-pointer hover:opacity-80 transition-all duration-300"
+            className="w-20 cursor-pointer hover:opacity-80 transition-all duration-300"
             loading="lazy"
-            src="https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/684f806d593d5a0b9c7e201c_R3.svg"
+            src={logo}
             alt="Logo"
           />
           {/* <h1 className="text-4xl font-bold">Sahar Iqbal</h1> */}

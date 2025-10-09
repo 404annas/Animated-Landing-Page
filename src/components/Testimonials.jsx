@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 
@@ -124,8 +124,8 @@ const Testimonials = () => {
                 key={idx}
                 className="flex-none w-full sm:w-1/2 lg:w-1/3 border border-[#D2D1CB] px-6 sm:px-8 py-8 sm:py-10 flex flex-col gap-4 sm:gap-6"
               >
-                <img className="w-30" loading="lazy" src={item.image} alt="Image" />
-                <h2 className="text-base text-[#25211D]">{item.title}</h2>
+                {/* <img className="w-30" loading="lazy" src={item.image} alt="Image" /> */}
+                <h2 className="text-base text-[#25211D]">{'"'}{item.title}{'"'}</h2>
                 {/* <ul className="text-[#34302B] text-base sm:text-lg space-y-3">
                   {item.points.map((point, i) => (
                     <li key={i}>{point}</li>

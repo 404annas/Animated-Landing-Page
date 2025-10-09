@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown, Menu, X } from "lucide-react";
+import logo from "../assets/logo.png"
 
 const Navbar = () => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -25,10 +26,11 @@ const Navbar = () => {
     return (
         <>
             {/* Navbar */}
-            <nav className="flex items-center justify-between bg-[#25211D] px-6 lg:px-10 py-4 text-white relative z-50">
+            <nav className="flex items-center justify-between bg-[#25211D] px-6 lg:px-10 py-2 text-white relative z-50">
                 {/* Left Side */}
                 <div className="flex items-center gap-8">
-                    <h1 className="text-xl font-semibold tracking-wide">LOGO</h1>
+                    {/* <h1 className="text-xl font-semibold tracking-wide">LOGO</h1> */}
+                    <img className="w-20" src={logo} loading="lazy" alt="Logo" />
 
                     {/* Desktop Dropdown */}
                     <div className="hidden lg:block relative">
@@ -45,7 +47,7 @@ const Navbar = () => {
                         </button>
 
                         <div
-                            className={`absolute mt-2 w-52 bg-white/10 backdrop-blur-md rounded-xl p-2 flex flex-col gap-1 z-50 text-sm transition-all duration-300 ease-in-out ${dropdownOpen
+                            className={`absolute mt-2 w-52 bg-[#25211D] backdrop-blur-md rounded-xl p-2 flex flex-col gap-1 z-50 text-sm transition-all duration-300 ease-in-out ${dropdownOpen
                                 ? "opacity-100 translate-y-0"
                                 : "opacity-0 -translate-y-2 pointer-events-none"
                                 }`}
