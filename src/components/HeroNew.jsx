@@ -80,28 +80,28 @@ const HeroNew = () => {
                                 title="PLANNING"
                                 reviews="(100+ Reviews)"
                                 stars={5}
-                                containerClass="top-[30%] right-[-15%]"
+                                containerClass="top-[30%] right-[-5%] sm:right-[-15%]"
                             />
                             <ServiceCard
                                 icon={<RiAwardLine />}
                                 title="BRAND IDENTITY"
                                 reviews="(30 Reviews)"
                                 stars={5}
-                                containerClass="left-[-15%] top-1/2 -translate-y-1/2"
+                                containerClass="left-[-2%] sm:left-[-15%] top-1/2 -translate-y-1/2"
                             />
                             <ServiceCard
                                 icon={<Pickaxe />}
                                 title="CONSTRUCTION"
                                 reviews="(50 Reviews)"
                                 stars={5}
-                                containerClass="bottom-[0%] left-[10%]"
+                                containerClass="bottom-[0%] sm:left-[10%]"
                             />
                             <ServiceCard
                                 icon={<FaPenNib />}
                                 title="DESIGNING"
                                 reviews="(100+ Reviews)"
                                 stars={5}
-                                containerClass="bottom-[5%] right-[-20%]"
+                                containerClass="bottom-[5%] right-[-5%] sm:right-[-20%]"
                             />
                             {/* Dotted line SVG */}
                             {/* <svg className="absolute w-24 h-24 -bottom-16 right-0 text-gray-800" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">

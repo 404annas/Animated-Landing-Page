@@ -98,10 +98,7 @@ const Navbar = () => {
                 className={`fixed top-0 right-0 h-full w-[70%] bg-[#25211D] z-50 transform transition-transform duration-500 ease-in-out ${sidebarOpen ? "translate-x-0" : "translate-x-full"
                     }`}
             >
-                <div className="flex justify-between items-center p-4">
-                    <h1 className="text-xl font-semibold tracking-wide text-white">
-                        LOGO
-                    </h1>
+                <div className="flex justify-end items-center p-4">
                     <button onClick={() => setSidebarOpen(false)} className="text-white cursor-pointer">
                         <X size={24} />
                     </button>
