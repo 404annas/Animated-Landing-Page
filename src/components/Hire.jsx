@@ -34,7 +34,7 @@ const Hire = () => {
     };
 
     return (
-        <div className="px-4 sm:px-6 md:px-10 py-10 sm:py-14 md:py-20 bg-white max-w-7xl mx-auto">
+        <div className="px-4 sm:px-6 md:px-10 pt-50 pb-10 sm:py-14 md:py-20 bg-white max-w-7xl mx-auto">
             {/* Top Center Heading */}
             <h2 className="text-3xl sm:text-6xl text-center uppercase text-[#25211D] max-w-4xl mx-auto mor mb-6 sm:mb-8 tracking-wide">
                 Our Design & Build Process
@@ -54,17 +54,17 @@ const Hire = () => {
                     </p>
                     <Link
                         to={"/contact"}
-                        className="bg-[#25211D] w-fit text-white inter px-8 py-2 rounded-xl shadow-primary transition-all duration-300 transform hover:-translate-y-1 hover:scale-103 flex items-center text-sm"
+                        className="bg-[#25211D] w-fit text-white inter px-4 sm:px-8 py-2 rounded-xl shadow-primary transition-all duration-300 transform hover:-translate-y-1 hover:scale-103 flex items-center text-sm"
                     >
                         <span className="mr-3">📅</span>
-                        Transform Your Space - Let's Talk
+                        Transform Your Space
                     </Link>
                 </div>
 
                 {/* EXISTING RIGHT DIV */}
                 <div className="relative flex-1 space-y-8 pl-4 sm:pl-6 md:pl-8">
                     {/* Timeline Vertical Line */}
-                    <div className="absolute top-10 sm:top-10 md:top-10 lg:top-6 left-1 sm:left-3 md:left-[19px] lg:left-5 w-[2px] h-[560px] sm:h-[470px] md:h-[670px] lg:h-[480px] bg-[#25211D]" />
+                    <div className="absolute top-4 sm:top-10 md:top-10 lg:top-6 left-1 sm:left-3 md:left-[19px] lg:left-5 w-[2px] h-[490px] sm:h-[470px] md:h-[670px] lg:h-[480px] bg-[#25211D]" />
 
                     {data.items.map((item, index) => (
                         <div key={index} className="relative flex items-start space-x-4">
