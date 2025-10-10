@@ -11,6 +11,7 @@ import avatar1 from "../assets/avatar1.png";
 import avatar2 from "../assets/avatar2.png";
 import avatar3 from "../assets/avatar3.png";
 import avatar4 from "../assets/avatar4.png";
+import avatar5 from "../assets/avatar5.png";
 
 const Card = ({ text, className }) => {
     return (
@@ -72,7 +73,7 @@ const QuerySection = () => {
                 {/* Center Image */}
                 <div className=" max-lg:order-1 ">
                     <img
-                        src={avatar4}
+                        src={avatar5}
                         loading="lazy"
                         alt="Center"
                         className="md:translate-x-12 w-[500px] bg-transparent"
