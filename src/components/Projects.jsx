@@ -52,8 +52,8 @@ const Projects = () => {
                     />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col h-full justify-center items-center text-center mt-4 md:mt-0'>
-                    <h1 className='mor-n uppercase leading-none text-7xl md:text-[100px] lg:text-[220px] text-[#25211D]'>Interior</h1>
-                    <p className='uppercase text-sm sm:text-base text-[#25211D]'>Architectural Drawings</p>
+                    <h1 className='mor-n uppercase leading-none text-7xl md:text-[100px] lg:text-[220px] text-[#25211D]'>Sanctuary</h1>
+                    <p className='uppercase text-sm sm:text-base text-[#25211D]'>Bespoke Calm</p>
                     <div className="flex justify-center mt-4 mb-0 sm:mb-4">
                         {/* Outer fixed border */}
                         <div
@@ -106,8 +106,8 @@ const Projects = () => {
                     <img loading='lazy' className='w-full h-full object-cover object-center' src={port2} alt="Project 2" />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col mt-14 md:mt-0'>
-                    <h1 className='mor-n uppercase leading-none text-7xl md:text-[100px] lg:text-[220px] text-[#25211D]'>Interior</h1>
-                    <p className='uppercase text-sm sm:text-base text-[#25211D]'>Structural Drawings</p>
+                    <h1 className='mor-n uppercase leading-none text-7xl md:text-[100px] lg:text-[220px] text-[#25211D]'>Masterpiece</h1>
+                    <p className='uppercase text-sm sm:text-base text-[#25211D]'>Artisanal Living</p>
                     <div className="flex justify-center mt-4 mb-0 sm:mb-4">
                         {/* Outer fixed border */}
                         <div
@@ -160,8 +160,8 @@ const Projects = () => {
                     <img loading='lazy' className='w-full h-full object-cover object-center' src={port3} alt="Project 3" />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col mt-4 md:mt-0'>
-                    <h1 className='mor-n uppercase leading-none text-[130px] md:text-[220px] text-[#25211D]'>Joinery</h1>
-                    <p className='uppercase text-[#25211D]'>Master Planning</p>
+                    <h1 className='mor-n uppercase leading-none text-[130px] md:text-[220px] text-[#25211D]'>Flow</h1>
+                    <p className='uppercase text-[#25211D]'>Seamless Integration</p>
                     <div className="flex justify-center mt-4 mb-0 sm:mb-4">
                         <div
                             className="rounded-full border border-slate-500"
@@ -318,8 +318,8 @@ const Projects = () => {
                     <img loading='lazy' className='w-full h-full object-cover object-center' src={port4} alt="Project 4" />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col'>
-                    <h1 className='mor-n uppercase leading-none text-7xl md:text-[100px] lg:text-[220px] text-[#25211D]'>Joinery</h1>
-                    <p className='uppercase text-sm sm:text-base text-[#25211D]'>Projects</p>
+                    <h1 className='mor-n uppercase leading-none text-7xl md:text-[100px] lg:text-[220px] text-[#25211D]'>Heritage</h1>
+                    <p className='uppercase text-sm sm:text-base text-[#25211D]'>Timeless Craft</p>
                     <div className="flex justify-center mt-4 mb-4">
                         <div
                             className="rounded-full border border-slate-500"

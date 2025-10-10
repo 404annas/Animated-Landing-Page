@@ -9,16 +9,16 @@ const Text = () => {
             />
 
             {/* Text Content */}
-            <p id="tour-text" className="frank text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center text-white leading-tight sm:leading-snug md:leading-snug max-w-5xl z-10">
+            <p id="tour-text" className="frank text-2xl sm:text-3xl md:text-4xl text-center text-white leading-tight sm:leading-snug md:leading-snug max-w-5xl z-10">
                 <span className="bg-gradient-to-r from-[#d88367] to-[#EACCC2] bg-clip-text text-transparent">
                     Transforming
                 </span>{" "}
                 <span className="text-[#EACCC2]">Vision into </span>{" "}
                 <span className="bg-gradient-to-r from-[#d88367] to-[#EACCC2] bg-clip-text text-transparent">
-                    Actionable Outcomes
+                    Exceptional Spaces
                 </span>{" "}
                 <span className="bg-gradient-to-r from-[#EACCC2] to-[#d88367] bg-clip-text text-transparent">
-                    Through Planning, Designing, and Construction.
+                    Through Meticulous Planning, Bespoke Design, and Flawless Construction.
                 </span>
             </p>
         </section>

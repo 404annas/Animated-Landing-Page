@@ -26,7 +26,7 @@ const Navbar = () => {
     return (
         <>
             {/* Navbar */}
-            <nav className="flex items-center justify-between bg-[#25211D] px-6 lg:px-10 py-2 text-white relative z-50">
+            <nav className="sticky top-0 left-0 flex items-center justify-between bg-gradient-to-r from-[#25211D] to-[#532514] px-6 lg:px-10 py-2 text-white relative z-50">
                 {/* Left Side */}
                 <div className="flex items-center gap-8">
                     {/* <h1 className="text-xl font-semibold tracking-wide">LOGO</h1> */}
@@ -38,7 +38,7 @@ const Navbar = () => {
                             onClick={() => setDropdownOpen(!dropdownOpen)}
                             className="flex items-center gap-2 outline-none bg-white/10 hover:bg-white/15 transition-colors duration-300 rounded-2xl px-4 py-2 cursor-pointer text-sm"
                         >
-                            <span>Navigate</span>
+                            <span>Home</span>
                             <ChevronDown
                                 size={16}
                                 className={`transition-transform duration-300 ${dropdownOpen ? "rotate-180" : ""
@@ -77,7 +77,7 @@ const Navbar = () => {
                     </a>
                     <Link to="/contact">
                         <button className="bg-white/10 hover:bg-white/15 transition-colors duration-300 rounded-2xl px-4 py-2 cursor-pointer text-sm">
-                            Contact Us
+                            📅 Book Your Free Consultation
                         </button>
                     </Link>
                 </div>
@@ -114,7 +114,7 @@ const Navbar = () => {
                             onClick={() => setSidebarDropdownOpen(!sidebarDropdownOpen)}
                             className="flex items-center outline-none justify-between w-full bg-white/10 hover:bg-white/15 transition-colors duration-300 rounded-2xl px-4 py-2 cursor-pointer text-sm text-white"
                         >
-                            <span>Navigate</span>
+                            <span>Home</span>
                             <ChevronDown
                                 size={16}
                                 className={`transition-transform duration-300 ${sidebarDropdownOpen ? "rotate-180" : ""

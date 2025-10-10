@@ -14,6 +14,7 @@ import Banner from '../components/Banner';
 import Text from '../components/Text';
 import QuerySection from '../components/QuerySection';
 import HeroNew from '../components/HeroNew';
+import Hire from '../components/Hire';
 
 const HomePage = () => {
   return (
@@ -40,6 +41,7 @@ const HomePage = () => {
       </div>
 
       <Projects />
+      <Hire />
       <Testimonials />
       <QuerySection />
       <OurValues />

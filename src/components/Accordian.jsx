@@ -9,20 +9,20 @@ import {
 const AccordianExample = () => {
     const ITEMS = [
         {
-            title: "What services does our interior design company offer?",
-            content: "We provide residential, commercial, and workspace interior design services, including furniture layout, color schemes, lighting, and decor solutions tailored to your taste.",
+            title: "What services do you provide for London properties?",
+            content: "We offer a complete end-to-end service, including architectural planning, interior design, and full project management. We handle everything from initial concepts and securing planning permissions to construction and final styling for both residential renovations and multi-unit commercial developments.",
         },
         {
-            title: "How do we approach a new project?",
-            content: "We begin with a detailed consultation to understand your requirements, budget, and style preferences, then create a customized design plan with 3D renderings and material suggestions.",
+            title: "How do you work with property developers?",
+            content: "We act as strategic partners for developers, focusing on designs that maximise your return on investment (ROI) and market appeal. We understand the commercial needs of a project, from optimising layouts to creating high-end finishes that attract premium buyers and tenants, ensuring your project is both beautiful and profitable.",
         },
         {
-            title: "Why choose us over other interior designers?",
-            content: "Our team combines creativity with functionality, offering personalized design solutions, on-time delivery, and attention to every detail to bring your vision to life.",
+            title: "Do you handle planning permissions and council approvals?",
+            content: "Yes, absolutely. Navigating London's complex planning regulations is one of our core strengths. We manage the entire process on your behalf, liaising with local councils to ensure your project is fully compliant, which helps avoid the costly delays and stress common in London builds.",
         },
         {
-            title: "Is consultation free?",
-            content: "Yes! Our initial consultation is completely free, helping you understand the design possibilities before committing.",
+            title: "What happens during the free consultation?",
+            content: "Our free consultation is a no-obligation discovery call. We'll discuss your vision, project goals, potential budget, and timelines. It’s the perfect opportunity for you to ask questions and for us to explain precisely how we can bring your specific London-based project to life.",
         },
     ];
 

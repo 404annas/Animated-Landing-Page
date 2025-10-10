@@ -7,6 +7,10 @@ import { Link } from "react-router-dom";
 // import image from "../assets/nesha-query.png";
 import { motion } from "framer-motion";
 import logo from "../assets/logo.png"
+import avatar1 from "../assets/avatar1.png";
+import avatar2 from "../assets/avatar2.png";
+import avatar3 from "../assets/avatar3.png";
+import avatar4 from "../assets/avatar4.png";
 
 const Card = ({ text, className }) => {
     return (
@@ -18,7 +22,7 @@ const Card = ({ text, className }) => {
                 <FaRegCircle />
                 <FaRegCircle />
             </h2>
-            <p className="px-8 py-6 anonymous font-semibold">{text}</p>
+            <p className="px-8 py-6 anonymous font-semibold text-base text-[#25211D]">{text}</p>
         </div>
     );
 };
@@ -33,15 +37,15 @@ const QuerySection = () => {
     return (
         <section className="py-10 px-2 bg-white inter">
             <div className="text-center mb-8">
-                <h1 id="tour-query" className="text-2xl sand md:text-5xl font-extrabold mor-n">
-                    Get In Touch With Designz
-                </h1>
-                <h1 id="tour-query-head" className="text-6xl md:text-7xl font-bold mb-8">
-                    <span className="bg-gradient-to-r from-[#2d5865] to-[#c45259] bg-clip-text text-transparent">
-                        All this sounds
+                {/* <h1 id="tour-query" className="text-2xl sm:text-4xl md:text-6xl font-extrabold mor-n text-[#25211D]">
+                    Get In Touch With DR Designz
+                </h1> */}
+                <h1 id="tour-query-head" className="text-6xl md:text-7xl font-bold mor mb-8">
+                    <span className="bg-gradient-to-r from-[#25211D] to-[#3B180C] bg-clip-text text-transparent">
+                        Starting a project
                     </span>
                     <br />
-                    <span className="text-[#2d5865]">so familiar, right?</span>
+                    <span className="text-[#3B180C]">raises questions, right?</span>
                 </h1>
             </div>
             <div className="flex flex-col-reverse lg:flex-row items-center justify-center px-4 md:px-20">
@@ -51,7 +55,7 @@ const QuerySection = () => {
                         <Card
                             className={"-rotate-3"}
                             text={
-                                "How can I get started with personalized consulting for my organization?"
+                                "What's a realistic budget and timeline for my London development or renovation?"
                             }
                         />
                     </div>
@@ -59,7 +63,7 @@ const QuerySection = () => {
                         <Card
                             className={"rotate-6"}
                             text={
-                                "Is there expert guidance available to help with strategic planning or operational challenges?"
+                                "How do we navigate London's complex planning permissions and building regulations?"
                             }
                         />
                     </div>
@@ -68,10 +72,10 @@ const QuerySection = () => {
                 {/* Center Image */}
                 <div className=" max-lg:order-1 ">
                     <img
-                        src={logo}
+                        src={avatar4}
                         loading="lazy"
                         alt="Center"
-                        className="md:translate-x-12 w-[400px]"
+                        className="md:translate-x-12 w-[500px] bg-transparent"
                     />
                 </div>
 
@@ -81,31 +85,31 @@ const QuerySection = () => {
                         <Card
                             className={"rotate-3"}
                             text={
-                                "Can I get consulting services that align with my values and business goals?"
+                                "How can a professional design actually increase my property's end value (ROI)?"
                             }
                         />
                     </div>
                     <div data-aos="zoom-out">
                         <Card
                             className={"-rotate-6"}
-                            text={"How soon can we begin working together on my project?"}
+                            text={"What are the first steps to actually get my project started?"}
                         />
                     </div>
                 </div>
             </div>
             <p
                 id="tour-query-para"
-                className="text-center w-full px-7 lg:w-2/3 mx-auto my-9 text-xl font-semibold "
+                className="text-center w-full px-7 lg:w-2/3 mx-auto my-9 text-xl font-semibold inter text-[#25211D]"
                 data-aos="fade-up"
             >
-                Reach out to our team and let’s make things easier together.
+                These are the questions we answer every day. Let's replace uncertainty with a clear, actionable plan for your project.
             </p>
             <Link
-                to={"/enroll"}
-                className="bg-[#D88569] w-fit text-white font-semibold px-8 py-2 rounded-xl  shadow-primary transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 flex items-center text-sm justify-center mx-auto "
+                to={"/contact"}
+                className="bg-[#25211D] w-fit text-white px-8 py-2 rounded-xl  shadow-primary transition-all duration-300 transform hover:-translate-y-1 hover:scale-103 flex items-center text-sm justify-center mx-auto inter"
             >
                 <span className="mr-3">📅</span>
-                Book One to One Discovery Call Now
+                Don't Wait - Secure Your Project Slot
             </Link>
 
             <div className="mt-20 flex justify-center px-10">

@@ -17,7 +17,7 @@ const testimonials = [
   },
   {
     image: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/6851619fb9d10aebcce79c0d_Sweden.svg",
-    title: "I would like to express my appreciation for the exceptional interior design services provided by Saleha. Her expertise and attention to detail ensured everything",
+    title: "I would like to express my appreciation for the exceptional interior design services provided by Saleha. Her expertise and attention to detail ensured everything.",
     person: "https://cdn.prod.website-files.com/684f6af04ca7b75961204bcc/68555f930b1cf5a2b9462b77_client-01.jpg",
     name: "Talib",
   },
