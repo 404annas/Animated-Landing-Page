@@ -10,9 +10,9 @@ const Navbar = () => {
 
     const menuItems = [
         { name: "Home", path: "/" },
-        { name: "About", path: "/about" },
-        { name: "Projects", path: "/projects" },
-        { name: "Contact", path: "/contact" },
+        { name: "About", path: "/" },
+        { name: "Projects", path: "/" },
+        { name: "Contact", path: "/" },
     ];
 
     const linkClass =
