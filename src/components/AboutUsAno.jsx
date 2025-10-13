@@ -71,7 +71,7 @@ const AboutUsAno = () => {
             <h1 className="text-center text-black uppercase inter">Design & Build</h1>
 
             {/* <h1 className='uppercase mor-n text-[#25211D] text-center text-[120px] sm:text-[150px] md:text-[200px] pt-10 leading-none'>Modern</h1> */}
-            <h1 className='uppercase mor-n text-[#25211D] text-center text-[120px] sm:text-[150px] md:text-[200px] pt-10 leading-none'>
+            <h1 className='uppercase mor-n text-[#25211D] text-center text-[110px] sm:text-[150px] md:text-[200px] pt-10 leading-none'>
                 {modernText.split("").map((char, index) => (
                     <motion.span
                         key={index}

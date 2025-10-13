@@ -160,7 +160,7 @@ const Projects = () => {
                     <img loading='lazy' className='w-full h-full object-cover object-center' src={port3} alt="Project 3" />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col mt-4 md:mt-0'>
-                    <h1 className='mor-n uppercase leading-none text-[130px] md:text-[220px] text-[#25211D]'>Flow</h1>
+                    <h1 className='mor-n uppercase leading-none text-7xl md:text-[100px] lg:text-[220px] text-[#25211D]'>Flow</h1>
                     <p className='uppercase text-[#25211D]'>Seamless Integration</p>
                     <div className="flex justify-center mt-4 mb-0 sm:mb-4">
                         <div
