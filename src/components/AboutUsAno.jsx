@@ -59,8 +59,8 @@ const charVariants = {
 const AboutUsAno = () => {
     const [hovered, setHovered] = useState(false);
 
-    const modernText = "Modern";
-    const architectureText = "Architecture";
+    const modernText = "South-London";
+    const architectureText = "Surey";
 
     // Ref for section
     const sectionRef = useRef(null);
@@ -68,7 +68,7 @@ const AboutUsAno = () => {
 
     return (
         <div id="services" ref={sectionRef} className="bg-[#FEFCF6] py-20 px-4 sm:px-6 md:px-10">
-            <h1 className="text-center text-black uppercase inter">Design Vision</h1>
+            <h1 className="text-center text-black uppercase inter">Design & Build</h1>
 
             {/* <h1 className='uppercase mor-n text-[#25211D] text-center text-[120px] sm:text-[150px] md:text-[200px] pt-10 leading-none'>Modern</h1> */}
             <h1 className='uppercase mor-n text-[#25211D] text-center text-[120px] sm:text-[150px] md:text-[200px] pt-10 leading-none'>
@@ -125,7 +125,7 @@ const AboutUsAno = () => {
                     <p>• Stakeholder</p>
                     <p>• Public Relations Media Relations</p>
                 </p> */}
-                <p className="text-sm text-center">We create architecture that balances form, function, and context. Our spaces reflect a deep respect for people, place, and purpose — shaped with care, vision, and lasting intent.</p>
+                <p className="text-sm text-center">From luxury home renovations to specialist commercial builds, we bring visison, detail and craftmanship together to create spaces that last.</p>
                 {/* <p className="max-w-md flex flex-col text-start justify-end inter text-[#34302B]">
                     <p>• Social Media Management</p>
                     <p>• Digital Marketing</p>
