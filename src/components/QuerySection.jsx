@@ -16,7 +16,7 @@ import avatar5 from "../assets/avatar5.png";
 const Card = ({ text, className }) => {
     return (
         <div
-            className={`${className} bg-white relative  shadow-lg  rounded-lg  w-[300px] md:w-[400px] text-lg md:text-xl border-gray-800 border-2 `}
+            className={`${className} bg-white relative  shadow-lg  rounded-lg  w-[280px] md:w-[400px] text-lg md:text-xl border-gray-800 border-2 `}
         >
             <h2 className=" font-bold bg-gradient-to-r from-[#532514] to-black text-white p-4 border-b-2 border-gray-800 rounded-t-lg flex gap-2 text-base">
                 <FaRegCircle />
@@ -81,7 +81,7 @@ const QuerySection = () => {
                 </div>
 
                 {/* Right Cards */}
-                <div className="flex flex-col gap-20  relative z-10  max-lg:pb-16">
+                <div className="flex flex-col gap-20 relative z-10  max-lg:pb-16">
                     <div data-aos="zoom-out">
                         <Card
                             className={"rotate-3"}
@@ -100,7 +100,7 @@ const QuerySection = () => {
             </div>
             <p
                 id="tour-query-para"
-                className="text-center w-full px-7 lg:w-2/3 mx-auto my-9 text-xl font-semibold inter text-[#25211D]"
+                className="text-center w-full px-7 lg:w-2/3 mx-auto my-9 text-base sm:text-xl font-semibold inter text-[#25211D]"
                 data-aos="fade-up"
             >
                 These are the questions we answer every day. Let's replace uncertainty with a clear, actionable plan for your project.
