@@ -38,7 +38,7 @@ const HeroNew = () => {
                         <h1 className="text-3xl sm:text-[45px] leading-none font-extrabold uppercase inter text-[#532514] my-2 text-left">
                             Interior Design & Architecture in London
                         </h1>
-                        <p className="text-5xl sm:text-7xl leading-none text-right -translate-x-40 sm:-translate-x-5 -translate-y-8 text-[#25211D] lady">with us</p>
+                        <p className="text-5xl sm:text-7xl leading-none text-right -translate-x-40 -translate-y-5 text-[#25211D] lady">with us</p>
 
                         <p className="-mt-4 sm:-mt-10 text-left text-base sm:text-lg md:text-xl text-[#25211D] max-w-lg mx-auto lg:mx-0">
                             We create elegant, functional spaces for property developers and homeowners across London.

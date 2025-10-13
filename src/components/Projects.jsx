@@ -66,7 +66,7 @@ const Projects = () => {
                         >
                             {/* Inner scaling content */}
                             <motion.div
-                                className="bg-[#25211D] w-full h-full rounded-full flex items-center justify-center uppercase text-white text-md overflow-hidden cursor-pointer"
+                                className="bg-[#25211D] w-full h-full rounded-full flex items-center justify-center uppercase text-white text-sm sm:text-md overflow-hidden cursor-pointer"
                                 onMouseEnter={() => setHovered(true)}
                                 onMouseLeave={() => setHovered(false)}
                                 animate={{ scale: hovered ? 0.96 : 1 }}
@@ -120,7 +120,7 @@ const Projects = () => {
                         >
                             {/* Inner scaling content */}
                             <motion.div
-                                className="bg-[#25211D] w-full h-full rounded-full flex items-center justify-center uppercase text-white text-md overflow-hidden cursor-pointer"
+                                className="bg-[#25211D] w-full h-full rounded-full flex items-center justify-center uppercase text-white text-sm sm:text-md overflow-hidden cursor-pointer"
                                 onMouseEnter={() => setHovered(true)}
                                 onMouseLeave={() => setHovered(false)}
                                 animate={{ scale: hovered ? 0.96 : 1 }}
@@ -172,7 +172,7 @@ const Projects = () => {
                             }}
                         >
                             <motion.div
-                                className="bg-[#25211D] w-full h-full rounded-full flex items-center justify-center uppercase text-white text-md overflow-hidden cursor-pointer"
+                                className="bg-[#25211D] w-full h-full rounded-full flex items-center justify-center uppercase text-white text-sm sm:text-md overflow-hidden cursor-pointer"
                                 onMouseEnter={() => setHovered(true)}
                                 onMouseLeave={() => setHovered(false)}
                                 animate={{ scale: hovered ? 0.96 : 1 }}
@@ -315,7 +315,7 @@ const Projects = () => {
 
             <div className='flex flex-col md:flex-row-reverse items-center text-center justify-between relative top-[100px] sm:top-[81px] h-screen bg-[#FEFCF6] pb-10'>
                 <div className='w-full md:w-1/2 h-full'>
-                    <img loading='lazy' className='w-full h-full object-cover object-center' src={port4} alt="Project 4" />
+                    <img loading='lazy' className='w-full h-full object-cover object-center pb-10' src={port4} alt="Project 4" />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col'>
                     <h1 className='mor-n uppercase leading-none text-7xl md:text-[100px] lg:text-[220px] text-[#25211D]'>Heritage</h1>
@@ -330,7 +330,7 @@ const Projects = () => {
                             }}
                         >
                             <motion.div
-                                className="bg-[#25211D] w-full h-full rounded-full flex items-center justify-center uppercase text-white text-md overflow-hidden cursor-pointer"
+                                className="bg-[#25211D] w-full h-full rounded-full flex items-center justify-center uppercase text-white text-sm sm:text-md overflow-hidden cursor-pointer"
                                 onMouseEnter={() => setHovered(true)}
                                 onMouseLeave={() => setHovered(false)}
                                 animate={{ scale: hovered ? 0.96 : 1 }}

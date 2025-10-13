@@ -34,16 +34,16 @@ const Hire = () => {
     };
 
     return (
-        <div className="px-4 sm:px-6 md:px-10 pt-50 pb-10 sm:py-14 md:py-20 bg-white max-w-7xl mx-auto">
+        <div className="px-4 sm:px-6 md:px-10 pt-40 pb-10 sm:py-14 md:py-20 bg-white max-w-7xl mx-auto">
             {/* Top Center Heading */}
-            <h2 className="text-3xl sm:text-6xl text-center uppercase text-[#25211D] max-w-4xl mx-auto mor mb-6 sm:mb-8 tracking-wide">
+            <h2 className="text-4xl sm:text-6xl text-center uppercase text-[#25211D] max-w-4xl mx-auto mor mb-6 sm:mb-8 tracking-wide">
                 Our Design & Build Process
             </h2>
 
             <div className="flex flex-col md:flex-row items-start justify-between gap-10 pt-5">
                 {/* NEW LEFT DIV */}
                 <div className="flex-1 max-w-xl space-y-4">
-                    <h3 id="tour-hire" className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl uppercase text-[#25211D] mor-n tracking-wide">
+                    <h3 id="tour-hire" className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase text-[#25211D] mor-n tracking-wide">
                         Why Choose DR Designz?
                     </h3>
                     <p className="text-gray-600 text-sm inter font-medium">
